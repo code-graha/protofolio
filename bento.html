@@ -1,0 +1,822 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Portfolio | Creative UI/UX Designer & Frontend Developer</title>
+    <meta name="description" content="Portfolio of Sam, a UI/UX designer and frontend developer with 6+ years of experience creating user-centered digital experiences, apps, and websites.">
+    <meta name="keywords" content="UI/UX Designer, Frontend Developer, Web Designer, Creative Portfolio, Mobile App Design, Brand Identity, Dashboard UI, Packaging Design">
+    <link rel="canonical" href="https://yourdomain.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Sam Portfolio | UI/UX Designer & Developer">
+    <meta property="og:description" content="Explore my work in UI/UX design, frontend development, branding, and more.">
+    <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sam Portfolio | UI/UX Designer & Developer">
+    <meta name="twitter:description" content="Explore my work in UI/UX design, frontend development, branding, and more.">
+    <meta name="twitter:image" content="https://yourdomain.com/preview.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sam",
+      "jobTitle": "UI/UX Designer & Frontend Developer",
+      "url": "https://yourdomain.com/",
+      "sameAs": [
+        "https://www.linkedin.com/in/yourprofile",
+        "https://github.com/yourprofile",
+        "https://dribbble.com/yourprofile",
+        "https://behance.net/yourprofile"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance / WebGraha"
+      }
+    }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .bento-card {
+            transition: all 0.3s ease;
+        }
+
+        .bento-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .dark-mode {
+            background: #0f0f23;
+            color: #ffffff;
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-slide-in {
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
+    <style>
+        .highlighted-section {
+            outline: 2px solid #3F20FB;
+            background-color: rgba(63, 32, 251, 0.1);
+        }
+
+        .edit-button {
+            position: absolute;
+            z-index: 1000;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        html,
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+
+    <!-- Header -->
+    <header id="header"
+        class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg z-50 border-b border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2 animate-slide-in">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">SP</span>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800 dark:text-white">SamPortfolio</span>
+                </div>
+
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#hero-section" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors cursor-pointer">
+                        Home
+                    </a>
+                    <a href="#skills-section" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors cursor-pointer">
+                        Expertise
+                    </a>
+                    <a href="#portfolio-section" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors cursor-pointer">
+                        Portfolio
+                    </a>
+                    <a href="#about-section" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors cursor-pointer">
+                        About
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <a href="#contact-section"><button
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                        Hire Me
+                    </button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="pt-24 pb-12 min-h-[600px]">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <!-- Main Profile Card -->
+                <div
+                    class="col-span-12 lg:col-span-8 bg-white rounded-3xl p-8 shadow-sm border border-gray-200/50 bento-card fade-in">
+                    <div class="grid grid-cols-12 gap-6 h-full">
+                        <div class="col-span-12 md:col-span-8">
+                            <div class="mb-6 flex items-center gap-3">
+                                <span
+                                    class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">UI/UX
+                                    Designer</span>
+                                <div class="flex items-center gap-1">
+                                    <!-- <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div> -->
+                                        <span
+                                            class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full text-sm font-medium">
+                                            Available for hire
+                                        </span>
+                                </div>
+                            </div>
+                            <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                                Creative <span class="gradient-text">Designer</span> &amp; <span
+                                    class="bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent">Developer</span>
+                            </h1>
+                            <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+                                I craft beautiful digital experiences that connect brands with their audiences through
+                                thoughtful design and cutting-edge technology. Specializing in user-centered design that
+                                drives results.
+                            </p>
+                            <!-- <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                                <div class="text-center p-3 bg-gray-50 rounded-xl">
+                                    <div class="text-2xl font-bold text-gray-900">6+</div>
+                                    <div class="text-xs text-gray-600">Years Exp.</div>
+                                </div>
+                                <div class="text-center p-3 bg-gray-50 rounded-xl">
+                                    <div class="text-2xl font-bold text-gray-900">150+</div>
+                                    <div class="text-xs text-gray-600">Projects</div>
+                                </div>
+                                <div class="text-center p-3 bg-gray-50 rounded-xl">
+                                    <div class="text-2xl font-bold text-gray-900">50+</div>
+                                    <div class="text-xs text-gray-600">Clients</div>
+                                </div>
+                                <div class="text-center p-3 bg-gray-50 rounded-xl">
+                                    <div class="text-2xl font-bold text-gray-900">98%</div>
+                                    <div class="text-xs text-gray-600">Success</div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="col-span-12 md:col-span-4 flex items-center justify-center">
+                            <div class="relative">
+                                <div
+                                    class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl floating">
+                                    <img class="w-full h-full object-cover"
+                                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3ae225e408-66105deba688be7e89ca.png"
+                                        alt="professional headshot">
+                                </div>
+                                <div
+                                    class="absolute -bottom-4 -right-4 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center border-4 border-white">
+                                    <i class="fa-solid fa-check text-white text-xl"></i>
+                                </div>
+                                <div
+                                    class="absolute -top-4 -left-4 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center border-4 border-white">
+                                    <i class="fa-solid fa-star text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 flex flex-wrap gap-4">
+                            <a href="#portfolio-section" class="bg-gray-900 text-white px-8 py-3 rounded-xl font-medium hover:bg-gray-800 transition-all hover:shadow-lg flex items-center gap-2"><button
+                                >
+                                <i class="fa-solid fa-briefcase"></i>
+                                View Portfolio
+                            </button></a>
+                            <button
+                                class="border border-gray-300 text-gray-700 px-8 py-3 rounded-xl font-medium hover:bg-gray-50 transition-colors flex items-center gap-2">
+                                <i class="fa-solid fa-download"></i>
+                                Download CV
+                            </button>
+                            <button
+                                class="bg-green-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-green-600 transition-colors flex items-center gap-2">
+                                <i class="fa-solid fa-calendar"></i>
+                                Book Call
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Status Cards -->
+                <div class="lg:col-span-4 col-span-12 space-y-6">
+                    <div
+                        class="bento-card bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl p-6 text-white shadow-lg animate-fade-in">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold">Available for Work</h3>
+                            <div class="w-3 h-3 bg-white rounded-full animate-pulse"></div>
+                        </div>
+                        <p class="text-green-100 mb-4">Ready to take on new projects and collaborations</p>
+                        <div class="flex items-center text-green-100">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span class="text-sm">Next availability: Jan 2024</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bento-card bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg animate-fade-in border dark:border-gray-700">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Experience</h3>
+                            <i class="fas fa-trophy text-yellow-500 text-xl"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-blue-600 mb-2">5+ Years</div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-3">Professional Design Experience</p>
+                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                            <i class="fas fa-briefcase mr-2"></i>
+                            <span>50+ Projects Delivered</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bento-card bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-6 text-white shadow-lg animate-fade-in">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold">Client Rating</h3>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="text-2xl font-bold mb-2">4.9/5.0</div>
+                        <p class="text-purple-100">Based on 30+ client reviews</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Stats Section -->
+    <section id="stats-section" class="py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div
+                    class="bento-card bg-white dark:bg-gray-800 rounded-2xl p-6 text-center shadow-lg border dark:border-gray-700 group hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
+                    <div
+                        class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-500 transition-colors">
+                        <i class="fas fa-project-diagram text-blue-600 group-hover:text-white"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                    <p class="text-gray-600 dark:text-gray-300">Projects Completed</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">Across various industries</p>
+                </div>
+                <div
+                    class="bento-card bg-white dark:bg-gray-800 rounded-2xl p-6 text-center shadow-lg border dark:border-gray-700 group hover:border-purple-500 dark:hover:border-purple-400 transition-colors">
+                    <div
+                        class="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-500 transition-colors">
+                        <i class="fas fa-users text-purple-600 group-hover:text-white"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-purple-600 mb-2">30+</div>
+                    <p class="text-gray-600 dark:text-gray-300">Happy Clients</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">Long-term partnerships</p>
+                </div>
+                <div
+                    class="bento-card bg-white dark:bg-gray-800 rounded-2xl p-6 text-center shadow-lg border dark:border-gray-700 group hover:border-green-500 dark:hover:border-green-400 transition-colors">
+                    <div
+                        class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-green-500 transition-colors">
+                        <i class="fas fa-award text-green-600 group-hover:text-white"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-green-600 mb-2">15</div>
+                    <p class="text-gray-600 dark:text-gray-300">Awards Won</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">Design competitions</p>
+                </div>
+                <div
+                    class="bento-card bg-white dark:bg-gray-800 rounded-2xl p-6 text-center shadow-lg border dark:border-gray-700 group hover:border-orange-500 dark:hover:border-orange-400 transition-colors">
+                    <div
+                        class="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-500 transition-colors">
+                        <i class="fas fa-clock text-orange-600 group-hover:text-white"></i>
+                    </div>
+                    <div class="text-3xl font-bold text-orange-600 mb-2">5+</div>
+                    <p class="text-gray-600 dark:text-gray-300">Years Experience</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">Professional journey</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Skills & Tools Section -->
+    <section id="skills-section" class="max-w-7xl mx-auto px-6 py-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Skills &amp; Expertise</h2>
+            <p class="text-lg text-gray-600">Technologies and tools I use to bring ideas to life</p>
+        </div>
+
+        <div class="grid grid-cols-12 gap-6">
+            <!-- Enhanced Skills Overview -->
+            <div
+                class="col-span-12 lg:col-span-6 bg-white rounded-3xl p-8 shadow-sm border border-gray-200/50 bento-card fade-in stagger-1">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                    <i class="fa-solid fa-chart-line text-purple-600"></i>
+                    Core Skills
+                </h3>
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-gray-700 flex items-center gap-2">
+                                <i class="fa-solid fa-palette text-purple-600"></i>
+                                UI/UX Design
+                            </span>
+                            <span class="text-sm text-gray-500">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-purple-500 to-blue-600 h-3 rounded-full relative"
+                                style="width: 95%">
+                                <div class="absolute right-0 top-0 w-3 h-3 bg-white rounded-full shadow-md"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-gray-700 flex items-center gap-2">
+                                <i class="fa-solid fa-code text-green-600"></i>
+                                Frontend Development
+                            </span>
+                            <span class="text-sm text-gray-500">88%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-green-500 to-teal-600 h-3 rounded-full relative"
+                                style="width: 88%">
+                                <div class="absolute right-0 top-0 w-3 h-3 bg-white rounded-full shadow-md"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-gray-700 flex items-center gap-2">
+                                <i class="fa-solid fa-bullhorn text-orange-600"></i>
+                                Brand Design
+                            </span>
+                            <span class="text-sm text-gray-500">92%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-orange-500 to-red-600 h-3 rounded-full relative"
+                                style="width: 92%">
+                                <div class="absolute right-0 top-0 w-3 h-3 bg-white rounded-full shadow-md"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-gray-700 flex items-center gap-2">
+                                <i class="fa-solid fa-mobile-alt text-blue-600"></i>
+                                Mobile Design
+                            </span>
+                            <span class="text-sm text-gray-500">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div class="bg-gradient-to-r from-blue-500 to-cyan-600 h-3 rounded-full relative"
+                                style="width: 90%">
+                                <div class="absolute right-0 top-0 w-3 h-3 bg-white rounded-full shadow-md"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Tools & Certifications -->
+            <div class="col-span-12 lg:col-span-6 space-y-6">
+                <div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-200/50 bento-card fade-in stagger-2">
+                    <h4 class="font-bold text-gray-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-tools text-purple-600"></i>
+                        Design Tools
+                    </h4>
+                    <div class="grid sm:grid-cols-4 grid-cols-2 gap-4">
+                        <div
+                            class="bg-purple-100 rounded-xl p-3 text-center group hover:bg-purple-200 transition-colors">
+                            <i
+                                class="fa-brands fa-figma text-2xl text-purple-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <div class="text-xs font-medium">Figma</div>
+                            <div class="text-xs text-gray-500">Expert</div>
+                        </div>
+                        <div class="bg-blue-100 rounded-xl p-3 text-center group hover:bg-blue-200 transition-colors">
+                            <i
+                                class="fa-solid fa-paintbrush text-2xl text-blue-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <div class="text-xs font-medium">Adobe CC</div>
+                            <div class="text-xs text-gray-500">Advanced</div>
+                        </div>
+                        <div class="bg-green-100 rounded-xl p-3 text-center group hover:bg-green-200 transition-colors">
+                            <i
+                                class="fa-solid fa-cube text-2xl text-green-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <div class="text-xs font-medium">Sketch</div>
+                            <div class="text-xs text-gray-500">Expert</div>
+                        </div>
+                        <div
+                            class="bg-orange-100 rounded-xl p-3 text-center group hover:bg-orange-200 transition-colors">
+                            <i
+                                class="fa-solid fa-vector-square text-2xl text-orange-600 mb-2 group-hover:scale-110 transition-transform"></i>
+                            <div class="text-xs font-medium">Framer</div>
+                            <div class="text-xs text-gray-500">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-gradient-to-br from-gray-900 to-gray-700 rounded-3xl p-6 text-white bento-card fade-in stagger-3">
+                    <h4 class="font-bold mb-4">Development</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Next.js</span>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Tailwind</span>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio-section" class="py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 dark:text-white mb-4">Featured Work</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300">A selection of my recent projects</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Featured Project -->
+                <div
+                    class="md:col-span-2 lg:col-span-2 bento-card bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="relative h-80">
+                        <img class="w-full h-full object-cover"
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/369be2de88-58a829a335922b3acdfa.png"
+                            alt="modern mobile app ui design with gradient colors and clean interface">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-2xl font-bold mb-2">Mobile App Redesign</h3>
+                            <p class="text-gray-200">Complete UI/UX overhaul for a fintech application</p>
+                            <div class="flex items-center mt-4 space-x-2">
+                                <span class="bg-blue-600 px-3 py-1 rounded-full text-sm">UI/UX</span>
+                                <span class="bg-purple-600 px-3 py-1 rounded-full text-sm">Mobile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Projects -->
+                <div class="space-y-6">
+                    <div class="bento-card bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg group">
+                        <div class="relative h-40">
+                            <img class="w-full h-full object-cover"
+                                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8decf4170a-c4961f9228efdb5db249.png"
+                                alt="brand identity design with logo and business cards">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                            <div
+                                class="absolute bottom-0 left-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-lg font-bold">Brand Identity</h3>
+                                <span class="bg-green-600 px-2 py-1 rounded-full text-xs">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bento-card bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg group">
+                        <div class="relative h-40">
+                            <img class="w-full h-full object-cover"
+                                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/30b6927bad-38b35178a1c06b69d245.png"
+                                alt="website design with modern layout and typography">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            </div>
+                            <div
+                                class="absolute bottom-0 left-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                <h3 class="text-lg font-bold">Web Design</h3>
+                                <span class="bg-orange-600 px-2 py-1 rounded-full text-xs">Web</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Projects -->
+                <div class="bento-card bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="relative h-60">
+                        <img class="w-full h-full object-cover"
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f3e63d4e40-be5d5241175c51486e70.png"
+                            alt="digital illustration artwork with vibrant colors">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold">Digital Art</h3>
+                            <p class="text-gray-200 text-sm">Creative illustrations and artwork</p>
+                            <span
+                                class="bg-pink-600 px-3 py-1 rounded-full text-sm mt-2 inline-block">Illustration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="relative h-60">
+                        <img class="w-full h-full object-cover"
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d8d8028cae-26ba727d25d0315ee0bc.png"
+                            alt="packaging design with modern minimalist style">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold">Packaging</h3>
+                            <p class="text-gray-200 text-sm">Product packaging design</p>
+                            <span class="bg-yellow-600 px-3 py-1 rounded-full text-sm mt-2 inline-block">Print</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg group">
+                    <div class="relative h-60">
+                        <img class="w-full h-full object-cover"
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8b4efcfb4f-d9c320cce0b4058e6cf8.png"
+                            alt="dashboard interface design with charts and data visualization">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <div
+                            class="absolute bottom-0 left-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <h3 class="text-xl font-bold">Dashboard UI</h3>
+                            <p class="text-gray-200 text-sm">Analytics dashboard design</p>
+                            <span class="bg-indigo-600 px-3 py-1 rounded-full text-sm mt-2 inline-block">UI
+                                Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="text-center mt-12">
+                <button
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                    View All Projects
+                </button>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-12 gap-6">
+            <!-- About Content -->
+            <div
+                class="col-span-12 lg:col-span-8 bg-white rounded-3xl p-8 shadow-sm border border-gray-200/50 bento-card fade-in">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
+                <div class="prose prose-lg text-gray-600 mb-8">
+                    <p>I'm a passionate UI/UX designer and frontend developer with over 6 years of experience creating
+                        digital experiences that matter. My journey started with a fascination for how design can solve
+                        real-world problems and improve people's lives.</p>
+                    <p>I specialize in creating user-centered designs that balance aesthetic appeal with functional
+                        excellence. From initial concept to final implementation, I ensure every pixel serves a purpose.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-gray-900">6+</div>
+                        <div class="text-sm text-gray-600">Years Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-gray-900">150+</div>
+                        <div class="text-sm text-gray-600">Projects Done</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-gray-900">50+</div>
+                        <div class="text-sm text-gray-600">Happy Clients</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-gray-900">12</div>
+                        <div class="text-sm text-gray-600">Awards Won</div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">User Experience</span>
+                    <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">Interface Design</span>
+                    <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">Prototyping</span>
+                    <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">Frontend Development</span>
+                    <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm">Design Systems</span>
+                </div>
+            </div>
+
+            <!-- Contact Info & Social -->
+            <div id="contact-section" class="col-span-12 lg:col-span-4 space-y-6">
+                <div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-200/50 bento-card fade-in stagger-1">
+                    <h3 class="font-bold text-gray-900 mb-4">Get In Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">samstone@example.com</div>
+                                <div class="text-sm text-gray-500">Email</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-phone text-green-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-medium text-gray-900">+1 (555) 123-4567</div>
+                                <div class="text-sm text-gray-500">Phone</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-gray-900 to-gray-700 rounded-3xl p-6 text-white bento-card fade-in stagger-2">
+                    <h3 class="font-bold mb-4">Follow Me</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <span
+                            class="bg-white/20 backdrop-blur-sm rounded-xl p-3 text-center hover:bg-white/30 transition-colors cursor-pointer">
+                            <i class="fa-brands fa-dribbble text-xl mb-2"></i>
+                            <div class="text-xs">Dribbble</div>
+                        </span>
+                        <span
+                            class="bg-white/20 backdrop-blur-sm rounded-xl p-3 text-center hover:bg-white/30 transition-colors cursor-pointer">
+                            <i class="fa-brands fa-behance text-xl mb-2"></i>
+                            <div class="text-xs">Behance</div>
+                        </span>
+                        <span
+                            class="bg-white/20 backdrop-blur-sm rounded-xl p-3 text-center hover:bg-white/30 transition-colors cursor-pointer">
+                            <i class="fa-brands fa-linkedin text-xl mb-2"></i>
+                            <div class="text-xs">LinkedIn</div>
+                        </span>
+                        <span
+                            class="bg-white/20 backdrop-blur-sm rounded-xl p-3 text-center hover:bg-white/30 transition-colors cursor-pointer">
+                            <i class="fa-brands fa-github text-xl mb-2"></i>
+                            <div class="text-xs">GitHub</div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold">SP</span>
+                    </div>
+                    <span class="text-lg font-bold text-gray-800 dark:text-white">SamPortfolio</span>
+                </div>
+
+                <div class="flex items-center space-x-6 text-sm text-gray-600 dark:text-gray-300">
+                    <span class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">Privacy
+                        Policy</span>
+                    <span class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">Terms of
+                        Service</span>
+                    <span>© 2025 WebGraha. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // // Theme Toggle
+        // const themeToggle = document.getElementById('theme-toggle');
+        // const html = document.documentElement;
+
+        // themeToggle.addEventListener('click', () => {
+        //     html.classList.toggle('dark');
+        //     localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        // });
+
+        // // Check for saved theme preference or default to light
+        // if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        //     html.classList.add('dark');
+        // }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.bento-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

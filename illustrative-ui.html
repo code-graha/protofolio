@@ -1,0 +1,1536 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SamDevFolio | Frontend Developer & UI/UX Designer Portfolio</title>
+<meta name="description" content="Sam's portfolio – Frontend Developer & UI/UX Designer specializing in React, Vue, and creative web design. Explore projects, skills, and experience.">
+<meta name="keywords" content="Frontend Developer, UI/UX Designer, React Developer, Vue Developer, Web Portfolio, Creative Designer, SamDevFolio">
+<link rel="canonical" href="https://yourdomain.com/">
+
+
+<!-- Open Graph -->
+<meta property="og:title" content="SamDevFolio | Frontend Developer & UI/UX Designer">
+<meta property="og:description" content="Explore Sam's projects, skills, and design journey. Specializing in modern web apps and creative UI/UX.">
+<meta property="og:image" content="https://yourdomain.com/preview.jpg">
+<meta property="og:url" content="https://yourdomain.com/">
+<meta property="og:type" content="website">
+
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SamDevFolio | Frontend Developer & UI/UX Designer">
+<meta name="twitter:description" content="Explore Sam's projects, skills, and design journey.">
+<meta name="twitter:image" content="https://yourdomain.com/preview.jpg">
+
+
+<!-- Fonts & Styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Person",
+"name": "Sam",
+"jobTitle": "Frontend Developer & UI/UX Designer",
+"url": "https://yourdomain.com/",
+"sameAs": [
+"https://github.com/yourprofile",
+"https://www.linkedin.com/in/yourprofile",
+"https://twitter.com/yourprofile",
+"https://dribbble.com/yourprofile"
+],
+"worksFor": {
+"@type": "Organization",
+"name": "SamDevFolio"
+}
+}
+</script>
+    <style>
+        ::-webkit-scrollbar { display: none;}
+        .sketch-border { 
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            border: 3px solid #2ECC40;
+        }
+        .doodle-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232ECC40' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hand-drawn {
+            filter: url(#roughPaper);
+        }
+        /* body.dark {
+background-color: #111827 !important;
+color: #e5e7eb !important;
+}
+.dark .bg-white { background-color: #1f2937 !important; }
+.dark .text-deep-blue { color: #f9fafb !important; }
+.dark .bg-soft-gray { background-color: #111827 !important; }
+.dark .border-bright-green { border-color: #2ECC40 !important; }
+.dark .hover\:text-bright-green:hover { color: #2ECC40 !important; } */
+    </style>
+    <script>tailwind.config = {
+    darkMode: "class",
+  "theme": {
+    "extend": {
+      "fontFamily": {
+        "sketch": [
+          "Kalam",
+          "cursive"
+        ],
+        "comic": [
+          "Comic Neue",
+          "cursive"
+        ],
+        "sans": [
+          "Inter",
+          "sans-serif"
+        ]
+      },
+      "colors": {
+        "deep-blue": "#001F3F",
+        "soft-gray": "#F0F0F0",
+        "bright-green": "#2ECC40"
+      }
+    }
+  }
+};</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"><style>
+      body {
+        font-family: 'Inter', sans-serif !important;
+      }
+      
+      /* Preserve Font Awesome icons */
+      .fa, .fas, .far, .fal, .fab {
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+      }
+    </style><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: hidden;
+  }
+  </style></head>
+<body class="bg-soft-gray dark:bg-gray-900 transition-colors duration-300 font-sans">
+
+<!-- SVG Filters for Hand-drawn Effect -->
+<svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+    <defs>
+        <filter id="roughPaper" x="0%" y="0%" width="100%" height="100%">
+            <feTurbulence baseFrequency="0.04" numOctaves="5" result="noise" seed="1"></feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="1"></feDisplacementMap>
+        </filter>
+    </defs>
+</svg>
+
+<!-- Header Navigation -->
+<header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b-4 border-bright-green">
+    <nav class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+    <div class="w-12 h-12 bg-bright-green rounded-full flex items-center justify-center sketch-border transform rotate-3">
+    <span class="text-white font-bold text-xl font-sketch">S</span>
+    </div>
+    <span class="text-2xl font-bold text-deep-blue dark:text-white font-sketch transform -rotate-1">SamDevFolio</span>
+    </div>
+    
+    
+    <!-- Desktop menu -->
+    <div class="hidden md:flex items-center space-x-8">
+    <a href="#intro" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Home</a>
+    <a href="#about" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">About</a>
+    <a href="#skills" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Skills</a>
+    <a href="#experience" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Experience</a>
+    <a href="#projects" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Projects</a>
+    <a href="#testimonials" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Reviews</a>
+    <a href="#contact" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Contact</a>
+    </div>
+    
+    
+    <!-- Theme and mobile menu -->
+    <div class="flex items-center space-x-4">
+    <button id="theme-toggle" class="w-10 h-10 bg-bright-green text-white rounded-full flex items-center justify-center sketch-border">
+    <i class="fas fa-sun dark:hidden"></i>
+    <i class="fas fa-moon hidden dark:block"></i>
+    </button>
+    
+    
+    <button id="mobile-menu-btn" class="md:hidden w-10 h-10 bg-bright-green text-white rounded-full flex items-center justify-center sketch-border">
+    <i class="fas fa-bars"></i>
+    </button>
+    </div>
+    </div>
+    
+    
+    <!-- Mobile menu container -->
+    <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4 bg-white dark:bg-gray-900 p-6 rounded-2xl sketch-border">
+        <a href="#intro" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Home</a>
+        <a href="#about" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">About</a>
+        <a href="#skills" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Skills</a>
+        <a href="#experience" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Experience</a>
+        <a href="#projects" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Projects</a>
+        <a href="#testimonials" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Reviews</a>
+        <a href="#contact" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Contact</a>
+    </div>
+    </nav>
+    </header>
+
+<!-- Intro Section -->
+<section id="intro" class="min-h-screen flex items-center justify-center pt-20 px-6 doodle-bg my-20">
+    <div class="container mx-auto text-center">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-8 relative">
+                <img class="w-48 h-48 mx-auto rounded-full sketch-border transform rotate-3 shadow-2xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/95e6ca28d6-72c48d74139c2de85685.png" alt="cartoon developer character with glasses and laptop, hand-drawn style illustration, friendly smile">
+                <div class="absolute -top-4 -right-4 w-24 h-24 bg-bright-green rounded-full flex items-center justify-center sketch-border transform -rotate-12">
+                    <span class="text-white text-2xl">👋</span>
+                </div>
+            </div>
+            
+            <h1 class="text-6xl md:text-8xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform -rotate-1">
+                Hey, I'm <span class="text-bright-green">Sam!</span>
+            </h1>
+            
+            <div class="relative mb-8">
+                <p class="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-4 font-sketch transform rotate-1">
+                    Frontend Developer &amp; UI/UX Enthusiast
+                </p>
+                <div class="absolute -right-8 top-0 text-bright-green text-4xl transform rotate-12">✨</div>
+            </div>
+            
+            <p class="text-xl text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed font-comic">
+                I create beautiful, user-friendly websites and applications that make people smile. 
+                Currently crafting digital experiences with React, Vue, and a sprinkle of creativity!
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <button class="bg-bright-green text-white px-8 py-4 rounded-full sketch-border text-xl font-bold font-sketch transform hover:scale-105 transition-transform hover:rotate-3">
+                    View My Work 🚀
+                </button>
+                <button class="border-4 border-bright-green text-bright-green px-8 py-4 rounded-full sketch-border text-xl font-bold font-sketch transform hover:scale-105 transition-transform hover:-rotate-3">
+                    Download CV 📄
+                </button>
+            </div>
+            
+            <div class="mt-16 flex justify-center space-x-8">
+                <div class="text-center transform rotate-2">
+                    <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border mb-2">
+                        <i class="fab fa-github text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm text-gray-600 dark:text-gray-400 font-sketch">GitHub</span>
+                </div>
+                <div class="text-center transform -rotate-2">
+                    <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border mb-2">
+                        <i class="fab fa-linkedin text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm text-gray-600 dark:text-gray-400 font-sketch">LinkedIn</span>
+                </div>
+                <div class="text-center transform rotate-1">
+                    <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border mb-2">
+                        <i class="fab fa-twitter text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm text-gray-600 dark:text-gray-400 font-sketch">Twitter</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-bright-green text-3xl"></i>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-white dark:bg-gray-800 transition-colors">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform -rotate-1">
+                About Me 🤓
+            </h2>
+            <div class="w-24 h-1 bg-bright-green mx-auto transform rotate-1"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img class="w-full h-96 rounded-3xl sketch-border transform rotate-2 shadow-2xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9f4863284a-95e5fdded6e756c61979.png" alt="developer working at desk with multiple monitors, hand-drawn illustration style, cozy workspace with plants">
+                <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-bright-green rounded-full flex items-center justify-center sketch-border transform -rotate-12">
+                    <span class="text-white text-4xl">💻</span>
+                </div>
+            </div>
+            
+            <div class="space-y-8">
+                <div class="relative">
+                    <h3 class="text-3xl font-bold text-deep-blue dark:text-white mb-4 font-sketch transform rotate-1">
+                        My Journey So Far...
+                    </h3>
+                    <div class="absolute -right-4 -top-2 text-bright-green text-2xl transform rotate-45">⭐</div>
+                </div>
+                
+                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed font-comic">
+                    Started my coding adventure 5 years ago when I accidentally broke my first website 
+                    (oops! 😅). Since then, I've been on a mission to create digital experiences that 
+                    don't just work, but make users go "wow!"
+                </p>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-soft-gray dark:bg-gray-700 p-6 rounded-2xl sketch-border transform rotate-1">
+                        <div class="text-3xl mb-2">🎯</div>
+                        <h4 class="font-bold text-deep-blue dark:text-white mb-2 font-sketch">Mission</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 font-comic">
+                            Creating user-centered designs that solve real problems
+                        </p>
+                    </div>
+                    <div class="bg-soft-gray dark:bg-gray-700 p-6 rounded-2xl sketch-border transform -rotate-1">
+                        <div class="text-3xl mb-2">🌱</div>
+                        <h4 class="font-bold text-deep-blue dark:text-white mb-2 font-sketch">Growth</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 font-comic">
+                            Always learning new technologies and best practices
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-bright-green/10 p-8 rounded-3xl sketch-border transform rotate-1">
+                    <h4 class="text-2xl font-bold text-deep-blue dark:text-white mb-4 font-sketch">
+                        Fun Facts About Me! 🎉
+                    </h4>
+                    <ul class="space-y-3 text-gray-700 dark:text-gray-300 font-comic">
+                        <li class="flex items-center space-x-3">
+                            <span class="text-bright-green text-xl">☕</span>
+                            <span>Coffee consumption: ~47 cups per week (I'm fine, really!)</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-bright-green text-xl">🎮</span>
+                            <span>Built my first game at age 12 (it was basically Pong)</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-bright-green text-xl">🎨</span>
+                            <span>I draw UI mockups by hand before coding them</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="text-bright-green text-xl">🌮</span>
+                            <span>Tacos are my debugging fuel (scientifically proven*)</span>
+                        </li>
+                    </ul>
+                    <p class="text-xs text-gray-500 mt-4 italic">*Not actually scientifically proven</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-soft-gray dark:bg-gray-900 transition-colors doodle-bg">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform rotate-1">
+                My Superpowers 🦸‍♂️
+            </h2>
+            <p class="text-xl text-gray-600 dark:text-gray-400 font-comic max-w-2xl mx-auto">
+                Here's what I've learned to do (without breaking things... mostly)
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- Frontend Skills -->
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl sketch-border transform rotate-1 shadow-lg">
+                <div class="text-center mb-6">
+                    <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border mx-auto mb-4 transform -rotate-12">
+                        <i class="fas fa-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white font-sketch">Frontend Magic</h3>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold text-deep-blue dark:text-white font-sketch">React.js</span>
+                            <span class="text-bright-green font-bold">95% 🚀</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                            <div class="bg-bright-green h-3 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold text-deep-blue dark:text-white font-sketch">Vue.js</span>
+                            <span class="text-bright-green font-bold">90% ⚡</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                            <div class="bg-bright-green h-3 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold text-deep-blue dark:text-white font-sketch">TypeScript</span>
+                            <span class="text-bright-green font-bold">85% 💪</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                            <div class="bg-bright-green h-3 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold text-deep-blue dark:text-white font-sketch">CSS/SCSS</span>
+                            <span class="text-bright-green font-bold">98% 🎨</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                            <div class="bg-bright-green h-3 rounded-full" style="width: 98%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Design Skills -->
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl sketch-border transform -rotate-1 shadow-lg">
+                <div class="text-center mb-6">
+                    <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border mx-auto mb-4 transform rotate-12">
+                        <i class="fas fa-palette text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white font-sketch">Design Wizardry</h3>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold text-deep-blue dark:text-white font-sketch">Figma</span>
+                            <span class="text-bright-green font-bold">92% ✨</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                            <div class="bg-bright-green h-3 rounded-full" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold text-deep-blue dark:text-white font-sketch">Adobe XD</span>
+                            <span class="text-bright-green font-bold">88% 🎯</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                            <div class="bg-bright-green h-3 rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold text-deep-blue dark:text-white font-sketch">UI/UX Design</span>
+                            <span class="text-bright-green font-bold">90% 🌟</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                            <div class="bg-bright-green h-3 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold text-deep-blue dark:text-white font-sketch">Prototyping</span>
+                            <span class="text-bright-green font-bold">87% 🔧</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                            <div class="bg-bright-green h-3 rounded-full" style="width: 87%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tools & Others -->
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl sketch-border transform rotate-1 shadow-lg">
+                <div class="text-center mb-6">
+                    <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border mx-auto mb-4 transform -rotate-12">
+                        <i class="fas fa-tools text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white font-sketch">Tools &amp; More</h3>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold text-deep-blue dark:text-white font-sketch">Git/GitHub</span>
+                            <span class="text-bright-green font-bold">94% 🔄</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                            <div class="bg-bright-green h-3 rounded-full" style="width: 94%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold text-deep-blue dark:text-white font-sketch">Node.js</span>
+                            <span class="text-bright-green font-bold">80% 📦</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                            <div class="bg-bright-green h-3 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold text-deep-blue dark:text-white font-sketch">MongoDB</span>
+                            <span class="text-bright-green font-bold">75% 🍃</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                            <div class="bg-bright-green h-3 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold text-deep-blue dark:text-white font-sketch">Problem Solving</span>
+                            <span class="text-bright-green font-bold">99% 🧠</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                            <div class="bg-bright-green h-3 rounded-full" style="width: 99%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tech Stack Icons -->
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl sketch-border transform -rotate-1 shadow-lg">
+            <h3 class="text-3xl font-bold text-center text-deep-blue dark:text-white mb-8 font-sketch">
+                My Tech Arsenal 🛠️
+            </h3>
+            <div class="grid grid-cols-4 md:grid-cols-8 gap-6">
+                <div class="text-center transform hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center sketch-border mx-auto mb-2">
+                        <i class="fab fa-html5 text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-sketch text-gray-600 dark:text-gray-400">HTML5</span>
+                </div>
+                <div class="text-center transform hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center sketch-border mx-auto mb-2">
+                        <i class="fab fa-css3-alt text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-sketch text-gray-600 dark:text-gray-400">CSS3</span>
+                </div>
+                <div class="text-center transform hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center sketch-border mx-auto mb-2">
+                        <i class="fab fa-js-square text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-sketch text-gray-600 dark:text-gray-400">JavaScript</span>
+                </div>
+                <div class="text-center transform hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center sketch-border mx-auto mb-2">
+                        <i class="fab fa-react text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-sketch text-gray-600 dark:text-gray-400">React</span>
+                </div>
+                <div class="text-center transform hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center sketch-border mx-auto mb-2">
+                        <i class="fab fa-vuejs text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-sketch text-gray-600 dark:text-gray-400">Vue.js</span>
+                </div>
+                <div class="text-center transform hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center sketch-border mx-auto mb-2">
+                        <i class="fab fa-node-js text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-sketch text-gray-600 dark:text-gray-400">Node.js</span>
+                </div>
+                <div class="text-center transform hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center sketch-border mx-auto mb-2">
+                        <i class="fab fa-sass text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-sketch text-gray-600 dark:text-gray-400">Sass</span>
+                </div>
+                <div class="text-center transform hover:scale-110 transition-transform">
+                    <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center sketch-border mx-auto mb-2">
+                        <i class="fab fa-github text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-sketch text-gray-600 dark:text-gray-400">GitHub</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-20 bg-white dark:bg-gray-800 transition-colors">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl md:text-6xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform -rotate-1">
+          My Journey 🗺️
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 font-comic">
+          My professional journey through the years
+        </p>
+      </div>
+  
+      <div class="relative">
+        <!-- Timeline Line -->
+        <div class="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-bright-green rounded-full"></div>
+  
+        <!-- Experience Items -->
+        <div class="space-y-16">
+  
+          <!-- Current Position -->
+          <div class="relative">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 md:pr-12">
+                <div class="bg-soft-gray dark:bg-gray-700 p-8 rounded-3xl sketch-border transform -rotate-1 hover:rotate-0 transition-transform shadow-lg">
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="bg-bright-green text-white px-4 py-1 rounded-full text-sm font-sketch">Current</span>
+                    <span class="text-gray-600 dark:text-gray-400 font-comic">2022 - Present</span>
+                  </div>
+                  <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-2 font-sketch">Senior Frontend Developer</h3>
+                  <h4 class="text-lg text-bright-green font-bold font-sketch mb-4">TechFlow Solutions</h4>
+                  <p class="text-gray-600 dark:text-gray-300 font-comic mb-4">
+                    Leading a team of 4 developers in creating cutting-edge web applications. 
+                    Architected and implemented scalable React solutions serving 100K+ users.
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Leadership</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Optimization</span>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-bright-green rounded-full border-4 border-white dark:border-gray-800 shadow-lg flex items-center justify-center">
+                🎯
+              </div>
+              <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+                <img class="w-full rounded-2xl shadow-lg transform rotate-2" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/7a113fbba2-e27048cefa80a24a311c.png" alt="modern office workspace, hand-drawn illustration, team collaboration, computers and code">
+              </div>
+            </div>
+          </div>
+  
+          <!-- Previous Position -->
+          <div class="relative">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+              <div class="md:w-1/2 md:pl-12">
+                <div class="bg-soft-gray dark:bg-gray-700 p-8 rounded-3xl sketch-border transform rotate-1 hover:rotate-0 transition-transform shadow-lg">
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="bg-deep-blue text-white px-4 py-1 rounded-full text-sm font-sketch">Previous</span>
+                    <span class="text-gray-600 dark:text-gray-400 font-comic">2020 - 2022</span>
+                  </div>
+                  <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-2 font-sketch">Frontend Developer</h3>
+                  <h4 class="text-lg text-bright-green font-bold font-sketch mb-4">Digital Innovations Inc.</h4>
+                  <p class="text-gray-600 dark:text-gray-300 font-comic mb-4">
+                    Developed responsive web applications using React and modern JavaScript. 
+                    Collaborated with UX/UI designers to create pixel-perfect implementations.
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Responsive Design</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-deep-blue rounded-full border-4 border-white dark:border-gray-800 shadow-lg flex items-center justify-center">
+                💻
+              </div>
+              <div class="md:w-1/2 md:pr-12 mt-8 md:mt-0">
+                <img class="w-full rounded-2xl shadow-lg transform -rotate-2" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/45d3a3ea0e-a29d0c7768ff6ed4ae10.png" alt="developer coding on laptop, hand-drawn style, colorful workspace, creative environment">
+              </div>
+            </div>
+          </div>
+  
+          <!-- Junior Position -->
+          <div class="relative">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 md:pr-12">
+                <div class="bg-soft-gray dark:bg-gray-700 p-8 rounded-3xl sketch-border transform -rotate-1 hover:rotate-0 transition-transform shadow-lg">
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="bg-yellow-500 text-white px-4 py-1 rounded-full text-sm font-sketch">Growth</span>
+                    <span class="text-gray-600 dark:text-gray-400 font-comic">2019 - 2020</span>
+                  </div>
+                  <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-2 font-sketch">Junior Frontend Developer</h3>
+                  <h4 class="text-lg text-bright-green font-bold font-sketch mb-4">StartupTech Co.</h4>
+                  <p class="text-gray-600 dark:text-gray-300 font-comic mb-4">
+                    Started my professional journey in a fast-paced startup environment. 
+                    Learned modern development practices and agile methodologies.
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">React</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                    <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Agile</span>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-500 rounded-full border-4 border-white dark:border-gray-800 shadow-lg flex items-center justify-center">
+                🌱
+              </div>
+              <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+                <img class="w-full rounded-2xl shadow-lg transform rotate-2" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/51a1464e0b-99c10cf0c63eef4fd882.png" alt="startup office environment, hand-drawn illustration, young developers working, energetic atmosphere">
+              </div>
+            </div>
+          </div>
+  
+          <!-- Freelance -->
+          <div class="relative">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+              <div class="md:w-1/2 md:pl-12">
+                <div class="bg-soft-gray dark:bg-gray-700 p-8 rounded-3xl sketch-border transform rotate-1 hover:rotate-0 transition-transform shadow-lg">
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="bg-purple-500 text-white px-4 py-1 rounded-full text-sm font-sketch">Beginning</span>
+                    <span class="text-gray-600 dark:text-gray-400 font-comic">2018 - 2019</span>
+                  </div>
+                  <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-2 font-sketch">Freelance Web Developer</h3>
+                  <h4 class="text-lg text-bright-green font-bold font-sketch mb-4">Self-Employed</h4>
+                  <p class="text-gray-600 dark:text-gray-300 font-comic mb-4">
+                    Started freelancing while completing my studies. Built websites for local 
+                    businesses and learned the fundamentals of client communication.
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Freelance</span>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-purple-500 rounded-full border-4 border-white dark:border-gray-800 shadow-lg flex items-center justify-center">
+                🎓
+              </div>
+              <div class="md:w-1/2 md:pr-12 mt-8 md:mt-0">
+                <img class="w-full rounded-2xl shadow-lg transform -rotate-2" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/838d0844bf-d49bb59caefe0abf7ecc.png" alt="freelancer working from home, hand-drawn illustration, cozy home office, laptop and coffee">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Achievements & Certifications -->
+      <div class="mt-20 grid md:grid-cols-2 gap-8">
+        <div class="bg-gradient-to-br from-bright-green/10 to-blue-50 dark:from-bright-green/20 dark:to-gray-700 p-8 rounded-3xl sketch-border transform -rotate-1 shadow-lg">
+          <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-6 font-sketch">Certifications & Education 🎓</h3>
+          <ul class="space-y-4 font-comic text-gray-600 dark:text-gray-300">
+            <li><strong>B.S. Computer Science</strong> – University of Technology • 2018</li>
+            <li><strong>AWS Certified Developer</strong> – Amazon Web Services • 2023</li>
+            <li><strong>React Advanced Certification</strong> – Meta (Facebook) • 2022</li>
+          </ul>
+        </div>
+  
+        <div class="bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-100/20 dark:to-gray-700 p-8 rounded-3xl sketch-border transform rotate-1 shadow-lg">
+          <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-6 font-sketch">Key Achievements 🏆</h3>
+          <ul class="space-y-4 font-comic text-gray-600 dark:text-gray-300">
+            <li><strong>Best Developer Award</strong> – TechFlow Solutions • 2023</li>
+            <li><strong>Innovation Excellence</strong> – Digital Innovations Inc. • 2021</li>
+            <li><strong>Team Leadership Recognition</strong> – Multiple Orgs • 2020-2023</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-soft-gray dark:bg-gray-900 transition-colors doodle-bg">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform rotate-1">
+                My Cool Projects 🚀
+            </h2>
+            <p class="text-xl text-gray-600 dark:text-gray-400 font-comic max-w-2xl mx-auto">
+                Here are some things I've built (and didn't break in the process!)
+            </p>
+        </div>
+        
+        <!-- Project Filters -->
+        <div class="flex justify-center mb-12">
+            <div class="bg-white dark:bg-gray-800 p-2 rounded-full sketch-border shadow-lg">
+                <div class="flex space-x-2">
+                    <button class="px-6 py-3 bg-bright-green text-white rounded-full font-sketch transform hover:scale-105 transition-transform">
+                        All Projects
+                    </button>
+                    <button class="px-6 py-3 text-deep-blue dark:text-white rounded-full font-sketch hover:bg-bright-green hover:text-white transition-colors">
+                        Web Apps
+                    </button>
+                    <button class="px-6 py-3 text-deep-blue dark:text-white rounded-full font-sketch hover:bg-bright-green hover:text-white transition-colors">
+                        UI/UX
+                    </button>
+                    <button class="px-6 py-3 text-deep-blue dark:text-white rounded-full font-sketch hover:bg-bright-green hover:text-white transition-colors">
+                        Mobile
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Projects Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-white dark:bg-gray-800 rounded-3xl sketch-border transform rotate-1 shadow-xl overflow-hidden hover:scale-105 transition-transform">
+                <div class="relative">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f7a8fb206c-cdddcb3b0c28257386ee.png" alt="modern e-commerce website interface, shopping cart, product grid, hand-drawn illustration style">
+                    <div class="absolute top-4 right-4 bg-bright-green text-white px-3 py-1 rounded-full text-sm font-sketch">
+                        Featured 🌟
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-3 font-sketch">
+                        EcoShop - Sustainable Shopping
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic">
+                        A modern e-commerce platform promoting eco-friendly products. 
+                        Built with React, Node.js, and lots of green vibes! 🌱
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="flex-1 bg-bright-green text-white py-2 px-4 rounded-full font-sketch hover:bg-green-600 transition-colors">
+                            <i class="fas fa-eye mr-2"></i>Live Demo
+                        </button>
+                        <button class="flex-1 border-2 border-bright-green text-bright-green py-2 px-4 rounded-full font-sketch hover:bg-bright-green hover:text-white transition-colors">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="bg-white dark:bg-gray-800 rounded-3xl sketch-border transform -rotate-1 shadow-xl overflow-hidden hover:scale-105 transition-transform">
+                <div class="relative">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/548b4ba259-5c583459049868267cf1.png" alt="task management dashboard interface, kanban board, productivity app, hand-drawn style">
+                    <div class="absolute top-4 left-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-sketch">
+                        New 🎉
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-3 font-sketch">
+                        TaskMaster Pro
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic">
+                        A productivity app that actually makes you productive! 
+                        Features drag-and-drop tasks, team collaboration, and coffee break reminders ☕
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                        <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Tailwind</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="flex-1 bg-bright-green text-white py-2 px-4 rounded-full font-sketch hover:bg-green-600 transition-colors">
+                            <i class="fas fa-eye mr-2"></i>Live Demo
+                        </button>
+                        <button class="flex-1 border-2 border-bright-green text-bright-green py-2 px-4 rounded-full font-sketch hover:bg-bright-green hover:text-white transition-colors">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="bg-white dark:bg-gray-800 rounded-3xl sketch-border transform rotate-1 shadow-xl overflow-hidden hover:scale-105 transition-transform">
+                <div class="relative">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/db6404f48c-0ca714867e6e823965f2.png" alt="weather app interface, forecast cards, location search, mobile design, hand-drawn illustration">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-3 font-sketch">
+                        WeatherWise
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic">
+                        A beautiful weather app that tells you if you need an umbrella or sunglasses. 
+                        Features animated weather icons and dad jokes! 🌦️
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React Native</span>
+                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">API</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Redux</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="flex-1 bg-bright-green text-white py-2 px-4 rounded-full font-sketch hover:bg-green-600 transition-colors">
+                            <i class="fas fa-eye mr-2"></i>Live Demo
+                        </button>
+                        <button class="flex-1 border-2 border-bright-green text-bright-green py-2 px-4 rounded-full font-sketch hover:bg-bright-green hover:text-white transition-colors">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <!-- <div class="bg-white dark:bg-gray-800 rounded-3xl sketch-border transform -rotate-1 shadow-xl overflow-hidden hover:scale-105 transition-transform">
+                <div class="relative">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f0c060bcaf-e5b63e368256e5eec1ac.png" alt="social media dashboard, analytics charts, user engagement metrics, hand-drawn design">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-3 font-sketch">
+                        SocialSync Dashboard
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic">
+                        Manage all your social media accounts from one place. 
+                        Because juggling 5 different apps is exhausting! 📱
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Angular</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">D3.js</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="flex-1 bg-bright-green text-white py-2 px-4 rounded-full font-sketch hover:bg-green-600 transition-colors">
+                            <i class="fas fa-eye mr-2"></i>Live Demo
+                        </button>
+                        <button class="flex-1 border-2 border-bright-green text-bright-green py-2 px-4 rounded-full font-sketch hover:bg-bright-green hover:text-white transition-colors">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- Project 5 -->
+            <!-- <div class="bg-white dark:bg-gray-800 rounded-3xl sketch-border transform rotate-1 shadow-xl overflow-hidden hover:scale-105 transition-transform">
+                <div class="relative">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d8aae9919e-d3598fe26dbc6e520963.png" alt="recipe sharing app interface, food photos, cooking instructions, community features">
+                    <div class="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-sketch">
+                        Popular 🔥
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-3 font-sketch">
+                        RecipeShare Community
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic">
+                        Share your grandmother's secret recipes with the world! 
+                        Features recipe rating, cooking timers, and emergency pizza ordering 🍕
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Next.js</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Prisma</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="flex-1 bg-bright-green text-white py-2 px-4 rounded-full font-sketch hover:bg-green-600 transition-colors">
+                            <i class="fas fa-eye mr-2"></i>Live Demo
+                        </button>
+                        <button class="flex-1 border-2 border-bright-green text-bright-green py-2 px-4 rounded-full font-sketch hover:bg-bright-green hover:text-white transition-colors">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- Project 6 -->
+            <!-- <div class="bg-white dark:bg-gray-800 rounded-3xl sketch-border transform -rotate-1 shadow-xl overflow-hidden hover:scale-105 transition-transform">
+                <div class="relative">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6a788179f1-283841c150a41db3fdd6.png" alt="fitness tracking app, workout routines, progress charts, health metrics dashboard">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-3 font-sketch">
+                        FitTrack Pro
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic">
+                        Track your fitness journey without the judgment! 
+                        Includes workout plans, progress tracking, and motivational cat videos 🐱
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Flutter</span>
+                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Dart</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">HealthKit</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <button class="flex-1 bg-bright-green text-white py-2 px-4 rounded-full font-sketch hover:bg-green-600 transition-colors">
+                            <i class="fas fa-eye mr-2"></i>Live Demo
+                        </button>
+                        <button class="flex-1 border-2 border-bright-green text-bright-green py-2 px-4 rounded-full font-sketch hover:bg-bright-green hover:text-white transition-colors">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        
+        <!-- View More Projects -->
+        <div class="text-center mt-16">
+            <button class="bg-bright-green text-white px-12 py-4 rounded-full text-xl font-bold font-sketch transform hover:scale-105 transition-transform sketch-border">
+                View All Projects on GitHub 📂
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-white dark:bg-gray-800 transition-colors">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform -rotate-1">
+                What People Say 💬
+            </h2>
+            <p class="text-xl text-gray-600 dark:text-gray-400 font-comic max-w-2xl mx-auto">
+                Don't just take my word for it - here's what others have to say!
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-soft-gray dark:bg-gray-700 p-8 rounded-3xl sketch-border transform rotate-1 shadow-lg relative">
+                <div class="absolute -top-4 left-8 w-8 h-8 bg-soft-gray dark:bg-gray-700 transform rotate-45"></div>
+                <div class="flex items-center mb-6">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="Sarah Johnson" class="w-16 h-16 rounded-full sketch-border mr-4">
+                    <div>
+                        <h4 class="font-bold text-deep-blue dark:text-white font-sketch">Sarah Johnson</h4>
+                        <p class="text-bright-green font-sketch">CEO, TechStart</p>
+                        <div class="flex text-yellow-500 mt-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic italic">
+                    "Sam transformed our outdated website into a modern, user-friendly platform. 
+                    Our conversion rate increased by 200%! Plus, he actually listens to feedback 
+                    (rare in developers, I know! 😄)"
+                </p>
+                <div class="text-bright-green text-6xl absolute bottom-4 right-6 opacity-20">"</div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="bg-soft-gray dark:bg-gray-700 p-8 rounded-3xl sketch-border transform -rotate-1 shadow-lg relative">
+                <div class="absolute -top-4 left-8 w-8 h-8 bg-soft-gray dark:bg-gray-700 transform rotate-45"></div>
+                <div class="flex items-center mb-6">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Mike Chen" class="w-16 h-16 rounded-full sketch-border mr-4">
+                    <div>
+                        <h4 class="font-bold text-deep-blue dark:text-white font-sketch">Mike Chen</h4>
+                        <p class="text-bright-green font-sketch">Product Manager, InnovateCorp</p>
+                        <div class="flex text-yellow-500 mt-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic italic">
+                    "Working with Sam was a breeze. He delivered ahead of schedule and 
+                    exceeded our expectations. His attention to detail is incredible, and 
+                    he makes the best debugging coffee! ☕"
+                </p>
+                <div class="text-bright-green text-6xl absolute bottom-4 right-6 opacity-20">"</div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="bg-soft-gray dark:bg-gray-700 p-8 rounded-3xl sketch-border transform rotate-1 shadow-lg relative">
+                <div class="absolute -top-4 left-8 w-8 h-8 bg-soft-gray dark:bg-gray-700 transform rotate-45"></div>
+                <div class="flex items-center mb-6">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Emily Rodriguez" class="w-16 h-16 rounded-full sketch-border mr-4">
+                    <div>
+                        <h4 class="font-bold text-deep-blue dark:text-white font-sketch">Emily Rodriguez</h4>
+                        <p class="text-bright-green font-sketch">Designer, CreativeStudio</p>
+                        <div class="flex text-yellow-500 mt-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic italic">
+                    "Sam brought our designs to life perfectly! He understands both the 
+                    technical and creative aspects. Plus, he laughed at all my design jokes 
+                    (which means he's a keeper! 🎨)"
+                </p>
+                <div class="text-bright-green text-6xl absolute bottom-4 right-6 opacity-20">"</div>
+            </div>
+            
+            <!-- Testimonial 4 -->
+            <!-- <div class="bg-soft-gray dark:bg-gray-700 p-8 rounded-3xl sketch-border transform -rotate-1 shadow-lg relative">
+                <div class="absolute -top-4 left-8 w-8 h-8 bg-soft-gray dark:bg-gray-700 transform rotate-45"></div>
+                <div class="flex items-center mb-6">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="David Kim" class="w-16 h-16 rounded-full sketch-border mr-4">
+                    <div>
+                        <h4 class="font-bold text-deep-blue dark:text-white font-sketch">David Kim</h4>
+                        <p class="text-bright-green font-sketch">Founder, StartupX</p>
+                        <div class="flex text-yellow-500 mt-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic italic">
+                    "Sam built our MVP in record time without compromising quality. 
+                    His problem-solving skills are top-notch, and he always finds a way 
+                    to make things work (even when I ask for impossible features! 🚀)"
+                </p>
+                <div class="text-bright-green text-6xl absolute bottom-4 right-6 opacity-20">"</div>
+            </div> -->
+            
+            <!-- Testimonial 5 -->
+            <!-- <div class="bg-soft-gray dark:bg-gray-700 p-8 rounded-3xl sketch-border transform rotate-1 shadow-lg relative">
+                <div class="absolute -top-4 left-8 w-8 h-8 bg-soft-gray dark:bg-gray-700 transform rotate-45"></div>
+                <div class="flex items-center mb-6">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" alt="Lisa Wang" class="w-16 h-16 rounded-full sketch-border mr-4">
+                    <div>
+                        <h4 class="font-bold text-deep-blue dark:text-white font-sketch">Lisa Wang</h4>
+                        <p class="text-bright-green font-sketch">CTO, DataFlow</p>
+                        <div class="flex text-yellow-500 mt-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic italic">
+                    "Clean code, excellent documentation, and great communication. 
+                    Sam is the kind of developer every team needs. He even writes 
+                    commit messages that actually make sense! 💻"
+                </p>
+                <div class="text-bright-green text-6xl absolute bottom-4 right-6 opacity-20">"</div>
+            </div> -->
+            
+            <!-- Testimonial 6 -->
+            <!-- <div class="bg-soft-gray dark:bg-gray-700 p-8 rounded-3xl sketch-border transform -rotate-1 shadow-lg relative">
+                <div class="absolute -top-4 left-8 w-8 h-8 bg-soft-gray dark:bg-gray-700 transform rotate-45"></div>
+                <div class="flex items-center mb-6">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="James Wilson" class="w-16 h-16 rounded-full sketch-border mr-4">
+                    <div>
+                        <h4 class="font-bold text-deep-blue dark:text-white font-sketch">James Wilson</h4>
+                        <p class="text-bright-green font-sketch">Marketing Director, GrowthCo</p>
+                        <div class="flex text-yellow-500 mt-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic italic">
+                    "Sam doesn't just build websites, he builds experiences. 
+                    Our users love the interface, and our analytics prove it! 
+                    He's also surprisingly good at explaining tech stuff to us non-techies 😊"
+                </p>
+                <div class="text-bright-green text-6xl absolute bottom-4 right-6 opacity-20">"</div>
+            </div> -->
+        </div>
+        
+        <!-- Stats Section -->
+        <div class="mt-20 grid md:grid-cols-4 gap-8">
+            <div class="text-center bg-bright-green/10 p-8 rounded-3xl sketch-border transform rotate-1">
+                <div class="text-5xl font-bold text-deep-blue dark:text-white mb-2 font-sketch">50+</div>
+                <p class="text-gray-600 dark:text-gray-400 font-comic">Happy Clients</p>
+                <div class="text-2xl mt-2">😊</div>
+            </div>
+            <div class="text-center bg-bright-green/10 p-8 rounded-3xl sketch-border transform -rotate-1">
+                <div class="text-5xl font-bold text-deep-blue dark:text-white mb-2 font-sketch">100+</div>
+                <p class="text-gray-600 dark:text-gray-400 font-comic">Projects Completed</p>
+                <div class="text-2xl mt-2">🚀</div>
+            </div>
+            <div class="text-center bg-bright-green/10 p-8 rounded-3xl sketch-border transform rotate-1">
+                <div class="text-5xl font-bold text-deep-blue dark:text-white mb-2 font-sketch">5</div>
+                <p class="text-gray-600 dark:text-gray-400 font-comic">Years Experience</p>
+                <div class="text-2xl mt-2">⭐</div>
+            </div>
+            <div class="text-center bg-bright-green/10 p-8 rounded-3xl sketch-border transform -rotate-1">
+                <div class="text-5xl font-bold text-deep-blue dark:text-white mb-2 font-sketch">24/7</div>
+                <p class="text-gray-600 dark:text-gray-400 font-comic">Coffee Availability</p>
+                <div class="text-2xl mt-2">☕</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-soft-gray dark:bg-gray-900 transition-colors doodle-bg">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform rotate-1">
+                Let's Build Something Amazing! 🎯
+            </h2>
+            <p class="text-xl text-gray-600 dark:text-gray-400 font-comic max-w-2xl mx-auto">
+                Got a cool project in mind? Let's chat over coffee (virtually or in person)!
+            </p>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+            <!-- Contact Form -->
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl sketch-border transform -rotate-1 shadow-xl">
+                <h3 class="text-3xl font-bold text-deep-blue dark:text-white mb-6 font-sketch">
+                    Send me a message! 📨
+                </h3>
+                
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-deep-blue dark:text-white font-bold mb-2 font-sketch">
+                                First Name *
+                            </label>
+                            <input type="text" class="w-full px-4 py-3 border-3 border-bright-green rounded-2xl sketch-border focus:outline-none focus:ring-2 focus:ring-bright-green font-comic" placeholder="Your awesome name">
+                        </div>
+                        <div>
+                            <label class="block text-deep-blue dark:text-white font-bold mb-2 font-sketch">
+                                Last Name *
+                            </label>
+                            <input type="text" class="w-full px-4 py-3 border-3 border-bright-green rounded-2xl sketch-border focus:outline-none focus:ring-2 focus:ring-bright-green font-comic" placeholder="Your family name">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-deep-blue dark:text-white font-bold mb-2 font-sketch">
+                            Email Address *
+                        </label>
+                        <input type="email" class="w-full px-4 py-3 border-3 border-bright-green rounded-2xl sketch-border focus:outline-none focus:ring-2 focus:ring-bright-green font-comic" placeholder="your.email@awesome.com">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-deep-blue dark:text-white font-bold mb-2 font-sketch">
+                            Project Type
+                        </label>
+                        <select class="w-full px-4 py-3 border-3 border-bright-green rounded-2xl sketch-border focus:outline-none focus:ring-2 focus:ring-bright-green font-comic">
+                            <option>🌐 Website Development</option>
+                            <option>📱 Mobile App</option>
+                            <option>🎨 UI/UX Design</option>
+                            <option>🛠️ Full-Stack Development</option>
+                            <option>🔧 Website Maintenance</option>
+                            <option>☕ Coffee Chat</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-deep-blue dark:text-white font-bold mb-2 font-sketch">
+                            Budget Range
+                        </label>
+                        <select class="w-full px-4 py-3 border-3 border-bright-green rounded-2xl sketch-border focus:outline-none focus:ring-2 focus:ring-bright-green font-comic">
+                            <option>💰 ₹5,000 - ₹10,000</option>
+                            <option>💎 ₹10,000 - ₹25,000</option>
+                            <option>🏆 ₹25,000 - ₹50,000</option>
+                            <option>🚀 ₹50,000+</option>
+                            <option>🤝 Let's discuss</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-deep-blue dark:text-white font-bold mb-2 font-sketch">
+                            Tell me about your project *
+                        </label>
+                        <textarea rows="6" class="w-full px-4 py-3 border-3 border-bright-green rounded-2xl sketch-border focus:outline-none focus:ring-2 focus:ring-bright-green font-comic" placeholder="Describe your amazing project idea... The more details, the better! I love hearing about cool ideas 🚀"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-bright-green text-white py-4 px-8 rounded-full text-xl font-bold font-sketch transform hover:scale-105 transition-transform sketch-border">
+                        Send Message 🚀
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="space-y-8">
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl sketch-border transform rotate-1 shadow-xl">
+                    <h3 class="text-3xl font-bold text-deep-blue dark:text-white mb-6 font-sketch">
+                        Let's Connect! 🤝
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-deep-blue dark:text-white font-sketch">Email Me</h4>
+                                <p class="text-gray-600 dark:text-gray-300 font-comic">hello@samdeveloper.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-deep-blue dark:text-white font-sketch">Call Me</h4>
+                                <p class="text-gray-600 dark:text-gray-300 font-comic">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-deep-blue dark:text-white font-sketch">Visit Me</h4>
+                                <p class="text-gray-600 dark:text-gray-300 font-comic">San Francisco, CA</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border">
+                                <i class="fas fa-coffee text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-deep-blue dark:text-white font-sketch">Coffee Chat</h4>
+                                <p class="text-gray-600 dark:text-gray-300 font-comic">Always available! ☕</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl sketch-border transform -rotate-1 shadow-xl">
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-6 font-sketch">
+                        Follow My Journey 📱
+                    </h3>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <span class="flex items-center space-x-3 p-4 bg-blue-500 text-white rounded-2xl sketch-border hover:scale-105 transition-transform cursor-pointer">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                            <span class="font-sketch">LinkedIn</span>
+                        </span>
+                        <span class="flex items-center space-x-3 p-4 bg-gray-800 text-white rounded-2xl sketch-border hover:scale-105 transition-transform cursor-pointer">
+                            <i class="fab fa-github text-2xl"></i>
+                            <span class="font-sketch">GitHub</span>
+                        </span>
+                        <span class="flex items-center space-x-3 p-4 bg-blue-400 text-white rounded-2xl sketch-border hover:scale-105 transition-transform cursor-pointer">
+                            <i class="fab fa-twitter text-2xl"></i>
+                            <span class="font-sketch">Twitter</span>
+                        </span>
+                        <span class="flex items-center space-x-3 p-4 bg-pink-500 text-white rounded-2xl sketch-border hover:scale-105 transition-transform cursor-pointer">
+                            <i class="fab fa-dribbble text-2xl"></i>
+                            <span class="font-sketch">Dribbble</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Fun Fact -->
+                <div class="bg-bright-green/10 p-8 rounded-3xl sketch-border transform rotate-1 text-center">
+                    <div class="text-6xl mb-4">🎉</div>
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-2 font-sketch">
+                        Fun Fact!
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 font-comic">
+                        I respond to emails faster than I respond to text messages 
+                        (sorry, friends! 😅)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="bg-deep-blue text-white py-16">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-12 h-12 bg-bright-green rounded-full flex items-center justify-center sketch-border transform rotate-3">
+                        <span class="text-white font-bold text-xl font-sketch">S</span>
+                    </div>
+                    <span class="text-3xl font-bold font-sketch">Sam Developer</span>
+                </div>
+                <p class="text-gray-300 mb-6 font-comic leading-relaxed">
+                    Passionate frontend developer creating beautiful, functional web experiences. 
+                    When I'm not coding, you can find me sketching UI ideas on napkins or 
+                    perfecting my coffee brewing technique! ☕
+                </p>
+                <div class="flex space-x-4">
+                    <span class="w-12 h-12 bg-bright-green rounded-full flex items-center justify-center sketch-border hover:scale-110 transition-transform cursor-pointer">
+                        <i class="fab fa-github text-white"></i>
+                    </span>
+                    <span class="w-12 h-12 bg-bright-green rounded-full flex items-center justify-center sketch-border hover:scale-110 transition-transform cursor-pointer">
+                        <i class="fab fa-linkedin text-white"></i>
+                    </span>
+                    <span class="w-12 h-12 bg-bright-green rounded-full flex items-center justify-center sketch-border hover:scale-110 transition-transform cursor-pointer">
+                        <i class="fab fa-twitter text-white"></i>
+                    </span>
+                    <span class="w-12 h-12 bg-bright-green rounded-full flex items-center justify-center sketch-border hover:scale-110 transition-transform cursor-pointer">
+                        <i class="fab fa-dribbble text-white"></i>
+                    </span>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold mb-6 font-sketch">Quick Links</h3>
+                <ul class="space-y-3 font-comic">
+                    <li><span class="text-gray-300 hover:text-bright-green transition-colors cursor-pointer">Home</span></li>
+                    <li><span class="text-gray-300 hover:text-bright-green transition-colors cursor-pointer">About</span></li>
+                    <li><span class="text-gray-300 hover:text-bright-green transition-colors cursor-pointer">Skills</span></li>
+                    <li><span class="text-gray-300 hover:text-bright-green transition-colors cursor-pointer">Projects</span></li>
+                    <li><span class="text-gray-300 hover:text-bright-green transition-colors cursor-pointer">Contact</span></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold mb-6 font-sketch">Services</h3>
+                <ul class="space-y-3 font-comic">
+                    <li><span class="text-gray-300">🌐 Web Development</span></li>
+                    <li><span class="text-gray-300">📱 Mobile Apps</span></li>
+                    <li><span class="text-gray-300">🎨 UI/UX Design</span></li>
+                    <li><span class="text-gray-300">🛠️ Consulting</span></li>
+                    <li><span class="text-gray-300">☕ Coffee Chats</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+            <p class="text-gray-300 font-comic">
+                © 2025 WebGraha. Made with ❤️ and lots of ☕ | 
+                <span class="text-bright-green">Available for awesome projects!</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-8 right-8 w-14 h-14 bg-bright-green text-white rounded-full sketch-border shadow-lg hover:scale-110 transition-transform z-50 hidden">
+    <i class="fas fa-arrow-up text-xl"></i>
+</button>
+
+<script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+
+    themeToggle.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+        html.classList.add('dark');
+    }
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Back to top button
+    const backToTopBtn = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.remove('hidden');
+        } else {
+            backToTopBtn.classList.add('hidden');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Add scroll animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(section);
+    });
+
+    // Form submission
+    document.querySelector('form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thanks for your message! I\'ll get back to you faster than you can say "JavaScript"! 🚀');
+    });
+
+    // // Theme Toggle
+    // const themeToggleBtn = document.getElementById("theme-toggle");
+    // const htmlEl = document.documentElement;
+    
+    
+    // if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    // htmlEl.classList.add("dark");
+    // } else {
+    // htmlEl.classList.remove("dark");
+    // }
+    
+    
+    // themeToggleBtn.addEventListener("click", () => {
+    // htmlEl.classList.toggle("dark");
+    // if (htmlEl.classList.contains("dark")) {
+    // localStorage.setItem("theme", "dark");
+    // } else {
+    // localStorage.setItem("theme", "light");
+    // }
+    // });
+    
+    
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    
+    
+    mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.toggle("flex");
+    });
+
+    // // Close mobile menu when a link is clicked
+    // document.querySelectorAll("#mobile-menu .mobile-link").forEach(link => {
+    //         link.addEventListener("click", () => {
+    //             mobileMenu.classList.remove("open");
+    //         });
+    //     });
+    </script>
+
+
+<!-- Theme Toggle Script -->
+<script>
+//   const themeToggle = document.getElementById("theme-toggle");
+
+//   // Load saved theme
+//   if (localStorage.theme === "dark") {
+//     document.documentElement.classList.add("dark");
+//   }
+
+//   themeToggle.addEventListener("click", () => {
+//     document.documentElement.classList.toggle("dark");
+//     if (document.documentElement.classList.contains("dark")) {
+//       localStorage.theme = "dark";
+//     } else {
+//       localStorage.theme = "light";
+//     }
+//   });
+</script>
+<script src="script.js"></script>
+
+</body></html>
