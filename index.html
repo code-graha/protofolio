@@ -1,417 +1,174 @@
-<html><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Protofolio | Creative Portfolio Templates & Custom Designs</title>
-  <meta name="description" content="Explore unique portfolio templates by Protofolio. Browse bento, illustrative UI designs, or request a custom portfolio built for you.">
-  <meta name="keywords" content="Portfolio templates, portfolio design, bento design, illustrative UI, custom portfolio, WebGraha, Protofolio">
+  <title>Protofolio | Portfolio Templates</title>
+  <meta name="description" content="Explore unique portfolio templates by Protofolio.">
   <link rel="canonical" href="https://yourdomain.com/">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Protofolio | Creative Portfolio Templates">
-  <meta property="og:description" content="Browse unique portfolio designs: bento, illustrative UI, and more.">
-  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
-  <meta property="og:url" content="https://yourdomain.com/">
-  <meta property="og:type" content="website">
+  <!-- Preconnect hints for faster resource loading -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Protofolio | Creative Portfolio Templates">
-  <meta name="twitter:description" content="Unique portfolio templates, plus custom designs.">
-  <meta name="twitter:image" content="https://yourdomain.com/preview.jpg">
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <div class="noise"></div>
 
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Protofolio",
-    "url": "https://yourdomain.com/",
-    "description": "Creative portfolio templates and custom portfolio creation.",
-    "creator": {
-      "@type": "Organization",
-      "name": "WebGraha"
-    }
-  }
-  </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    
-    <style>::-webkit-scrollbar { display: none;}</style>
-    <script>tailwind.config = {
-  "theme": {
-    "extend": {
-      "colors": {
-        "retro-black": "#0D0208",
-        "retro-green": "#00FF41",
-        "retro-dark-green": "#008F11",
-        "retro-light-green": "#A5F1CC",
-        "retro-blue": "#003B6F",
-        "retro-purple": "#5E2750",
-        "retro-amber": "#FFB000"
-      },
-      "fontFamily": {
-        "vt323": [
-          "VT323",
-          "monospace"
-        ],
-        "press-start": [
-          "\"Press Start 2P\"",
-          "cursive"
-        ],
-        "sans": [
-          "Inter",
-          "sans-serif"
-        ]
-      },
-      "animation": {
-        // "blink": "blink 1s step-end infinite",
-        "scan": "scan 2s linear infinite",
-        "float": "float 3s ease-in-out infinite",
-        "glitch": "glitch 1s ease-in-out infinite"
-      },
-      "keyframes": {
-        "blink": {
-          "0%, 100%": {
-            "opacity": "1"
-          },
-          "50%": {
-            "opacity": "0"
-          }
-        },
-        "scan": {
-          "0%": {
-            "transform": "translateY(0)"
-          },
-          "50%": {
-            "transform": "translateY(100%)"
-          },
-          "100%": {
-            "transform": "translateY(0)"
-          }
-        },
-        "float": {
-          "0%, 100%": {
-            "transform": "translateY(0)"
-          },
-          "50%": {
-            "transform": "translateY(-10px)"
-          }
-        },
-        "glitch": {
-          "0%, 100%": {
-            "transform": "translate(0)"
-          },
-          "20%": {
-            "transform": "translate(-2px, 2px)"
-          },
-          "40%": {
-            "transform": "translate(-2px, -2px)"
-          },
-          "60%": {
-            "transform": "translate(2px, 2px)"
-          },
-          "80%": {
-            "transform": "translate(2px, -2px)"
-          }
-        }
-      }
-    }
-  }
-};</script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"><style>
-      body {
-        font-family: 'Inter', sans-serif !important;
-      }
-      
-      /* Preserve Font Awesome icons */
-      .fa, .fas, .far, .fal, .fab {
-        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
-      }
-    </style><style>
-  .highlighted-section {
-    outline: 2px solid #3F20FB;
-    background-color: rgba(63, 32, 251, 0.1);
-  }
+  <div class="screen">
 
-  .edit-button {
-    position: absolute;
-    z-index: 1000;
-  }
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
-  html, body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  </style></head>
-<body class="bg-retro-black text-retro-green relative overflow-x-hidden font-sans">
-    <!-- Retro scan line effect -->
-    <div class="fixed inset-0 pointer-events-none bg-gradient-to-b from-transparent to-transparent bg-repeat-y opacity-10" style="background-image: linear-gradient(transparent 50%, rgba(0, 255, 65, 0.1) 50%); background-size: 100% 4px;"></div>
-    
-    <!-- CRT flicker effect -->
-    <div class="fixed inset-0 pointer-events-none bg-retro-green opacity-5 animate-blink"></div>
-    
     <!-- Header -->
-    <header id="header" class="relative z-10 border-b-2 border-retro-green py-6 px-8 mb-8">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <i class="fa-solid fa-terminal text-3xl text-retro-green animate-blink"></i>
-                <h1 class="font-press-start text-2xl md:text-3xl tracking-wider">PROTOFOLIO</h1>
-            </div>
-            <!-- <div class="hidden md:flex items-center space-x-6">
-                <span class="text-retro-green hover:text-retro-light-green transition-colors duration-300 text-lg relative group cursor-pointer">
-                    <span class="inline-block transform group-hover:animate-glitch">BROWSE</span>
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-retro-green group-hover:w-full transition-all duration-300"></span>
-                </span>
-                <span class="text-retro-green hover:text-retro-light-green transition-colors duration-300 text-lg relative group cursor-pointer">
-                    <span class="inline-block transform group-hover:animate-glitch">ABOUT</span>
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-retro-green group-hover:w-full transition-all duration-300"></span>
-                </span>
-                <span class="text-retro-green hover:text-retro-light-green transition-colors duration-300 text-lg relative group cursor-pointer">
-                    <span class="inline-block transform group-hover:animate-glitch">CONTACT</span>
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-retro-green group-hover:w-full transition-all duration-300"></span>
-                </span>
-            </div>
-            <div class="md:hidden">
-                <button class="text-retro-green text-2xl">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div> -->
+    <header>
+      <div class="header-top">
+        <div class="logo" id="site-name">PROTOFOLIO<span class="blink">_</span></div>
+        <div class="header-status">
+          <span class="status-dot"></span>
+          <span>SYSTEM ONLINE</span>
         </div>
+      </div>
+      <div class="header-info">
+        <span id="tagline">portFOLIOs, PROTOtyped for You</span>
+        <span class="separator">|</span>
+        <span id="template-count">3 Templates Available</span>
+        <span class="separator">|</span>
+        <span>100% Responsive</span>
+      </div>
     </header>
 
-    <!-- Main Content -->
-    <main id="main-content" class="container mx-auto px-4 md:px-8 pb-16">
-        <!-- Intro Section -->
-        <section id="intro-section" class="mb-12 text-center">
-            <h2 class="font-press-start text-xl md:text-2xl mb-4 inline-block relative">
-                <span class="relative z-10">A Collection of Portfolios, Prototyped for You.</span>
-                <span class="absolute bottom-0 left-0 w-full h-1 bg-retro-green"></span>
-            </h2>
-            <p class="text-xl max-w-3xl mx-auto leading-relaxed mb-8">
-                Explore our gallery of portfolio templates, click to view each design in detail, and get inspired by the possibilities.
-            </p>
-            <div class="inline-block border-2 border-retro-green p-4 rounded animate-float">
-                <p class="text-lg flex items-center">
-                    <i class="fa-solid fa-info-circle mr-2"></i>
-                    <span class="typing-text">All templates are fully responsive</span>
-                </p>
-            </div>
-        </section>
+    <!-- Section Title -->
+    <div class="section-title">
+      <span class="line"></span>
+      <span class="title-text">[ SELECT TEMPLATE ]</span>
+      <span class="line"></span>
+    </div>
 
-        <!-- Portfolio Grid -->
-        <section id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            
-            
-            <!-- Portfolio Card 1 -->
-            <div id="portfolio-card-1" class="portfolio-card border-2 border-retro-green bg-retro-black rounded-md overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,65,0.5)]">
-                <div class="relative">
-                    <iframe class="w-full h-[22rem] object-cover"
-                        src="/protofolio/retro-gaming"
-                        loading="lazy"
-                        title="a retro gaming style portfolio, designed to showcase your skills and experience">
-                    </iframe>
-                </div>
-                <div class="p-2 flex items-center justify-between">
-                    <span class="text-2xl font-bold">
-                        Retro Gaming
-                    </span>
-                    <span>
-                        <a href="/protofolio/retro-gaming" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right text-3xl text-retro-green"></i></a>
-                    </span>
-                </div>
-            </div>
-
-            <!-- Portfolio Card 2 -->
-            <div id="portfolio-card-2" class="portfolio-card border-2 border-retro-green bg-retro-black rounded-md overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,65,0.5)]">
-              <div class="relative">
-                  <iframe class="w-full h-[22rem] object-cover"
-                      src="/protofolio/bento"
-                      loading="lazy"
-        title="Bento Portfolio Template - showcase of skills and projects">
-                  </iframe>
-              </div>
-              <div class="p-2 flex items-center justify-between">
-                  <span class="text-2xl font-bold">
-                      Bento Style
-                  </span>
-                  <span>
-                      <a href="/protofolio/bento" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right text-3xl text-retro-green"></i></a>
-                  </span>
-              </div>
-          </div>
-
-          
-            <!-- Portfolio Card 3 -->
-            <div id="portfolio-card-3" class="portfolio-card border-2 border-retro-green bg-retro-black rounded-md overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,65,0.5)]">
-              <div class="relative">
-                  <iframe class="w-full h-[22rem] object-cover"
-                      src="/protofolio/illustrative-ui"
-                      loading="lazy"
-        title="Illustrative UI Portfolio Template - creative design showcase">
-                  </iframe>
-              </div>
-              <div class="p-2 flex items-center justify-between">
-                  <span class="text-2xl font-bold">
-                      Illustrative UI
-                  </span>
-                  <span>
-                      <a href="/protofolio/illustrative-ui" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-right text-3xl text-retro-green"></i></a>
-                  </span>
-              </div>
-          </div>
-
-        </section>
-
-        <!-- CTA Section -->
-        <section id="cta-section" class="text-center mb-16">
-            <div class="border-2 border-retro-green p-8 rounded-md relative overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-r from-retro-dark-green/20 to-retro-blue/20 opacity-50"></div>
-                <div class="relative z-10">
-                    <h2 class="font-press-start text-xl md:text-2xl mb-6">CUSTOM PORTFOLIO CREATION</h2>
-                    <p class="text-xl mb-8 max-w-3xl mx-auto">
-                        Like what you see? Let us design a custom portfolio crafted exclusively around your style and vision.
-                    </p>
-                    <button class="bg-retro-green text-retro-black px-8 py-3 text-xl font-bold hover:bg-retro-light-green transition-colors duration-300 relative">
-                        <span class="relative z-10">GET YOURS NOW</span>
-                        <span class="absolute inset-0 bg-retro-green animate-glitch opacity-50"></span>
-                    </button>
-                </div>
-                <!-- Decorative elements -->
-                <div class="absolute -top-4 -left-4 w-16 h-16 border-2 border-retro-green opacity-50"></div>
-                <div class="absolute -bottom-4 -right-4 w-16 h-16 border-2 border-retro-green opacity-50"></div>
-            </div>
-        </section>
-
-        <!-- Featured Portfolio -->
-        <!-- <section id="featured-section" class="mb-16">
-            <h2 class="font-press-start text-xl md:text-2xl mb-8 text-center">FEATURED PORTFOLIO</h2>
-            <div class="border-2 border-retro-green p-4 rounded-md">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="md:col-span-2">
-                        <img class="w-full h-80 object-cover rounded" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1741b837be-7d616ed4f8b9b7cd715d.png" alt="detailed view of retro computer terminal portfolio website with green text on black background, showing project showcase section">
-                    </div>
-                    <div class="flex flex-col justify-center p-4">
-                        <h3 class="text-2xl font-bold mb-4">Terminal Pro</h3>
-                        <p class="text-xl mb-6">Our most popular portfolio template with authentic terminal aesthetics and interactive command line features.</p>
-                        <ul class="mb-6 space-y-2">
-                            <li class="flex items-center">
-                                <i class="fa-solid fa-check mr-2"></i>
-                                <span>Interactive CLI experience</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fa-solid fa-check mr-2"></i>
-                                <span>Authentic terminal aesthetics</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fa-solid fa-check mr-2"></i>
-                                <span>Customizable commands</span>
-                            </li>
-                        </ul>
-                        <button class="self-start px-6 py-2 border-2 border-retro-green hover:bg-retro-green hover:text-retro-black transition-colors duration-300">
-                            EXPLORE DEMO
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+    <!-- Portfolio Grid -->
+    <main id="portfolio-grid">
+      <!-- Loading placeholder to prevent layout shift -->
+      <div class="portfolio-placeholder"></div>
+      <div class="portfolio-placeholder"></div>
+      <div class="portfolio-placeholder"></div>
     </main>
 
+    <!-- Get Yours Section -->
+    <div class="section-title">
+      <span class="line"></span>
+      <span class="title-text">[ GET YOURS ]</span>
+      <span class="line"></span>
+    </div>
+
+    <div class="get-yours-box">
+      <p class="get-yours-text" id="cta-text">Get your first portfolio with our <span class="highlight">free templates</span></p>
+      <div class="get-yours-stats" id="stats-container">
+        <!-- Stats will be loaded from data -->
+      </div>
+      <p class="get-yours-cta" id="cta-subtext"><span class="highlight">Contact us</span> to get yours today</p>
+    </div>
+
     <!-- Footer -->
-    <footer id="footer" class="border-t-2 border-retro-green py-8 px-8">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div class="md:col-span-2">
-                    <h3 class="text-xl font-bold mb-4">PROTOFOLIO</h3>
-                    <p class="text-lg">Reimagining how portfolios inspire. Protofolio, a WebGraha project.</p>
-                </div>
-                <!-- <div class="md:col-start-2">
-                    <h3 class="text-xl font-bold mb-4">QUICK LINKS</h3>
-                    <ul class="space-y-2">
-                        <li><span class="hover:text-retro-light-green transition-colors duration-300 cursor-pointer">Home</span></li>
-                        <li><span class="hover:text-retro-light-green transition-colors duration-300 cursor-pointer">Portfolio Templates</span></li>
-                        <li><span class="hover:text-retro-light-green transition-colors duration-300 cursor-pointer">Custom Designs</span></li>
-                        <li><span class="hover:text-retro-light-green transition-colors duration-300 cursor-pointer">Contact Us</span></li>
-                    </ul>
-                </div> -->
-                <div class="md:col-start-4">
-                    <h3 class="text-xl font-bold mb-4">CONNECT</h3>
-                    <div class="flex space-x-4 mb-4">
-                        <span class="text-2xl hover:text-retro-light-green transition-colors duration-300 cursor-pointer">
-                            <i class="fa-brands fa-github"></i>
-                        </span>
-                        <span class="text-2xl hover:text-retro-light-green transition-colors duration-300 cursor-pointer">
-                            <i class="fa-brands fa-twitter"></i>
-                        </span>
-                        <span class="text-2xl hover:text-retro-light-green transition-colors duration-300 cursor-pointer">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </span>
-                        <span class="text-2xl hover:text-retro-light-green transition-colors duration-300 cursor-pointer">
-                            <i class="fa-brands fa-instagram"></i>
-                        </span>
-                    </div>
-                    <!-- <p class="text-lg">Subscribe to our newsletter</p>
-                    <div class="flex mt-2">
-                        <input type="email" placeholder="your@email.com" class="bg-retro-black border border-retro-green p-2 w-full focus:outline-none focus:border-retro-light-green">
-                        <button class="bg-retro-green text-retro-black px-4 hover:bg-retro-light-green transition-colors duration-300">
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </button>
-                    </div> -->
-                </div>
-            </div>
-            <div class="pt-4 border-t border-retro-green/50 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-lg mb-4 md:mb-0">© 2024 WebGraha. All rights reserved.</p>
-                <div class="flex space-x-4">
-                    <span class="text-sm hover:text-retro-light-green transition-colors duration-300 cursor-pointer">Terms &amp; Conditions</span>
-                    <span class="text-sm hover:text-retro-light-green transition-colors duration-300 cursor-pointer">Privacy Policy</span>
-                    <span class="text-sm hover:text-retro-light-green transition-colors duration-300 cursor-pointer">Cookie Policy</span>
-                </div>
-            </div>
-        </div>
+    <footer>
+      <div class="footer-main">
+        <span class="footer-logo" id="footer-logo">PROTOFOLIO<span class="blink">_</span></span>
+        <span class="footer-divider">|</span>
+        <a href="#" target="_blank" class="footer-link" id="contact-link">Contact Us</a>
+      </div>
+      <div class="footer-bottom">
+        <span id="powered-by">Powered by caffeine & <a href="https://siddharthmhjn.com" target="_blank" class="footer-credit-link">siddharthmhjn.com</a></span>
+        <span id="year">2025</span>
+      </div>
     </footer>
 
-    <!-- Cursor effect -->
-    <div class="fixed w-4 h-6 bg-retro-green opacity-75 pointer-events-none z-50 hidden md:block" id="custom-cursor"></div>
+  </div>
 
-    <script>
-        // Typing text animation
-        const typingTexts = document.querySelectorAll('.typing-text');
-        
-        typingTexts.forEach(element => {
-            const text = element.textContent;
-            element.textContent = '';
-            let i = 0;
-            
-            function typeWriter() {
-                if (i < text.length) {
-                    element.textContent += text.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, 50);
-                } else {
-                    setTimeout(() => {
-                        element.textContent = '';
-                        i = 0;
-                        typeWriter();
-                    }, 3000);
-                }
-            }
-            
-            typeWriter();
-        });
+  <script>
+    // Fetch and render data from JSON file
+    async function loadData() {
+      const response = await fetch('portfolios-data.json');
+      const data = await response.json();
 
-        // Custom cursor
-        document.addEventListener('mousemove', function(e) {
-            const cursor = document.getElementById('custom-cursor');
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-        });
-    </script>
-    <script src="script.js"></script>
+      // Update site info
+      document.title = data.site.name;
+      document.getElementById('tagline').textContent = data.site.tagline;
+      document.getElementById('template-count').textContent = `${data.portfolios.length} Templates Available`;
+      document.getElementById('year').textContent = data.site.year;
+      document.getElementById('powered-by').innerHTML = `${data.site.footerText} <a href="${data.site.poweredByUrl}" target="_blank" class="footer-credit-link">${data.site.poweredBy}</a>`;
 
-</body></html>
+      // Update contact link
+      document.getElementById('contact-link').href = data.contact.whatsapp;
+      document.getElementById('contact-link').textContent = data.contact.label;
+
+      // Update CTA section
+      document.getElementById('cta-text').innerHTML = `${data.cta.text} <span class="highlight">${data.cta.highlight}</span>`;
+      document.getElementById('cta-subtext').innerHTML = `<span class="highlight">${data.cta.subHighlight}</span> ${data.cta.subtext}`;
+
+      // Render stats
+      const statsContainer = document.getElementById('stats-container');
+      statsContainer.innerHTML = data.stats.map(stat => `<span>${stat}</span>`).join('');
+
+      // Render portfolios
+      const portfolioGrid = document.getElementById('portfolio-grid');
+      portfolioGrid.innerHTML = data.portfolios.map(portfolio => `
+        <a href="${portfolio.url}" target="_blank" class="portfolio-item">
+          <div class="monitor">
+            <div class="monitor-top">
+              <span class="monitor-dot red"></span>
+              <span class="monitor-dot yellow"></span>
+              <span class="monitor-dot green"></span>
+              <span class="monitor-title">${portfolio.file}</span>
+            </div>
+            <div class="monitor-screen">
+              <div class="iframe-wrapper">
+                <iframe src="${portfolio.url}" loading="lazy"></iframe>
+              </div>
+              <div class="monitor-overlay">
+                <span>[ CLICK TO VIEW ]</span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-label">
+            <span class="label-name">${portfolio.name}</span>
+            <span class="label-tag">${portfolio.tag}</span>
+          </div>
+          <div class="portfolio-features">
+            ${portfolio.features.map(f => `<span>${f}</span>`).join('')}
+          </div>
+        </a>
+      `).join('');
+
+      // Resize iframes after content loads (use requestIdleCallback for better performance)
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(resizeIframes);
+      } else {
+        setTimeout(resizeIframes, 100);
+      }
+    }
+
+    function resizeIframes() {
+      document.querySelectorAll('.iframe-wrapper').forEach(w => {
+        const iframe = w.querySelector('iframe');
+        if (iframe) {
+          const scale = w.offsetWidth / 1280;
+          iframe.style.transform = `scale(${scale})`;
+          w.style.height = `${800 * scale}px`;
+        }
+      });
+    }
+
+    // Debounced resize handler for better performance
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(resizeIframes, 150);
+    }, { passive: true });
+    document.addEventListener('DOMContentLoaded', loadData);
+  </script>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+{
+  "meta": {
+    "title": "PORTOFOLIO_ by siddharthmhjn.com",
+    "description": "Tony Stark - CEO of Stark Industries and Iron Man. Building technology to protect the world and power the future."
+  },
+  "personal": {
+    "name": "Tony Stark",
+    "initials": "TS",
+    "title": "Genius, Billionaire, Philanthropist",
+    "subtitle": "Iron Man | Avenger | Inventor",
+    "location": "New York, USA",
+    "email": "tony@starkindustries.com",
+    "isAvailable": true,
+    "availability": "Currently Saving the World",
+    "availabilitySubtext": "World-Saving & Clean Energy Solutions",
+    "yearsExperience": "20+",
+    "projectsCompleted": "85+",
+    "awardsCount": "∞",
+    "resume": "/resources/resume.pdf",
+    "heroImage": "/resources/iron-man.jpg",
+    "googleScriptURL": "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE",
+    "socialLinks": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/siddharth-mhjn",
+        "icon": "fa-brands fa-linkedin"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/siddharth-mhjn",
+        "icon": "fa-brands fa-github"
+      },
+      {
+        "name": "Email",
+        "url": "mailto:tony@starkindustries.com",
+        "icon": "fa-solid fa-envelope"
+      }
+    ]
+  },
+  "hero": {
+    "title1": "Genius, Billionaire,",
+    "title2": "Philanthropist",
+    "description": "I am Iron Man. Building cutting-edge technology that protects the world and powers the future. From arc reactor clean energy to AI-driven defense systems.",
+    "experienceBadge": "20+ Years of Innovation"
+  },
+  "about": {
+    "title": "Building the Future of Everything",
+    "subtitle": "Pioneering arc reactor technology, artificial intelligence, and nanotechnology to protect and power the world",
+    "cards": [
+      {
+        "icon": "fa-solid fa-atom",
+        "title": "Arc Reactor Technology",
+        "description": "Invented miniaturized arc reactor providing clean, unlimited energy. Powers the Iron Man suits and entire buildings.",
+        "gradient": "from-blue-50 to-indigo-50",
+        "borderColor": "indigo",
+        "iconBg": "indigo-600"
+      },
+      {
+        "icon": "fa-solid fa-robot",
+        "title": "Artificial Intelligence",
+        "description": "Created J.A.R.V.I.S., F.R.I.D.A.Y., and EDITH - advanced AI systems managing everything from suit operations to global defense.",
+        "gradient": "from-purple-50 to-pink-50",
+        "borderColor": "purple",
+        "iconBg": "purple-600"
+      },
+      {
+        "icon": "fa-solid fa-shield-halved",
+        "title": "Iron Man Armor",
+        "description": "Designed 85+ iterations of powered exoskeleton suits featuring nanotech, weapons systems, and space capabilities.",
+        "gradient": "from-red-50 to-orange-50",
+        "borderColor": "red",
+        "iconBg": "red-600"
+      }
+    ],
+    "journey": [
+      "Genius inventor and CEO of Stark Industries - transformed from weapons manufacturer to clean energy pioneer.",
+      "Built the first Iron Man suit in a cave with a box of scraps. Created 85+ suit iterations with advanced nanotech.",
+      "Founding member of the Avengers. Led Earth's Mightiest Heroes against Ultron, Thanos, and cosmic threats.",
+      "Cracked the code for time travel and saved half the universe. I am Iron Man."
+    ],
+    "skillBars": [
+      { "name": "Arc Reactor Technology", "percentage": 100, "gradient": "from-blue-600 to-indigo-600" },
+      { "name": "AI Development", "percentage": 100, "gradient": "from-purple-600 to-pink-600" },
+      { "name": "Nanotechnology", "percentage": 98, "gradient": "from-indigo-600 to-purple-600" },
+      { "name": "Weapons Engineering", "percentage": 100, "gradient": "from-red-600 to-orange-600" },
+      { "name": "Quantum Mechanics", "percentage": 95, "gradient": "from-pink-600 to-rose-600" }
+    ]
+  },
+  "experience": [
+    {
+      "title": "CEO & Lead Inventor",
+      "company": "Stark Industries",
+      "period": "1991 – Present",
+      "duration": "34+ Years",
+      "isCurrent": true,
+      "color": "indigo",
+      "responsibilities": [
+        "Transformed company from weapons manufacturer to clean energy and technology leader",
+        "Invented arc reactor technology providing unlimited clean energy",
+        "Created 85+ iterations of Iron Man armor with advanced AI integration",
+        "Pioneered nanotechnology and miniaturization breakthroughs"
+      ],
+      "technologies": ["Arc Reactor", "Iron Man Armor", "Clean Energy"]
+    },
+    {
+      "title": "Founding Member",
+      "company": "The Avengers",
+      "period": "2012 – Present",
+      "duration": "13+ Years",
+      "isCurrent": true,
+      "color": "purple",
+      "responsibilities": [
+        "Co-founded Earth's Mightiest Heroes with Captain America, Thor, and others",
+        "Led defense of New York against Chitauri invasion",
+        "Developed Ultron (learning experience) and helped create Vision",
+        "Made the sacrifice play against Thanos to save the universe"
+      ],
+      "technologies": ["Leadership", "Strategy", "Combat Systems"]
+    },
+    {
+      "title": "Quantum Engineer",
+      "company": "Time Heist Initiative",
+      "period": "2023",
+      "duration": "Critical Mission",
+      "isCurrent": false,
+      "color": "pink",
+      "responsibilities": [
+        "Cracked the code for time travel when everyone said it was impossible",
+        "Designed Time-Space GPS for quantum realm navigation",
+        "Enabled Avengers to retrieve Infinity Stones from the past",
+        "Reversed the Snap, saving half of all life in the universe"
+      ],
+      "technologies": ["Quantum Mechanics", "Time Travel", "Infinity Stones"]
+    }
+  ],
+  "skills": {
+    "Arc Reactor & Energy": {
+      "icon": "fa-solid fa-atom",
+      "gradient": "from-blue-50 to-indigo-50",
+      "borderColor": "indigo",
+      "iconBg": "indigo-600",
+      "technologies": [
+        { "name": "Arc Reactor", "icon": "fa-solid fa-atom", "color": "blue-600" },
+        { "name": "Clean Energy", "icon": "fa-solid fa-bolt", "color": "yellow-500" },
+        { "name": "Vibranium", "icon": "fa-solid fa-gem", "color": "purple-600" },
+        { "name": "Quantum Energy", "icon": "fa-solid fa-infinity", "color": "indigo-600" },
+        { "name": "Miniaturization", "icon": "fa-solid fa-compress", "color": "green-600" },
+        { "name": "Power Systems", "icon": "fa-solid fa-plug", "color": "orange-500" }
+      ]
+    },
+    "AI & Robotics": {
+      "icon": "fa-solid fa-robot",
+      "gradient": "from-purple-50 to-pink-50",
+      "borderColor": "purple",
+      "iconBg": "purple-600",
+      "technologies": [
+        { "name": "J.A.R.V.I.S.", "icon": "fa-solid fa-robot", "color": "blue-600" },
+        { "name": "F.R.I.D.A.Y.", "icon": "fa-solid fa-robot", "color": "purple-600" },
+        { "name": "EDITH", "icon": "fa-solid fa-glasses", "color": "indigo-600" },
+        { "name": "Neural Networks", "icon": "fa-solid fa-brain", "color": "pink-600" },
+        { "name": "Vision", "icon": "fa-solid fa-eye", "color": "red-600" },
+        { "name": "Automation", "icon": "fa-solid fa-gears", "color": "gray-700" }
+      ]
+    },
+    "Armor Systems": {
+      "icon": "fa-solid fa-shield-halved",
+      "gradient": "from-red-50 to-orange-50",
+      "borderColor": "red",
+      "iconBg": "red-600",
+      "technologies": [
+        { "name": "Nanotech", "icon": "fa-solid fa-microchip", "color": "purple-600" },
+        { "name": "Repulsors", "icon": "fa-solid fa-hand", "color": "blue-600" },
+        { "name": "Unibeam", "icon": "fa-solid fa-circle-radiation", "color": "yellow-500" },
+        { "name": "Flight Systems", "icon": "fa-solid fa-jet-fighter", "color": "indigo-600" },
+        { "name": "Weapons", "icon": "fa-solid fa-crosshairs", "color": "red-600" },
+        { "name": "Hulkbuster", "icon": "fa-solid fa-shield", "color": "orange-600" }
+      ]
+    },
+    "Advanced Engineering": {
+      "icon": "fa-solid fa-microchip",
+      "gradient": "from-green-50 to-emerald-50",
+      "borderColor": "green",
+      "iconBg": "green-600",
+      "technologies": [
+        { "name": "Quantum Tech", "icon": "fa-solid fa-atom", "color": "purple-600" },
+        { "name": "Time Travel", "icon": "fa-solid fa-clock-rotate-left", "color": "blue-600" },
+        { "name": "Holographics", "icon": "fa-solid fa-cube", "color": "indigo-600" },
+        { "name": "Neural Interface", "icon": "fa-solid fa-brain", "color": "pink-600" },
+        { "name": "Space Tech", "icon": "fa-solid fa-rocket", "color": "gray-700" },
+        { "name": "Particle Physics", "icon": "fa-solid fa-wand-magic-sparkles", "color": "yellow-500" }
+      ]
+    }
+  },
+  "projects": [
+    {
+      "id": "project1",
+      "title": "Iron Man Armor Series",
+      "description": "85+ iterations of powered exoskeleton suits with flight, weapons, AI integration, and bleeding-edge nanotech.",
+      "image": "",
+      "gradient": "from-red-500 to-orange-600",
+      "icon": "fa-solid fa-shield-halved",
+      "technologies": ["Nanotech", "Arc Reactor", "AI"],
+      "link": "https://github.com/siddharth-mhjn"
+    },
+    {
+      "id": "project2",
+      "title": "J.A.R.V.I.S. AI System",
+      "description": "Advanced natural language AI managing complex systems, security protocols, and suit operations. Eventually became Vision.",
+      "image": "",
+      "gradient": "from-purple-500 to-pink-600",
+      "icon": "fa-solid fa-robot",
+      "technologies": ["Neural Networks", "NLP", "Automation"],
+      "link": "https://github.com/siddharth-mhjn"
+    },
+    {
+      "id": "project3",
+      "title": "Arc Reactor Technology",
+      "description": "Miniaturized particle accelerator providing clean, unlimited energy. Powers suits, buildings, and the future.",
+      "image": "",
+      "gradient": "from-blue-500 to-indigo-600",
+      "icon": "fa-solid fa-atom",
+      "technologies": ["Clean Energy", "Miniaturization", "Quantum"],
+      "link": "https://github.com/siddharth-mhjn"
+    },
+    {
+      "id": "project4",
+      "title": "Time-Space GPS",
+      "description": "Quantum realm navigation device enabling time travel. Used to save half the universe.",
+      "image": "",
+      "gradient": "from-indigo-500 to-purple-600",
+      "icon": "fa-solid fa-clock-rotate-left",
+      "technologies": ["Quantum Mechanics", "Time Travel", "GPS"],
+      "link": "https://github.com/siddharth-mhjn"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "MIT - Summa Cum Laude",
+      "issuer": "Massachusetts Institute of Technology",
+      "level": "PhD at Age 17",
+      "description": "Graduated top of class with doctorate in Physics and Engineering. Youngest graduate in MIT history.",
+      "icon": "fa-solid fa-graduation-cap",
+      "color": "indigo"
+    },
+    {
+      "title": "Avengers Security Clearance",
+      "issuer": "S.H.I.E.L.D.",
+      "level": "Level 10 Maximum",
+      "description": "Highest security clearance for access to classified Avengers operations and global defense systems.",
+      "icon": "fa-solid fa-shield-halved",
+      "color": "purple"
+    },
+    {
+      "title": "Infinity Gauntlet Wielder",
+      "issuer": "The Cosmos",
+      "level": "Universe Saver",
+      "description": "Successfully wielded all six Infinity Stones to reverse the Snap and defeat Thanos.",
+      "icon": "fa-solid fa-infinity",
+      "color": "yellow"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Saved the Universe",
+      "date": "2023",
+      "issuer": "The Cosmos",
+      "description": "Used the Infinity Gauntlet to reverse the Snap and defeat Thanos, sacrificing everything to save half of all life.",
+      "icon": "fa-solid fa-infinity",
+      "color": "purple"
+    },
+    {
+      "title": "Person of the Year",
+      "date": "2012",
+      "issuer": "TIME Magazine",
+      "description": "Recognized for leading the defense of New York City against Chitauri invasion and carrying a nuke through a wormhole.",
+      "icon": "fa-solid fa-trophy",
+      "color": "yellow"
+    },
+    {
+      "title": "Apogee Award",
+      "date": "2008",
+      "issuer": "Tech Excellence",
+      "description": "Honored for advancing technology and clean energy innovation through arc reactor development.",
+      "icon": "fa-solid fa-award",
+      "color": "indigo"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Steve Rogers",
+      "role": "Captain America",
+      "company": "The Avengers",
+      "image": "/resources/steve-rogers.jpg",
+      "quote": "The most annoying person I've ever met, but also one of the bravest. When it mattered most, he made the sacrifice play.",
+      "rating": 5
+    },
+    {
+      "name": "Pepper Potts",
+      "role": "CEO",
+      "company": "Stark Industries",
+      "image": "/resources/pepper-potts.jpg",
+      "quote": "Behind the armor was the most selfless person I've ever known. I watched him grow from having everything to giving everything.",
+      "rating": 5
+    },
+    {
+      "name": "Peter Parker",
+      "role": "Spider-Man",
+      "company": "The Avengers",
+      "image": "/resources/spider-man.jpg",
+      "quote": "Mr. Stark believed in me when no one else did. He gave me a chance and showed me what it really means to be a hero.",
+      "rating": 5
+    }
+  ],
+  "footerServices": [
+    "Arc Reactor Technology",
+    "Defense Systems",
+    "Clean Energy Solutions",
+    "AI Development"
+  ],
+  "footer": {
+    "copyright": "Made with ❤️ by",
+    "copyrightLink": {
+      "text": "siddharthmhjn.com",
+      "url": "https://siddharthmhjn.com"
+    }
+  }
+}

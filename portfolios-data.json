@@ -1,0 +1,76 @@
+{
+  "site": {
+    "name": "PORTOFOLIO_ by siddharthmhjn.com",
+    "tagline": "portFOLIOs, PROTOtyped for You",
+    "year": "2025",
+    "footerText": "Powered by caffeine &",
+    "poweredBy": "siddharthmhjn.com",
+    "poweredByUrl": "https://siddharthmhjn.com"
+  },
+  "contact": {
+    "whatsapp": "https://siddharthmhjn.com",
+    "label": "Let's Connect"
+  },
+  "stats": [
+    "6+ Templates",
+    "100% Responsive",
+    "Free to Browse",
+    "24/7 Support"
+  ],
+  "cta": {
+    "text": "Get your first portfolio with our",
+    "highlight": "free templates",
+    "subtext": "to get yours today",
+    "subHighlight": "Let's connect"
+  },
+  "portfolios": [
+    {
+      "id": 1,
+      "name": "CLEAN MINIMALIST",
+      "tag": "Simple • Elegant • Professional",
+      "url": "themes/clean-minimalist/",
+      "file": "TEMPLATE_01.EXE",
+      "features": ["Minimal", "Light Mode", "Fast"]
+    },
+    {
+      "id": 2,
+      "name": "BENTO",
+      "tag": "Grid Layout • Modern • Clean",
+      "url": "themes/bento/",
+      "file": "TEMPLATE_02.EXE",
+      "features": ["Bento Grid", "Responsive", "Minimal"]
+    },
+    {
+      "id": 3,
+      "name": "RETRO GAMING",
+      "tag": "Pixel Art • Nostalgic • Fun",
+      "url": "themes/retro-gaming/",
+      "file": "TEMPLATE_03.EXE",
+      "features": ["Animated", "Dark Mode", "Interactive"]
+    },
+    {
+      "id": 4,
+      "name": "ILLUSTRATIVE UI",
+      "tag": "Creative • Artistic • Unique",
+      "url": "themes/illustrative-ui/",
+      "file": "TEMPLATE_04.EXE",
+      "features": ["Illustrations", "Colorful", "Creative"]
+    },
+    {
+      "id": 5,
+      "name": "MODERN SAAS",
+      "tag": "Corporate • Sleek • Professional",
+      "url": "themes/modern-saas/",
+      "file": "TEMPLATE_05.EXE",
+      "features": ["Modern", "Business", "Polished"]
+    },
+    {
+      "id": 6,
+      "name": "DIGITAL NEBULA",
+      "tag": "Futuristic • Glowing • Tech",
+      "url": "themes/digital-nebula/",
+      "file": "TEMPLATE_06.EXE",
+      "features": ["Neon Effects", "Dark Mode", "Animated"]
+    }
+  ]
+}

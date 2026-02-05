@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "title": "PORTOFOLIO_ by siddharthmhjn.com",
+    "description": "Tony Stark - CEO of Stark Industries and Iron Man. Building technology to protect the world and power the future."
+  },
+  "personal": {
+    "name": "Tony Stark",
+    "initials": "Tony Stark",
+    "title": "Genius, Billionaire, Philanthropist",
+    "subtitle": "Iron Man | Avenger | Inventor",
+    "location": "New York, USA",
+    "email": "tony@starkindustries.com",
+    "phone": "Contact Pepper Potts",
+    "availability": "Currently Saving the World",
+    "yearsExperience": "20+",
+    "projectsCompleted": "85+",
+    "resume": "/resources/resume.pdf",
+    "footerDescription": "CEO of Stark Industries & Iron Man. Building technology to protect the world.",
+    "googleScriptURL": "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE",
+    "socialLinks": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/siddharth-mhjn",
+        "icon": "fa-brands fa-linkedin"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/siddharth-mhjn",
+        "icon": "fa-brands fa-github"
+      }
+    ]
+  },
+  "sectionHeaders": {
+    "skills": {
+      "title": "Technical Arsenal",
+      "description": "Comprehensive expertise across advanced technology, AI systems, and next-generation engineering"
+    },
+    "projects": {
+      "title": "Featured Inventions",
+      "description": "Showcasing world-changing innovations in defense, energy, and artificial intelligence"
+    },
+    "experience": {
+      "title": "Heroic Journey",
+      "description": "From weapons manufacturer to Earth's mightiest defender"
+    },
+    "certifications": {
+      "title": "Credentials & Achievements",
+      "description": "Academic excellence and universe-saving accomplishments"
+    },
+    "testimonials": {
+      "title": "What Heroes Say",
+      "description": "Trusted by Earth's Mightiest Heroes"
+    },
+    "blog": {
+      "title": "Stark Tech Blog",
+      "description": "Insights on arc reactor technology, AI development, and saving the world"
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "description": "For world-saving emergencies or Stark Industries inquiries"
+    }
+  },
+  "about": {
+    "description": [
+      "Genius, billionaire, playboy, philanthropist. Built the first Iron Man suit in a cave with a box of scraps.",
+      "Pioneer of arc reactor technology, creator of J.A.R.V.I.S. and F.R.I.D.A.Y. AI systems.",
+      "Founding member of the Avengers, led the team through multiple world-ending threats.",
+      "Cracked time travel and saved half the universe. I am Iron Man."
+    ],
+    "expertise": [
+      {
+        "icon": "fa-solid fa-atom",
+        "title": "Arc Reactor Technology",
+        "description": "Invented miniaturized arc reactor technology providing clean, unlimited energy for suits and buildings.",
+        "gradient": "from-cyber-blue to-cyber-purple"
+      },
+      {
+        "icon": "fa-solid fa-robot",
+        "title": "Artificial Intelligence",
+        "description": "Created advanced AI systems including J.A.R.V.I.S., F.R.I.D.A.Y., EDITH, and the Vision.",
+        "gradient": "from-cyber-purple to-cyber-violet"
+      },
+      {
+        "icon": "fa-solid fa-shield-halved",
+        "title": "Armor Engineering",
+        "description": "Designed 85+ iterations of the Iron Man suit with nanotech, weapons systems, and space capabilities.",
+        "gradient": "from-cyber-violet to-cyber-pink"
+      }
+    ]
+  },
+  "skills": {
+    "Arc Reactor & Energy": {
+      "icon": "fa-solid fa-atom",
+      "gradient": "from-cyber-blue to-cyber-purple",
+      "borderColor": "border-cyber-blue/30",
+      "technologies": [
+        {"icon": "fa-solid fa-atom", "name": "Arc Reactor"},
+        {"icon": "fa-solid fa-bolt", "name": "Clean Energy"},
+        {"icon": "fa-solid fa-circle", "name": "Palladium Core"},
+        {"icon": "fa-solid fa-gem", "name": "Vibranium"},
+        {"icon": "fa-solid fa-infinity", "name": "Quantum Energy"},
+        {"icon": "fa-solid fa-compress", "name": "Miniaturization"},
+        {"icon": "fa-solid fa-plug", "name": "Power Systems"},
+        {"icon": "fa-solid fa-arrows-rotate", "name": "Energy Transfer"}
+      ]
+    },
+    "AI & Robotics": {
+      "icon": "fa-solid fa-robot",
+      "gradient": "from-cyber-purple to-cyber-violet",
+      "borderColor": "border-cyber-purple/30",
+      "technologies": [
+        {"icon": "fa-solid fa-robot", "name": "J.A.R.V.I.S."},
+        {"icon": "fa-solid fa-robot", "name": "F.R.I.D.A.Y."},
+        {"icon": "fa-solid fa-glasses", "name": "EDITH"},
+        {"icon": "fa-solid fa-brain", "name": "Neural Networks"},
+        {"icon": "fa-solid fa-microchip", "name": "Machine Learning"},
+        {"icon": "fa-solid fa-gears", "name": "Autonomous Systems"}
+      ]
+    },
+    "Armor Systems": {
+      "icon": "fa-solid fa-shield-halved",
+      "gradient": "from-cyber-violet to-cyber-pink",
+      "borderColor": "border-cyber-violet/30",
+      "technologies": [
+        {"icon": "fa-solid fa-microchip", "name": "Nanotech"},
+        {"icon": "fa-solid fa-hand", "name": "Repulsor Tech"},
+        {"icon": "fa-solid fa-circle-radiation", "name": "Unibeam"},
+        {"icon": "fa-solid fa-jet-fighter", "name": "Flight Systems"},
+        {"icon": "fa-solid fa-crosshairs", "name": "Weapons"},
+        {"icon": "fa-solid fa-shield", "name": "Hulkbuster"}
+      ]
+    },
+    "Advanced Engineering": {
+      "icon": "fa-solid fa-microchip",
+      "gradient": "from-cyber-pink to-cyber-blue",
+      "borderColor": "border-cyber-pink/30",
+      "technologies": [
+        {"icon": "fa-solid fa-atom", "name": "Quantum Mechanics"},
+        {"icon": "fa-solid fa-clock-rotate-left", "name": "Time Travel GPS"},
+        {"icon": "fa-solid fa-cube", "name": "Holographic UI"},
+        {"icon": "fa-solid fa-brain", "name": "Neural Interfaces"},
+        {"icon": "fa-solid fa-rocket", "name": "Space Travel"},
+        {"icon": "fa-solid fa-wand-magic-sparkles", "name": "Particle Physics"}
+      ]
+    }
+  },
+  "projects": [
+    {
+      "icon": "fa-solid fa-shield-halved",
+      "title": "Iron Man Armor Series",
+      "description": "85+ iterations of powered exoskeleton suits with flight, weapons, AI, and nanotech capabilities.",
+      "gradient": "from-cyber-blue to-cyber-purple",
+      "borderColor": "border-cyber-blue/30",
+      "glowColor": "bg-cyber-blue/10",
+      "technologies": ["Nanotech", "Arc Reactor", "AI"],
+      "link": "https://github.com/siddharth-mhjn"
+    },
+    {
+      "icon": "fa-solid fa-robot",
+      "title": "J.A.R.V.I.S. AI System",
+      "description": "Advanced natural language AI assistant managing complex systems, security, and suit operations.",
+      "gradient": "from-cyber-purple to-cyber-violet",
+      "borderColor": "border-cyber-purple/30",
+      "glowColor": "bg-cyber-purple/10",
+      "technologies": ["Neural Networks", "NLP", "Automation"],
+      "link": "https://github.com/siddharth-mhjn"
+    },
+    {
+      "icon": "fa-solid fa-building",
+      "title": "Stark Tower",
+      "description": "Self-sustaining skyscraper powered by arc reactor. Avengers headquarters.",
+      "gradient": "from-cyber-violet to-cyber-pink",
+      "borderColor": "border-cyber-violet/30",
+      "glowColor": "bg-cyber-violet/10",
+      "technologies": ["Clean Energy", "Architecture", "Security"],
+      "link": "https://github.com/siddharth-mhjn"
+    }
+  ],
+  "experience": [
+    {
+      "title": "CEO & Lead Inventor",
+      "company": "Stark Industries",
+      "period": "1991 – Present",
+      "duration": "34+ Years",
+      "isCurrent": true,
+      "color": "cyber-blue",
+      "responsibilities": [
+        "Transformed company from weapons to clean energy leader",
+        "Invented arc reactor and Iron Man armor series",
+        "Pioneered AI systems and nanotechnology"
+      ],
+      "technologies": ["Arc Reactor", "Iron Man Armor", "Clean Energy"]
+    },
+    {
+      "title": "Founding Member",
+      "company": "The Avengers",
+      "period": "2012 – Present",
+      "duration": "13+ Years",
+      "isCurrent": true,
+      "color": "cyber-purple",
+      "achievements": [
+        "Co-founded Earth's Mightiest Heroes",
+        "Defended New York against Chitauri invasion",
+        "Led team against Ultron and Thanos"
+      ],
+      "technologies": ["Leadership", "Strategy", "Combat Systems"]
+    },
+    {
+      "title": "Quantum Engineer",
+      "company": "Time Heist Initiative",
+      "period": "2023",
+      "duration": "Critical Mission",
+      "isCurrent": false,
+      "color": "cyber-violet",
+      "impact": [
+        "Cracked the code for time travel",
+        "Designed Time-Space GPS for quantum realm navigation",
+        "Enabled retrieval of Infinity Stones",
+        "Reversed the Snap, saving half of all life"
+      ],
+      "technologies": ["Quantum Mechanics", "Time Travel", "Infinity Stones"]
+    }
+  ],
+  "certifications": [
+    {
+      "icon": "fa-solid fa-graduation-cap",
+      "title": "MIT - Summa Cum Laude",
+      "level": "PhD in Physics & Engineering",
+      "issuer": "Massachusetts Institute of Technology - Age 17",
+      "gradient": "from-cyber-blue to-cyber-purple"
+    },
+    {
+      "icon": "fa-solid fa-shield-halved",
+      "title": "Avengers Security Clearance",
+      "level": "Level 10 - Maximum",
+      "issuer": "S.H.I.E.L.D.",
+      "gradient": "from-cyber-purple to-cyber-violet"
+    },
+    {
+      "icon": "fa-solid fa-infinity",
+      "title": "Infinity Gauntlet Wielder",
+      "level": "Universe Saver",
+      "issuer": "The Cosmos",
+      "gradient": "from-cyber-violet to-cyber-pink"
+    }
+  ],
+  "awards": [
+    {
+      "icon": "fa-solid fa-infinity",
+      "title": "Saved the Universe",
+      "date": "2023",
+      "description": "Used the Infinity Gauntlet to reverse the Snap and defeat Thanos, sacrificing everything.",
+      "gradient": "from-purple-400 to-purple-600",
+      "shadowColor": "shadow-purple-500/30",
+      "borderColor": "border-cyber-purple/30"
+    },
+    {
+      "icon": "fa-solid fa-star",
+      "title": "Person of the Year",
+      "date": "2012",
+      "description": "Led defense of New York City against Chitauri invasion, carried nuke through wormhole.",
+      "gradient": "from-yellow-400 to-yellow-600",
+      "shadowColor": "shadow-yellow-500/30",
+      "borderColor": "border-cyber-blue/30"
+    },
+    {
+      "icon": "fa-solid fa-award",
+      "title": "Apogee Award",
+      "date": "2008",
+      "description": "Honored for advancing technology and clean energy through arc reactor innovation.",
+      "gradient": "from-blue-400 to-blue-600",
+      "shadowColor": "shadow-blue-500/30",
+      "borderColor": "border-cyber-violet/30"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Steve Rogers",
+      "role": "Captain America",
+      "company": "The Avengers",
+      "image": "/resources/steve-rogers.jpg",
+      "rating": 5,
+      "quote": "The most annoying person I've met, but also one of the bravest. He made the sacrifice play.",
+      "borderColor": "border-cyber-blue",
+      "companyColor": "text-cyber-blue"
+    },
+    {
+      "name": "Pepper Potts",
+      "role": "CEO",
+      "company": "Stark Industries",
+      "image": "/resources/pepper-potts.jpg",
+      "rating": 5,
+      "quote": "Behind the armor was the most selfless person I've ever known.",
+      "borderColor": "border-cyber-purple",
+      "companyColor": "text-cyber-purple"
+    },
+    {
+      "name": "Peter Parker",
+      "role": "Spider-Man",
+      "company": "The Avengers",
+      "image": "/resources/spider-man.jpg",
+      "rating": 5,
+      "quote": "Mr. Stark believed in me when no one else did. Everything I am, I owe to him.",
+      "borderColor": "border-cyber-violet",
+      "companyColor": "text-cyber-violet"
+    }
+  ],
+  "blog": [
+    {
+      "id": "arc-reactor-basics",
+      "icon": "fa-solid fa-atom",
+      "title": "Arc Reactor Technology Explained",
+      "excerpt": "Learn how I miniaturized a particle accelerator to fit in my chest and power the Iron Man suit.",
+      "category": "Energy",
+      "date": "Jan 15, 2026",
+      "gradient": "from-cyber-blue/20 to-cyber-purple/20",
+      "borderColor": "border-cyber-blue/20",
+      "categoryColor": "bg-cyber-blue/20 text-cyber-blue",
+      "hoverColor": "group-hover:text-cyber-blue",
+      "linkColor": "text-cyber-blue hover:text-cyber-purple",
+      "link": "#"
+    },
+    {
+      "id": "ai-development",
+      "icon": "fa-solid fa-robot",
+      "title": "Building J.A.R.V.I.S.: AI That Actually Helps",
+      "excerpt": "The journey from a simple assistant to a fully sentient AI that became Vision.",
+      "category": "AI",
+      "date": "Jan 10, 2026",
+      "gradient": "from-cyber-purple/20 to-cyber-violet/20",
+      "borderColor": "border-cyber-purple/20",
+      "categoryColor": "bg-cyber-purple/20 text-cyber-purple",
+      "hoverColor": "group-hover:text-cyber-purple",
+      "linkColor": "text-cyber-purple hover:text-cyber-violet",
+      "link": "#"
+    },
+    {
+      "id": "time-travel-guide",
+      "icon": "fa-solid fa-clock-rotate-left",
+      "title": "So You Want to Invent Time Travel",
+      "excerpt": "A comprehensive guide to quantum realm navigation and not creating alternate timelines.",
+      "category": "Quantum",
+      "date": "Jan 5, 2026",
+      "gradient": "from-cyber-violet/20 to-cyber-pink/20",
+      "borderColor": "border-cyber-violet/20",
+      "categoryColor": "bg-cyber-violet/20 text-cyber-violet",
+      "hoverColor": "group-hover:text-cyber-violet",
+      "linkColor": "text-cyber-violet hover:text-cyber-pink",
+      "link": "#"
+    }
+  ],
+  "footerServices": [
+    "Arc Reactor Technology",
+    "Defense Systems",
+    "Clean Energy Solutions",
+    "AI Development"
+  ],
+  "footer": {
+    "copyright": "Made with ❤️ by",
+    "copyrightLink": {
+      "text": "siddharthmhjn.com",
+      "url": "https://siddharthmhjn.com"
+    }
+  },
+  "policies": {
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "January 2026",
+      "sections": [
+        {
+          "heading": "Information We Collect",
+          "content": "Stark Industries collects information you provide through our contact forms. Unlike certain government agencies, we respect your privacy and don't have a helicarrier scanning your communications."
+        },
+        {
+          "heading": "How We Use Your Information",
+          "content": "Information collected is used to respond to inquiries about Stark Industries products and services. We do not sell your data - we're not that kind of company anymore."
+        },
+        {
+          "heading": "Data Security",
+          "content": "Your data is protected by the same security systems that guard the Iron Man suits. F.R.I.D.A.Y. monitors all access attempts 24/7."
+        },
+        {
+          "heading": "Cookies",
+          "content": "This website uses cookies to enhance your experience. They're less intrusive than Ultron, I promise."
+        },
+        {
+          "heading": "Contact",
+          "content": "Questions about privacy? Contact Pepper Potts at Stark Industries. She handles these things better than I do."
+        }
+      ]
+    },
+    "termsOfService": {
+      "title": "Terms of Service",
+      "lastUpdated": "January 2026",
+      "sections": [
+        {
+          "heading": "Acceptance of Terms",
+          "content": "By accessing this website, you agree to these terms. It's a lot simpler than the Sokovia Accords, trust me."
+        },
+        {
+          "heading": "Use of Content",
+          "content": "All content including arc reactor schematics, suit designs, and AI code is proprietary to Stark Industries. Unauthorized reproduction will result in a visit from Legal... or worse, Pepper."
+        },
+        {
+          "heading": "Contact Form",
+          "content": "When using the contact form, provide accurate information. No, you cannot order an Iron Man suit. Stop asking."
+        },
+        {
+          "heading": "Limitation of Liability",
+          "content": "Stark Industries is not responsible for any alien invasions, rogue AI, or time travel paradoxes that may occur while visiting this site."
+        },
+        {
+          "heading": "Changes to Terms",
+          "content": "These terms may be updated. Continued use constitutes acceptance. Unlike the Avengers roster, these changes are usually less dramatic."
+        }
+      ]
+    }
+  }
+}

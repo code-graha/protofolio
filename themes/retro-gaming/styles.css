@@ -1,0 +1,493 @@
+/* =============================================
+   Retro Gaming Portfolio - Styles
+   A nostalgic retro gaming themed portfolio
+   ============================================= */
+
+/* Performance Optimizations */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    content-visibility: auto;
+}
+
+.hover-lift, .fade-in-up {
+    will-change: transform, opacity;
+}
+
+/* Section cards need overflow visible for badges */
+section > div {
+    overflow: visible !important;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Preserve Font Awesome icons */
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+}
+
+/* =============================================
+   Retro Animations
+   ============================================= */
+
+/* Glitch Effect */
+@keyframes glitch {
+    0%, 100% {
+        transform: translate(0);
+    }
+    10% {
+        transform: translate(-2px, -1px);
+    }
+    20% {
+        transform: translate(2px, 1px);
+    }
+    30% {
+        transform: translate(-1px, 2px);
+    }
+    40% {
+        transform: translate(1px, -1px);
+    }
+    50% {
+        transform: translate(-2px, 2px);
+    }
+    60% {
+        transform: translate(2px, -2px);
+    }
+    70% {
+        transform: translate(-1px, -2px);
+    }
+    80% {
+        transform: translate(1px, 2px);
+    }
+    90% {
+        transform: translate(-2px, -1px);
+    }
+}
+
+.animate-glitch {
+    animation: glitch 2s infinite;
+}
+
+/* Pulse Retro Effect */
+@keyframes pulse-retro {
+    0%, 100% {
+        box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8);
+    }
+    50% {
+        box-shadow: 8px 8px 0px rgba(138, 43, 226, 0.6);
+    }
+}
+
+.animate-pulse-retro {
+    animation: pulse-retro 2s infinite;
+}
+
+/* Typewriter Effect */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+.animate-typewriter {
+    animation: typewriter 3s steps(40, end), blink 0.75s step-end infinite;
+}
+
+/* Float Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Scanline Animation */
+@keyframes scanline {
+    0% {
+        transform: translateY(-100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.animate-scanline {
+    animation: scanline 3s linear infinite;
+}
+
+/* =============================================
+   Transition Effects
+   ============================================= */
+
+/* Fade In Up Animation */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover Lift Effect */
+.hover-lift {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+/* =============================================
+   Retro Glow Effect
+   ============================================= */
+
+.retro-glow {
+    position: relative;
+    overflow: visible;
+}
+
+.retro-glow::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #FF6EC7, #00BFFF, #00FF7F, #FFFF00);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.retro-glow:hover::after {
+    opacity: 0.7;
+}
+
+/* =============================================
+   Highlighted Section (for editing mode)
+   ============================================= */
+
+.highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+}
+
+.edit-button {
+    position: absolute;
+    z-index: 1000;
+}
+
+/* =============================================
+   Mobile Menu Slide Animation
+   ============================================= */
+
+.mobile-slide {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.mobile-slide.open {
+    max-height: 500px;
+}
+
+/* =============================================
+   Progress Bar Styles
+   ============================================= */
+
+.progress-bar {
+    height: 16px;
+    background-color: #e5e7eb;
+    border: 2px solid black;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    border-right: 2px solid black;
+}
+
+/* =============================================
+   Card Styles
+   ============================================= */
+
+.retro-card {
+    background: white;
+    border: 4px solid black;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.retro-card-sm {
+    background: white;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
+}
+
+/* =============================================
+   Button Styles
+   ============================================= */
+
+.retro-button {
+    border: 4px solid black;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease;
+}
+
+.retro-button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.8);
+}
+
+.retro-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
+}
+
+/* =============================================
+   Tag Styles
+   ============================================= */
+
+.retro-tag {
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
+    padding: 4px 12px;
+    font-family: 'VT323', monospace;
+}
+
+.retro-tag-sm {
+    border: 1px solid black;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-family: 'VT323', monospace;
+}
+
+/* =============================================
+   Social Icon Styles
+   ============================================= */
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+}
+
+/* =============================================
+   Section Header Styles
+   ============================================= */
+
+.section-header {
+    position: absolute;
+    top: -24px;
+    left: -24px;
+    border: 4px solid black;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
+    padding: 4px 16px;
+}
+
+/* Ensure section badges are visible (not clipped) */
+#main-content section {
+    overflow: visible;
+    padding-top: 1.5rem;
+}
+
+#main-content section > div {
+    overflow: visible;
+}
+
+/* =============================================
+   Form Styles
+   ============================================= */
+
+.retro-input {
+    border: 4px solid black;
+    padding: 12px;
+    font-family: 'VT323', monospace;
+    transition: border-color 0.2s ease;
+}
+
+.retro-input:focus {
+    outline: none;
+    border-color: #00BFFF;
+}
+
+/* =============================================
+   Modal Styles
+   ============================================= */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 50;
+}
+
+.modal-content {
+    background: white;
+    border: 4px solid black;
+    max-width: 512px;
+    width: 91.666667%;
+    padding: 24px;
+}
+
+/* =============================================
+   Floating Particles
+   ============================================= */
+
+.particle {
+    position: absolute;
+    pointer-events: none;
+}
+
+/* =============================================
+   Screen Effects
+   ============================================= */
+
+#screen-border {
+    position: fixed;
+    inset: 0;
+    border: 8px solid #111111;
+    pointer-events: none;
+    z-index: 50;
+}
+
+#screen-scanlines {
+    position: fixed;
+    inset: 0;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+');
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 40;
+}
+
+/* =============================================
+   Responsive Adjustments
+   ============================================= */
+
+@media (max-width: 768px) {
+    .retro-card {
+        border-width: 3px;
+        box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);
+    }
+
+    .section-header {
+        top: -20px;
+        left: -12px;
+        border-width: 3px;
+        font-size: 14px;
+    }
+
+    #screen-border {
+        border-width: 4px;
+    }
+}
+
+/* =============================================
+   Star Rating
+   ============================================= */
+
+.star-rating {
+    display: flex;
+    gap: 2px;
+}
+
+.star-rating i {
+    color: #FFFF00;
+}
+
+/* =============================================
+   Quote Styles
+   ============================================= */
+
+.quote-mark {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* =============================================
+   Navigation Styles
+   ============================================= */
+
+.nav-link {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: white;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #FFFF00;
+}
+
+/* =============================================
+   Project Card Overlay
+   ============================================= */
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-overlay:hover {
+    opacity: 1;
+}

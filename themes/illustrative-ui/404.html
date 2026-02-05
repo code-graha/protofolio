@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Illustrative UI Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sketch: ['Kalam', 'cursive'],
+                        comic: ['Comic Neue', 'cursive'],
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'deep-blue': '#001F3F',
+                        'soft-gray': '#F0F0F0',
+                        'bright-green': '#2ECC40'
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kalam:wght@400;700&family=Comic+Neue:wght@400;700&display=swap">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .sketch-border {
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            border: 3px solid #2ECC40;
+        }
+        .doodle-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232ECC40' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        @keyframes wobble {
+            0%, 100% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+        }
+        .animate-wobble { animation: wobble 2s ease-in-out infinite; }
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .animate-bounce-slow { animation: bounce-slow 3s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-soft-gray min-h-screen doodle-bg">
+    <div class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
+        <div class="max-w-2xl w-full text-center">
+            <!-- Sad Character -->
+            <div class="mb-8 animate-bounce-slow">
+                <div class="w-32 h-32 bg-bright-green rounded-full sketch-border mx-auto flex items-center justify-center transform rotate-3">
+                    <span class="text-6xl">😢</span>
+                </div>
+            </div>
+
+            <!-- Error Message Card -->
+            <div class="bg-white p-8 rounded-3xl sketch-border transform -rotate-1 shadow-xl mb-8">
+                <h1 class="text-8xl md:text-9xl font-bold text-deep-blue mb-4 font-sketch animate-wobble">
+                    404
+                </h1>
+                <div class="relative mb-6">
+                    <h2 class="text-3xl font-bold text-deep-blue font-sketch transform rotate-1">
+                        Oops! Page Not Found 🔍
+                    </h2>
+                    <div class="absolute -right-4 top-0 text-bright-green text-2xl transform rotate-12">✨</div>
+                </div>
+                <p class="text-xl text-gray-600 font-comic mb-8 leading-relaxed">
+                    Looks like this page went on vacation without telling anyone!
+                    <br>Don't worry, even the best explorers get lost sometimes. 🗺️
+                </p>
+
+                <!-- Fun Drawing -->
+                <div class="mb-8 flex justify-center gap-4">
+                    <div class="w-4 h-4 bg-bright-green rounded-full animate-bounce" style="animation-delay: 0s;"></div>
+                    <div class="w-4 h-4 bg-deep-blue rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
+                    <div class="w-4 h-4 bg-bright-green rounded-full animate-bounce" style="animation-delay: 0.4s;"></div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/" class="bg-bright-green text-white px-8 py-4 rounded-full sketch-border text-xl font-bold font-sketch transform hover:scale-105 transition-transform hover:rotate-3">
+                        Go Home 🏠
+                    </a>
+                    <button onclick="history.back()" class="border-4 border-bright-green text-bright-green px-8 py-4 rounded-full sketch-border text-xl font-bold font-sketch transform hover:scale-105 transition-transform hover:-rotate-3">
+                        Go Back ←
+                    </button>
+                </div>
+            </div>
+
+            <!-- Terminal Style (with sketch twist) -->
+            <div class="bg-deep-blue p-6 rounded-3xl sketch-border transform rotate-1 shadow-xl mb-8">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    <span class="text-gray-400 text-sm ml-2 font-comic">~ oops terminal</span>
+                </div>
+                <div class="font-comic text-left space-y-2">
+                    <p class="text-gray-400">$ looking for <span class="text-bright-green" id="requested-path">/page</span></p>
+                    <p class="text-red-400">Hmm... I can't find that page anywhere! 🤔</p>
+                    <p class="text-gray-400">$ suggestion:</p>
+                    <p class="text-bright-green">Let's head back home and try again! 🚀</p>
+                </div>
+            </div>
+
+            <!-- Stats with fun twist -->
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-2xl sketch-border transform rotate-2">
+                    <div class="text-3xl font-bold text-deep-blue font-sketch">404</div>
+                    <p class="text-gray-600 font-comic text-sm">Error Code</p>
+                    <div class="text-xl">🚫</div>
+                </div>
+                <div class="bg-white p-4 rounded-2xl sketch-border transform -rotate-1">
+                    <div class="text-3xl font-bold text-deep-blue font-sketch">0</div>
+                    <p class="text-gray-600 font-comic text-sm">Pages Found</p>
+                    <div class="text-xl">😅</div>
+                </div>
+                <div class="bg-white p-4 rounded-2xl sketch-border transform rotate-1">
+                    <div class="text-3xl font-bold text-bright-green font-sketch">1</div>
+                    <p class="text-gray-600 font-comic text-sm">Way Home</p>
+                    <div class="text-xl">🏠</div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <p class="mt-8 text-gray-500 font-comic">
+                Don't feel bad, finding things is hard! Even I lose my keys sometimes 🔑
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>

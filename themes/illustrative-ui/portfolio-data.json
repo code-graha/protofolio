@@ -1,0 +1,318 @@
+{
+  "theme": {
+    "defaultTheme": "light",
+    "lightIcon": "fa-sun",
+    "darkIcon": "fa-moon",
+    "lightLabel": "Switch to Dark Mode",
+    "darkLabel": "Switch to Light Mode",
+    "useSystemPreference": true
+  },
+  "meta": {
+    "title": "PORTOFOLIO_ by siddharthmhjn.com",
+    "description": "Genius, Billionaire, Philanthropist. CEO of Stark Industries and Iron Man.",
+    "keywords": "Tony Stark, Iron Man, Stark Industries, Arc Reactor, Avengers, AI, J.A.R.V.I.S., Nanotechnology",
+    "url": "https://www.starkindustries.com/",
+    "image": "https://www.starkindustries.com/preview.jpg"
+  },
+  "person": {
+    "name": "Tony Stark",
+    "initial": "T",
+    "jobTitle": "Genius, Billionaire, Philanthropist",
+    "tagline": "Iron Man | Avenger | Inventor",
+    "description": "I am Iron Man. Genius inventor, CEO of Stark Industries, and founding member of the Avengers. I build cutting-edge technology that protects the world and powers the future.",
+    "profileImage": "/resources/iron-man.jpg",
+    "aboutImage": "/resources/iron-man.jpg",
+    "cvUrl": "/resources/resume.pdf",
+    "email": "tony@starkindustries.com",
+    "phone": "Contact Pepper Potts",
+    "location": "New York, USA"
+  },
+  "social": {
+    "github": "https://github.com/siddharth-mhjn",
+    "linkedin": "https://www.linkedin.com/in/siddharth-mhjn"
+  },
+  "about": {
+    "heading": "My Origin Story...",
+    "description": "Genius, billionaire, playboy, philanthropist. After being held captive in Afghanistan, I built the first Iron Man suit in a cave with a box of scraps. That experience changed everything - I went from weapons manufacturer to Earth's greatest defender. I've pioneered arc reactor technology, created J.A.R.V.I.S. and F.R.I.D.A.Y., and led the Avengers against cosmic threats.",
+    "mission": {
+      "title": "World Protection",
+      "icon": "🛡️",
+      "description": "Building armor around the world - one suit at a time"
+    },
+    "growth": {
+      "title": "Infinite Innovation",
+      "icon": "🚀",
+      "description": "If it doesn't exist yet, I'll invent it. Simple as that."
+    },
+    "funFacts": [
+      { "icon": "🥃", "text": "Fueled by espresso and sarcasm" },
+      { "icon": "🤖", "text": "My AI assistants are better than your AI assistants" },
+      { "icon": "🔧", "text": "Built my first circuit board at age 4" }
+    ]
+  },
+  "skills": {
+    "categories": [
+      {
+        "title": "Arc Reactor & Energy",
+        "icon": "fa-atom",
+        "skills": [
+          { "name": "Arc Reactor", "level": 100, "emoji": "⚡" },
+          { "name": "Clean Energy", "level": 100, "emoji": "🌱" },
+          { "name": "Quantum Energy", "level": 95, "emoji": "🔮" },
+          { "name": "Vibranium Tech", "level": 90, "emoji": "💎" }
+        ]
+      },
+      {
+        "title": "AI & Robotics",
+        "icon": "fa-robot",
+        "skills": [
+          { "name": "J.A.R.V.I.S./F.R.I.D.A.Y.", "level": 100, "emoji": "🤖" },
+          { "name": "Neural Networks", "level": 98, "emoji": "🧠" },
+          { "name": "Autonomous Systems", "level": 95, "emoji": "⚙️" },
+          { "name": "Vision Creation", "level": 100, "emoji": "👁️" }
+        ]
+      },
+      {
+        "title": "Armor Systems",
+        "icon": "fa-shield-halved",
+        "skills": [
+          { "name": "Nanotechnology", "level": 98, "emoji": "🔬" },
+          { "name": "Repulsor Tech", "level": 100, "emoji": "✋" },
+          { "name": "Flight Systems", "level": 100, "emoji": "✈️" },
+          { "name": "Weapons Systems", "level": 100, "emoji": "🎯" }
+        ]
+      }
+    ],
+    "techStack": [
+      { "name": "Arc Reactor", "icon": "fas fa-atom", "color": "bg-blue-600" },
+      { "name": "Nanotech", "icon": "fas fa-microchip", "color": "bg-purple-500" },
+      { "name": "J.A.R.V.I.S.", "icon": "fas fa-robot", "color": "bg-red-500" },
+      { "name": "Repulsors", "icon": "fas fa-hand", "color": "bg-yellow-500" },
+      { "name": "Holographics", "icon": "fas fa-cube", "color": "bg-green-600" },
+      { "name": "Quantum Tech", "icon": "fas fa-infinity", "color": "bg-indigo-800" },
+      { "name": "Time Travel", "icon": "fas fa-clock-rotate-left", "color": "bg-orange-500" },
+      { "name": "Unibeam", "icon": "fas fa-circle-radiation", "color": "bg-cyan-600" }
+    ]
+  },
+  "experience": [
+    {
+      "status": "Current",
+      "statusColor": "bg-bright-green",
+      "period": "1991 - Present",
+      "title": "CEO & Lead Inventor",
+      "company": "Stark Industries",
+      "description": "Transformed Stark Industries from a weapons manufacturer to the world's leading clean energy and advanced technology company. Invented the arc reactor, created 85+ Iron Man suits, and pioneered AI systems.",
+      "tags": [
+        { "text": "Arc Reactor", "color": "bg-blue-100 text-blue-800" },
+        { "text": "Iron Man", "color": "bg-red-100 text-red-800" },
+        { "text": "Clean Energy", "color": "bg-green-100 text-green-800" }
+      ],
+      "image": "/resources/ironman-armor.jpg",
+      "icon": "🏢",
+      "iconBg": "bg-bright-green"
+    },
+    {
+      "status": "Active",
+      "statusColor": "bg-deep-blue",
+      "period": "2012 - Present",
+      "title": "Founding Member",
+      "company": "The Avengers",
+      "description": "Co-founded Earth's Mightiest Heroes. Led the team through the Battle of New York, Ultron crisis, and the fight against Thanos. Made the sacrifice play when it mattered most.",
+      "tags": [
+        { "text": "Leadership", "color": "bg-blue-100 text-blue-800" },
+        { "text": "Strategy", "color": "bg-yellow-100 text-yellow-800" },
+        { "text": "Combat", "color": "bg-purple-100 text-purple-800" }
+      ],
+      "image": "/resources/iron-man.jpg",
+      "icon": "🦸",
+      "iconBg": "bg-deep-blue"
+    },
+    {
+      "status": "Critical",
+      "statusColor": "bg-purple-500",
+      "period": "2023",
+      "title": "Quantum Engineer",
+      "company": "Time Heist Initiative",
+      "description": "Cracked the code for time travel when everyone said it was impossible. Designed the Time-Space GPS that enabled the Avengers to retrieve the Infinity Stones and save half of all life in the universe.",
+      "tags": [
+        { "text": "Quantum Mechanics", "color": "bg-purple-100 text-purple-800" },
+        { "text": "Time Travel", "color": "bg-indigo-100 text-indigo-800" },
+        { "text": "Universe Saved", "color": "bg-green-100 text-green-800" }
+      ],
+      "image": "/resources/time-space-gps.jpg",
+      "icon": "⏰",
+      "iconBg": "bg-purple-500"
+    }
+  ],
+  "certifications": [
+    { "title": "MIT - Summa Cum Laude", "issuer": "Massachusetts Institute of Technology", "year": "Age 17" },
+    { "title": "PhD in Physics & Engineering", "issuer": "MIT", "year": "Youngest Graduate" },
+    { "title": "Avengers Security Clearance Level 10", "issuer": "S.H.I.E.L.D.", "year": "Maximum" }
+  ],
+  "achievements": [
+    { "title": "Saved the Universe", "issuer": "The Cosmos", "year": "2023" },
+    { "title": "Person of the Year", "issuer": "TIME Magazine", "year": "2012" },
+    { "title": "Apogee Award", "issuer": "Tech Excellence", "year": "2008" }
+  ],
+  "projectsSection": {
+    "heading": "My Greatest Inventions 🦾",
+    "description": "Here's some stuff I built (that didn't try to destroy the world... mostly)",
+    "allFilter": "All Inventions",
+    "categories": ["Armor", "AI", "Energy"],
+    "viewMoreButton": "View All Projects on GitHub 📂",
+    "viewMoreUrl": "https://github.com/siddharth-mhjn"
+  },
+  "projects": [
+    {
+      "title": "Iron Man Armor Series",
+      "description": "85+ iterations of the world's most advanced powered exoskeleton. Features flight, weapons systems, AI integration, and nanotech. Built the first one in a cave. With a box of scraps.",
+      "image": "/resources/ironman-armor.jpg",
+      "tags": ["Nanotech", "Arc Reactor", "AI"],
+      "liveUrl": "",
+      "codeUrl": "https://github.com/siddharth-mhjn",
+      "category": "Armor"
+    },
+    {
+      "title": "J.A.R.V.I.S. AI System",
+      "description": "Just A Rather Very Intelligent System - my AI assistant that manages everything from suit operations to making my coffee. Eventually became Vision. You're welcome, world.",
+      "image": "/resources/jarvis-ai.jpg",
+      "tags": ["Neural Networks", "NLP", "Automation"],
+      "liveUrl": "",
+      "codeUrl": "https://github.com/siddharth-mhjn",
+      "category": "AI"
+    },
+    {
+      "title": "Arc Reactor Technology",
+      "description": "Miniaturized a particle accelerator to fit in my chest. Powers the suits, powers buildings, powers the future. Clean, unlimited energy - you're welcome, planet Earth.",
+      "image": "/resources/arc-reactor.jpg",
+      "tags": ["Clean Energy", "Miniaturization", "Quantum"],
+      "liveUrl": "",
+      "codeUrl": "https://github.com/siddharth-mhjn",
+      "category": "Energy"
+    },
+    {
+      "title": "Hulkbuster Armor (Veronica)",
+      "description": "When your friend turns into an angry green rage monster, you need a bigger suit. Modular, deployable from orbit, and surprisingly effective at restraining Hulk. Mostly.",
+      "image": "/resources/hulkbuster-armor.jpg",
+      "tags": ["Heavy Armor", "Modular", "Anti-Hulk"],
+      "liveUrl": "",
+      "codeUrl": "https://github.com/siddharth-mhjn",
+      "category": "Armor"
+    },
+    {
+      "title": "Time-Space GPS",
+      "description": "Everyone said time travel was impossible. I figured it out in one night. This device navigates the quantum realm for precise temporal displacement. Used it to save half the universe.",
+      "image": "/resources/time-space-gps.jpg",
+      "tags": ["Quantum", "Time Travel", "Universe-Saving"],
+      "liveUrl": "",
+      "codeUrl": "https://github.com/siddharth-mhjn",
+      "category": "Energy"
+    },
+    {
+      "title": "F.R.I.D.A.Y. & EDITH",
+      "description": "Female Replacement Intelligent Digital Assistant Youth - my new AI after J.A.R.V.I.S. became Vision. EDITH controls a global defense network. Even Dead I'm The Hero.",
+      "image": "/resources/jarvis-ai.jpg",
+      "tags": ["AI", "Defense", "Orbital Systems"],
+      "liveUrl": "",
+      "codeUrl": "https://github.com/siddharth-mhjn",
+      "category": "AI"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Steve Rogers",
+      "role": "Captain America, The Avengers",
+      "image": "/resources/steve-rogers.jpg",
+      "text": "The most annoying person I've ever met, but also one of the bravest. When it mattered most, he made the sacrifice play.",
+      "rating": 5
+    },
+    {
+      "name": "Pepper Potts",
+      "role": "CEO, Stark Industries",
+      "image": "/resources/pepper-potts.jpg",
+      "text": "Behind the armor was the most selfless person I've ever known. I watched him grow from having everything to giving everything.",
+      "rating": 5
+    },
+    {
+      "name": "Peter Parker",
+      "role": "Spider-Man, The Avengers",
+      "image": "/resources/spider-man.jpg",
+      "text": "Mr. Stark believed in me when no one else did. He gave me a chance and showed me what it really means to be a hero.",
+      "rating": 5
+    }
+  ],
+  "stats": [
+    { "value": "85+", "label": "Suits Built", "emoji": "🦾" },
+    { "value": "20+", "label": "Years Innovating", "emoji": "⚡" },
+    { "value": "1", "label": "Universe Saved", "emoji": "🌌" },
+    { "value": "∞", "label": "Lives Protected", "emoji": "🛡️" }
+  ],
+  "contact": {
+    "heading": "Let's Talk Business 💼",
+    "description": "Got a world-ending threat? Need clean energy solutions? Want to license arc reactor tech? Or just want to meet a genius? Reach out - Pepper will probably respond.",
+    "googleScriptURL": "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE",
+    "formMessages": {
+      "success": "Message received! I'll get back to you faster than I can suit up (that's pretty fast). 🦾",
+      "error": "Oops! Looks like Ultron is interfering with our systems. Try emailing tony@starkindustries.com directly.",
+      "sending": "Transmitting to Stark Industries..."
+    },
+    "form": {
+      "title": "Send Me a Message ✉️",
+      "fields": {
+        "firstName": { "label": "First Name *", "placeholder": "Your name" },
+        "lastName": { "label": "Last Name *", "placeholder": "Your family name" },
+        "email": { "label": "Email Address *", "placeholder": "your.email@example.com" },
+        "projectType": { "label": "Inquiry Type" },
+        "budgetRange": { "label": "Project Scale" },
+        "message": { "label": "Tell me what you need *", "placeholder": "Describe your project, threat level, or business proposal. I've seen it all, so don't hold back. 🚀" }
+      },
+      "submitButton": "Send Message 🚀"
+    },
+    "projectTypes": [
+      "⚡ Arc Reactor Licensing",
+      "🛡️ Defense Systems",
+      "🤖 AI Development",
+      "🏢 Clean Energy Solutions",
+      "🦸 Avengers-Level Threat",
+      "🥃 Drinks & Discussion"
+    ],
+    "budgetRanges": [
+      "💰 $100K - $1M",
+      "💎 $1M - $10M",
+      "🏆 $10M - $100M",
+      "🚀 $100M+",
+      "🤝 Let's discuss"
+    ],
+    "funFact": "I built my first suit in a cave. Whatever you need, I can probably figure it out over a weekend. 🦾"
+  },
+  "footer": {
+    "tagline": "Genius, Billionaire, Philanthropist. CEO of Stark Industries and Iron Man. Building technology to protect the world and power the future. I am Iron Man.",
+    "services": [
+      "⚡ Arc Reactor Technology",
+      "🛡️ Defense Systems",
+      "🌱 Clean Energy Solutions",
+      "🤖 AI Development"
+    ],
+    "quickLinks": [
+      { "label": "Home", "href": "#intro" },
+      { "label": "About", "href": "#about" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "copyright": "Made with ❤️ by",
+    "copyrightLink": {
+      "text": "siddharthmhjn.com",
+      "url": "https://siddharthmhjn.com"
+    }
+  },
+  "navigation": [
+    { "label": "Home", "href": "#intro" },
+    { "label": "About", "href": "#about" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Reviews", "href": "#testimonials" },
+    { "label": "Contact", "href": "#contact" }
+  ]
+}

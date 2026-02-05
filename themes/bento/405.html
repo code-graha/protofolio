@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>405 - Method Not Allowed | Bento Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .bento-card {
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes pulse-border {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+            50% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+        }
+        .pulse-border { animation: pulse-border 2s infinite; }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="min-h-screen flex flex-col items-center justify-center px-4 py-8 sm:py-12">
+        <!-- Bento Grid Error Layout -->
+        <div class="max-w-4xl w-full">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+                <!-- Main Error Card -->
+                <div class="md:col-span-2 bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg border border-gray-200/50 bento-card">
+                    <div class="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                        <span class="bg-red-100 text-red-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium">Error</span>
+                        <span class="bg-orange-100 text-orange-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium">405</span>
+                    </div>
+                    <h1 class="text-5xl sm:text-6xl md:text-8xl font-bold mb-3 sm:mb-4">
+                        <span class="gradient-text">405</span>
+                    </h1>
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Method Not Allowed</h2>
+                    <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+                        The request method you used is not permitted for this resource. Please try a different approach.
+                    </p>
+                    <div class="flex flex-wrap gap-3 sm:gap-4">
+                        <a href="/" class="flex-1 sm:flex-none bg-gradient-to-r from-red-500 to-orange-500 text-white px-5 sm:px-8 py-2.5 sm:py-3 rounded-xl font-medium hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer text-sm sm:text-base">
+                            <i class="fa-solid fa-home"></i>
+                            Go Home
+                        </a>
+                        <a onclick="history.back()" class="flex-1 sm:flex-none border border-gray-300 text-gray-700 px-5 sm:px-8 py-2.5 sm:py-3 rounded-xl font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-2 cursor-pointer text-sm sm:text-base">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Go Back
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Side Cards -->
+                <div class="grid grid-cols-2 md:grid-cols-1 gap-4 sm:gap-6">
+                    <div class="bg-gradient-to-r from-red-500 to-orange-500 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-white shadow-lg bento-card">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-white/20 rounded-full flex items-center justify-center mb-3 sm:mb-4 pulse-border mx-auto">
+                            <i class="fa-solid fa-ban text-xl sm:text-3xl"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-semibold mb-1 sm:mb-2 text-center">Access Denied</h3>
+                        <p class="text-red-100 text-xs sm:text-sm text-center">Method not permitted</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-200/50 bento-card">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                            <i class="fa-solid fa-check text-green-600 text-lg sm:text-xl"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2">Allowed Methods</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-100 text-green-700 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm">GET</span>
+                            <span class="bg-green-100 text-green-700 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm">HEAD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terminal Card -->
+            <div class="mt-4 sm:mt-6 bg-gray-900 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg bento-card overflow-x-auto">
+                <div class="flex items-center gap-2 mb-3 sm:mb-4">
+                    <div class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500"></div>
+                    <div class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500"></div>
+                    <span class="text-gray-500 text-xs sm:text-sm ml-2 font-mono">terminal</span>
+                </div>
+                <div class="font-mono text-xs sm:text-sm space-y-1.5 sm:space-y-2 min-w-max">
+                    <p class="text-gray-500">$ <span class="text-red-400">REQUEST</span> POST <span class="text-white" id="requested-path">/resource</span></p>
+                    <p class="text-red-400"><i class="fa-solid fa-xmark mr-2"></i>Error 405: Method not allowed</p>
+                    <p class="text-gray-500">$ <span class="text-blue-400">allowed_methods</span> --list</p>
+                    <p class="text-yellow-400">Allowed: GET, HEAD</p>
+                    <p class="text-gray-500">$ <span class="text-blue-400">suggest</span> --action</p>
+                    <p class="text-green-400">Try using GET method or return home</p>
+                </div>
+            </div>
+
+            <!-- Info Cards Row -->
+            <div class="mt-4 sm:mt-6 grid grid-cols-3 gap-3 sm:gap-6">
+                <div class="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-6 text-center shadow-lg border border-gray-200/50 bento-card">
+                    <i class="fa-solid fa-shield-halved text-red-500 text-xl sm:text-2xl mb-1 sm:mb-2"></i>
+                    <div class="text-gray-900 font-semibold text-xs sm:text-base">Blocked</div>
+                    <div class="text-gray-500 text-xs sm:text-sm hidden sm:block">Method restricted</div>
+                </div>
+                <div class="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-6 text-center shadow-lg border border-gray-200/50 bento-card">
+                    <i class="fa-solid fa-code text-yellow-500 text-xl sm:text-2xl mb-1 sm:mb-2"></i>
+                    <div class="text-gray-900 font-semibold text-xs sm:text-base">Error 405</div>
+                    <div class="text-gray-500 text-xs sm:text-sm hidden sm:block">HTTP Status</div>
+                </div>
+                <div class="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-6 text-center shadow-lg border border-gray-200/50 bento-card">
+                    <i class="fa-solid fa-rotate text-green-500 text-xl sm:text-2xl mb-1 sm:mb-2"></i>
+                    <div class="text-gray-900 font-semibold text-xs sm:text-base">Try Again</div>
+                    <div class="text-gray-500 text-xs sm:text-sm hidden sm:block">Use GET method</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>

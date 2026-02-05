@@ -1,0 +1,1155 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preconnect hints for faster resource loading -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading...</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="canonical" href="#">
+
+
+<!-- Open Graph -->
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="#">
+<meta property="og:url" content="#">
+<meta property="og:type" content="website">
+
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="#">
+
+
+<!-- Fonts & Styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Person",
+"name": "",
+"jobTitle": "",
+"url": "",
+"sameAs": [],
+"worksFor": {
+"@type": "Organization",
+"name": ""
+}
+}
+</script>
+    <style>
+        ::-webkit-scrollbar { display: none;}
+        .sketch-border { 
+            border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+            border: 3px solid #2ECC40;
+        }
+        .doodle-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232ECC40' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hand-drawn {
+            filter: url(#roughPaper);
+        }
+        /* body.dark {
+background-color: #111827 !important;
+color: #e5e7eb !important;
+}
+.dark .bg-white { background-color: #1f2937 !important; }
+.dark .text-deep-blue { color: #f9fafb !important; }
+.dark .bg-soft-gray { background-color: #111827 !important; }
+.dark .border-bright-green { border-color: #2ECC40 !important; }
+.dark .hover\:text-bright-green:hover { color: #2ECC40 !important; } */
+    </style>
+    <script>tailwind.config = {
+    darkMode: "class",
+  "theme": {
+    "extend": {
+      "fontFamily": {
+        "sketch": [
+          "Kalam",
+          "cursive"
+        ],
+        "comic": [
+          "Comic Neue",
+          "cursive"
+        ],
+        "sans": [
+          "Inter",
+          "sans-serif"
+        ]
+      },
+      "colors": {
+        "deep-blue": "#001F3F",
+        "soft-gray": "#F0F0F0",
+        "bright-green": "#2ECC40"
+      }
+    }
+  }
+};</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"><style>
+      body {
+        font-family: 'Inter', sans-serif !important;
+      }
+      
+      /* Preserve Font Awesome icons */
+      .fa, .fas, .far, .fal, .fab {
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+      }
+    </style><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: hidden;
+  }
+  </style></head>
+<body class="bg-soft-gray dark:bg-gray-900 transition-colors duration-300 font-sans">
+
+<!-- SVG Filters for Hand-drawn Effect -->
+<svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">
+    <defs>
+        <filter id="roughPaper" x="0%" y="0%" width="100%" height="100%">
+            <feTurbulence baseFrequency="0.04" numOctaves="5" result="noise" seed="1"></feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="1"></feDisplacementMap>
+        </filter>
+    </defs>
+</svg>
+
+<!-- Header Navigation -->
+<header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b-4 border-bright-green">
+    <nav class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+    <div class="w-12 h-12 bg-bright-green rounded-full flex items-center justify-center sketch-border transform rotate-3 logo-initial-container">
+    <span class="text-white font-bold text-xl font-sketch logo-initial"></span>
+    </div>
+    <span class="text-2xl font-bold text-deep-blue dark:text-white font-sketch transform -rotate-1 logo-text"></span>
+    </div>
+    
+    
+    <!-- Desktop menu -->
+    <div class="hidden md:flex items-center space-x-8">
+    <a href="#intro" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Home</a>
+    <a href="#about" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">About</a>
+    <a href="#skills" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Skills</a>
+    <a href="#experience" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Experience</a>
+    <a href="#projects" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Projects</a>
+    <a href="#testimonials" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Reviews</a>
+    <a href="#contact" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Contact</a>
+    </div>
+    
+    
+    <!-- Theme and mobile menu -->
+    <div class="flex items-center space-x-4">
+    <button id="theme-toggle" class="w-10 h-10 bg-bright-green text-white rounded-full flex items-center justify-center sketch-border" aria-label="Switch to Dark Mode" title="Switch to Dark Mode">
+    <i class="fas fa-sun theme-light-icon"></i>
+    <i class="fas fa-moon theme-dark-icon hidden"></i>
+    </button>
+    
+    
+    <button id="mobile-menu-btn" class="md:hidden w-10 h-10 bg-bright-green text-white rounded-full flex items-center justify-center sketch-border">
+    <i class="fas fa-bars"></i>
+    </button>
+    </div>
+    </div>
+    
+    
+    <!-- Mobile menu container -->
+    <div id="mobile-menu" class="hidden flex-col space-y-4 mt-4 bg-white dark:bg-gray-900 p-6 rounded-2xl sketch-border">
+        <a href="#intro" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Home</a>
+        <a href="#about" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">About</a>
+        <a href="#skills" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Skills</a>
+        <a href="#experience" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Experience</a>
+        <a href="#projects" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Projects</a>
+        <a href="#testimonials" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Reviews</a>
+        <a href="#contact" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">Contact</a>
+    </div>
+    </nav>
+    </header>
+
+<!-- Intro Section -->
+<section id="intro" class="min-h-screen flex items-center justify-center pt-20 px-6 doodle-bg my-20">
+    <div class="container mx-auto text-center">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-8 relative">
+                <img class="w-48 h-48 mx-auto rounded-full sketch-border transform rotate-3 shadow-2xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/95e6ca28d6-72c48d74139c2de85685.png" alt="cartoon developer character with glasses and laptop, hand-drawn style illustration, friendly smile">
+                <div class="absolute -top-4 -right-4 w-24 h-24 bg-bright-green rounded-full flex items-center justify-center sketch-border transform -rotate-12">
+                    <span class="text-white text-2xl">👋</span>
+                </div>
+            </div>
+            
+            <h1 class="text-6xl md:text-8xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform -rotate-1 intro-greeting">
+                Hey, I'm <br><span class="text-bright-green intro-name"></span>
+            </h1>
+
+            <div class="relative mb-8">
+                <p class="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-4 font-sketch transform rotate-1 intro-tagline">
+                </p>
+                <div class="absolute -right-8 top-0 text-bright-green text-4xl transform rotate-12">✨</div>
+            </div>
+
+            <p class="text-xl text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed font-comic intro-description">
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#projects" class="bg-bright-green text-white px-8 py-4 rounded-full sketch-border text-xl font-bold font-sketch transform hover:scale-105 transition-transform hover:rotate-3">
+                    View My Work 🚀
+                </a>
+                <button class="border-4 border-bright-green text-bright-green px-8 py-4 rounded-full sketch-border text-xl font-bold font-sketch transform hover:scale-105 transition-transform hover:-rotate-3">
+                    Download CV 📄
+                </button>
+            </div>
+            
+            <div class="mt-16 flex justify-center space-x-8">
+                <a href="#" target="_blank" class="text-center transform rotate-2 social-github">
+                    <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border mb-2 hover:scale-110 transition-transform">
+                        <i class="fab fa-github text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm text-gray-600 dark:text-gray-400 font-sketch">GitHub</span>
+                </a>
+                <a href="#" target="_blank" class="text-center transform -rotate-2 social-linkedin">
+                    <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border mb-2 hover:scale-110 transition-transform">
+                        <i class="fab fa-linkedin text-white text-2xl"></i>
+                    </div>
+                    <span class="text-sm text-gray-600 dark:text-gray-400 font-sketch">LinkedIn</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-bright-green text-3xl"></i>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-white dark:bg-gray-800 transition-colors">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform -rotate-1">
+                About Me 🤓
+            </h2>
+            <div class="w-24 h-1 bg-bright-green mx-auto transform rotate-1"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img class="w-full h-96 rounded-3xl sketch-border transform rotate-2 shadow-2xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9f4863284a-95e5fdded6e756c61979.png" alt="developer working at desk with multiple monitors, hand-drawn illustration style, cozy workspace with plants">
+                <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-bright-green rounded-full flex items-center justify-center sketch-border transform -rotate-12">
+                    <span class="text-white text-4xl">💻</span>
+                </div>
+            </div>
+            
+            <div class="space-y-8">
+                <div class="relative">
+                    <h3 class="text-3xl font-bold text-deep-blue dark:text-white mb-4 font-sketch transform rotate-1 about-heading">
+                    </h3>
+                    <div class="absolute -right-4 -top-2 text-bright-green text-2xl transform rotate-45">⭐</div>
+                </div>
+
+                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed font-comic about-description">
+                </p>
+
+                <div class="grid grid-cols-2 gap-6 about-cards">
+                    <!-- Populated by JavaScript -->
+                </div>
+
+                <div class="bg-bright-green/10 p-8 rounded-3xl sketch-border transform rotate-1 about-fun-facts">
+                    <h4 class="text-2xl font-bold text-deep-blue dark:text-white mb-4 font-sketch">
+                        Fun Facts About Me! 🎉
+                    </h4>
+                    <ul class="space-y-3 text-gray-700 dark:text-gray-300 font-comic">
+                        <!-- Populated by JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-soft-gray dark:bg-gray-900 transition-colors doodle-bg">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform rotate-1">
+                My Superpowers 🦸‍♂️
+            </h2>
+            <p class="text-xl text-gray-600 dark:text-gray-400 font-comic max-w-2xl mx-auto">
+                Here's what I've learned to do (without breaking things... mostly)
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- Populated by JavaScript -->
+        </div>
+        
+        <!-- Tech Stack Icons -->
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl sketch-border transform -rotate-1 shadow-lg">
+            <h3 class="text-3xl font-bold text-center text-deep-blue dark:text-white mb-8 font-sketch">
+                My Tech Arsenal 🛠️
+            </h3>
+            <div class="grid grid-cols-4 md:grid-cols-8 gap-6">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-20 bg-white dark:bg-gray-800 transition-colors">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl md:text-6xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform -rotate-1">
+          My Journey 🗺️
+        </h2>
+        <p class="text-xl text-gray-600 dark:text-gray-400 font-comic">
+          My professional journey through the years
+        </p>
+      </div>
+  
+      <div class="relative">
+        <!-- Timeline Line -->
+        <div class="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-1 bg-bright-green rounded-full"></div>
+  
+        <!-- Experience Items -->
+        <div class="space-y-16">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Achievements & Certifications -->
+      <div class="mt-20 grid md:grid-cols-2 gap-8">
+        <div class="bg-gradient-to-br from-bright-green/10 to-blue-50 dark:from-bright-green/20 dark:to-gray-700 p-8 rounded-3xl sketch-border transform -rotate-1 shadow-lg">
+          <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-6 font-sketch">Certifications & Education 🎓</h3>
+          <ul class="space-y-4 font-comic text-gray-600 dark:text-gray-300">
+            <!-- Populated by JavaScript -->
+          </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-100/20 dark:to-gray-700 p-8 rounded-3xl sketch-border transform rotate-1 shadow-lg">
+          <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-6 font-sketch">Key Achievements 🏆</h3>
+          <ul class="space-y-4 font-comic text-gray-600 dark:text-gray-300">
+            <!-- Populated by JavaScript -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-soft-gray dark:bg-gray-900 transition-colors doodle-bg">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform rotate-1 projects-heading">
+                My Cool Projects 🚀
+            </h2>
+            <p class="text-xl text-gray-600 dark:text-gray-400 font-comic max-w-2xl mx-auto projects-description">
+                Here are some things I've built (and didn't break in the process!)
+            </p>
+        </div>
+
+        <!-- Project Filters -->
+        <div class="flex justify-center mb-12">
+            <div class="bg-white dark:bg-gray-800 p-2 rounded-full sketch-border shadow-lg">
+                <div class="projects-filters flex flex-wrap justify-center gap-2">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Grid - Populated by JavaScript -->
+        <div class="projects-grid grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Projects will be loaded from JSON -->
+        </div>
+
+        <!-- View More Projects -->
+        <div class="text-center mt-16">
+            <a href="#" target="_blank" class="projects-view-more inline-block bg-bright-green text-white px-12 py-4 rounded-full text-xl font-bold font-sketch transform hover:scale-105 transition-transform sketch-border">
+                View All Projects on GitHub 📂
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-white dark:bg-gray-800 transition-colors">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform -rotate-1">
+                What People Say 💬
+            </h2>
+            <p class="text-xl text-gray-600 dark:text-gray-400 font-comic max-w-2xl mx-auto">
+                Don't just take my word for it - here's what others have to say!
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- Stats Section -->
+        <div class="mt-20 grid md:grid-cols-4 gap-8">
+            <!-- Populated by JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-soft-gray dark:bg-gray-900 transition-colors doodle-bg">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-6xl font-bold text-deep-blue dark:text-white mb-6 font-sketch transform rotate-1 contact-heading">
+            </h2>
+            <p class="text-xl text-gray-600 dark:text-gray-400 font-comic max-w-2xl mx-auto contact-description">
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+            <!-- Contact Form -->
+            <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl sketch-border transform -rotate-1 shadow-xl">
+                <h3 class="text-3xl font-bold text-deep-blue dark:text-white mb-6 font-sketch form-title">
+                    Send Me a Message ✉️
+                </h3>
+                
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-deep-blue dark:text-white font-bold mb-2 font-sketch">
+                                First Name *
+                            </label>
+                            <input type="text" name="firstName" required class="w-full px-4 py-3 border-3 border-bright-green rounded-2xl sketch-border focus:outline-none focus:ring-2 focus:ring-bright-green font-comic" placeholder="Your awesome name">
+                        </div>
+                        <div>
+                            <label class="block text-deep-blue dark:text-white font-bold mb-2 font-sketch">
+                                Last Name *
+                            </label>
+                            <input type="text" name="lastName" required class="w-full px-4 py-3 border-3 border-bright-green rounded-2xl sketch-border focus:outline-none focus:ring-2 focus:ring-bright-green font-comic" placeholder="Your family name">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-deep-blue dark:text-white font-bold mb-2 font-sketch">
+                            Email Address *
+                        </label>
+                        <input type="email" name="email" required class="w-full px-4 py-3 border-3 border-bright-green rounded-2xl sketch-border focus:outline-none focus:ring-2 focus:ring-bright-green font-comic" placeholder="your.email@awesome.com">
+                    </div>
+
+                    <div>
+                        <label class="block text-deep-blue dark:text-white font-bold mb-2 font-sketch">
+                            Project Type
+                        </label>
+                        <select name="projectType" class="w-full px-4 py-3 border-3 border-bright-green rounded-2xl sketch-border focus:outline-none focus:ring-2 focus:ring-bright-green font-comic">
+                            <!-- Populated by JavaScript -->
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-deep-blue dark:text-white font-bold mb-2 font-sketch">
+                            Budget Range
+                        </label>
+                        <select name="budgetRange" class="w-full px-4 py-3 border-3 border-bright-green rounded-2xl sketch-border focus:outline-none focus:ring-2 focus:ring-bright-green font-comic">
+                            <!-- Populated by JavaScript -->
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-deep-blue dark:text-white font-bold mb-2 font-sketch">
+                            Tell me about your project *
+                        </label>
+                        <textarea name="message" rows="6" required class="w-full px-4 py-3 border-3 border-bright-green rounded-2xl sketch-border focus:outline-none focus:ring-2 focus:ring-bright-green font-comic" placeholder="Describe your amazing project idea... The more details, the better! I love hearing about cool ideas 🚀"></textarea>
+                    </div>
+
+                    <!-- Form status message -->
+                    <div id="form-status" class="hidden text-center p-4 rounded-2xl font-comic"></div>
+
+                    <button type="submit" class="w-full bg-bright-green text-white py-4 px-8 rounded-full text-xl font-bold font-sketch transform hover:scale-105 transition-transform sketch-border">
+                        <span class="btn-text">Send Message 🚀</span>
+                        <span class="btn-loading hidden"><i class="fas fa-spinner fa-spin mr-2"></i>Sending...</span>
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="space-y-8">
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl sketch-border transform rotate-1 shadow-xl">
+                    <h3 class="text-3xl font-bold text-deep-blue dark:text-white mb-6 font-sketch">
+                        Let's Connect! 🤝
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-deep-blue dark:text-white font-sketch">Email Me</h4>
+                                <p class="text-gray-600 dark:text-gray-300 font-comic"></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-deep-blue dark:text-white font-sketch">Call Me</h4>
+                                <p class="text-gray-600 dark:text-gray-300 font-comic"></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-deep-blue dark:text-white font-sketch">Location</h4>
+                                <p class="text-gray-600 dark:text-gray-300 font-comic"></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border">
+                                <i class="fas fa-briefcase text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-deep-blue dark:text-white font-sketch">Availability</h4>
+                                <p class="text-gray-600 dark:text-gray-300 font-comic">Available for Technical Consulting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl sketch-border transform -rotate-1 shadow-xl">
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-6 font-sketch">
+                        Follow My Journey 📱
+                    </h3>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+                
+                <!-- Fun Fact -->
+                <div class="bg-bright-green/10 p-8 rounded-3xl sketch-border transform rotate-1 text-center">
+                    <div class="text-6xl mb-4">🐳</div>
+                    <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-2 font-sketch">
+                        Fun Fact!
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300 font-comic">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="bg-deep-blue text-white py-16">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <div class="flex items-center space-x-3 mb-6">
+                    <div class="w-12 h-12 bg-bright-green rounded-full flex items-center justify-center sketch-border transform rotate-3">
+                        <span class="text-white font-bold text-xl font-sketch logo-initial"></span>
+                    </div>
+                    <span class="text-3xl font-bold font-sketch logo-text"></span>
+                </div>
+                <p class="text-gray-300 mb-6 font-comic leading-relaxed tagline">
+                </p>
+                <div class="flex space-x-4">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-6 font-sketch">Quick Links</h3>
+                <ul class="space-y-3 font-comic">
+                    <!-- Populated by JavaScript -->
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-bold mb-6 font-sketch">Services</h3>
+                <ul class="space-y-3 font-comic">
+                    <!-- Populated by JavaScript -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+            <p class="text-gray-300 font-comic copyright">
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-8 right-8 w-14 h-14 bg-bright-green text-white rounded-full sketch-border shadow-lg hover:scale-110 transition-transform z-50 hidden">
+    <i class="fas fa-arrow-up text-xl"></i>
+</button>
+
+<script>
+    // Theme Toggle - handled by script.js with JSON configuration
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Back to top button
+    const backToTopBtn = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.remove('hidden');
+        } else {
+            backToTopBtn.classList.add('hidden');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Add scroll animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(20px)';
+        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(section);
+    });
+
+    // Form submission - handled by script.js with Google Sheets integration
+
+    // // Theme Toggle
+    // const themeToggleBtn = document.getElementById("theme-toggle");
+    // const htmlEl = document.documentElement;
+    
+    
+    // if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    // htmlEl.classList.add("dark");
+    // } else {
+    // htmlEl.classList.remove("dark");
+    // }
+    
+    
+    // themeToggleBtn.addEventListener("click", () => {
+    // htmlEl.classList.toggle("dark");
+    // if (htmlEl.classList.contains("dark")) {
+    // localStorage.setItem("theme", "dark");
+    // } else {
+    // localStorage.setItem("theme", "light");
+    // }
+    // });
+    
+    
+    // Mobile Menu Toggle - handled by initMobileMenu() in script.js
+    </script>
+
+
+<!-- Theme Toggle Script -->
+<script>
+//   const themeToggle = document.getElementById("theme-toggle");
+
+//   // Load saved theme
+//   if (localStorage.theme === "dark") {
+//     document.documentElement.classList.add("dark");
+//   }
+
+//   themeToggle.addEventListener("click", () => {
+//     document.documentElement.classList.toggle("dark");
+//     if (document.documentElement.classList.contains("dark")) {
+//       localStorage.theme = "dark";
+//     } else {
+//       localStorage.theme = "light";
+//     }
+//   });
+</script>
+<script src="script.js" defer></script>
+<script>
+// Load portfolio data from JSON
+fetch('portfolio-data.json')
+  .then(response => response.json())
+  .then(data => {
+    // Meta tags
+    document.title = data.meta.title;
+    document.querySelector('meta[name="description"]').content = data.meta.description;
+    document.querySelector('meta[name="keywords"]').content = data.meta.keywords;
+    document.querySelector('meta[property="og:title"]').content = data.meta.title;
+    document.querySelector('meta[property="og:description"]').content = data.meta.description;
+    document.querySelector('meta[property="og:url"]').content = data.meta.url;
+    document.querySelector('meta[property="og:image"]').content = data.meta.image;
+    document.querySelector('meta[name="twitter:title"]').content = data.meta.title;
+    document.querySelector('meta[name="twitter:description"]').content = data.meta.description;
+    document.querySelector('meta[name="twitter:image"]').content = data.meta.image;
+
+    // Logo & Header
+    document.querySelectorAll('.logo-initial').forEach(el => el.textContent = data.person.initial);
+    document.querySelectorAll('.logo-text').forEach(el => el.textContent = data.person.name);
+
+    // Navigation - Desktop Menu
+    const desktopMenu = document.querySelector('.hidden.md\\:flex.items-center.space-x-8');
+    if (desktopMenu && data.navigation) {
+      desktopMenu.innerHTML = data.navigation.map(nav =>
+        `<a href="${nav.href}" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">${nav.label}</a>`
+      ).join('');
+    }
+
+    // Navigation - Mobile Menu
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenu && data.navigation) {
+      mobileMenu.innerHTML = data.navigation.map(nav =>
+        `<a href="${nav.href}" class="text-deep-blue dark:text-white hover:text-bright-green font-sketch text-lg cursor-pointer">${nav.label}</a>`
+      ).join('');
+
+      // Re-initialize mobile menu after updating content
+      if (typeof initMobileMenu === 'function') {
+        initMobileMenu();
+      }
+    }
+
+    // Intro Section
+    document.querySelector('.intro-name').textContent = data.person.name + '!';
+    document.querySelector('.intro-tagline').textContent = data.person.tagline;
+    document.querySelector('.intro-description').textContent = data.person.description;
+    document.querySelector('#intro img').src = data.person.profileImage;
+
+    // About Section
+    document.querySelector('.about-heading').textContent = data.about.heading;
+    document.querySelector('.about-description').textContent = data.about.description;
+    document.querySelector('#about img').src = data.person.aboutImage;
+
+    // About Cards
+    const aboutCards = document.querySelector('.about-cards');
+    if (aboutCards) {
+      aboutCards.innerHTML = `
+        <div class="bg-soft-gray dark:bg-gray-700 p-6 rounded-2xl sketch-border transform rotate-1">
+          <div class="text-3xl mb-2">${data.about.mission.icon}</div>
+          <h4 class="font-bold text-deep-blue dark:text-white mb-2 font-sketch">${data.about.mission.title}</h4>
+          <p class="text-sm text-gray-600 dark:text-gray-400 font-comic">${data.about.mission.description}</p>
+        </div>
+        <div class="bg-soft-gray dark:bg-gray-700 p-6 rounded-2xl sketch-border transform -rotate-1">
+          <div class="text-3xl mb-2">${data.about.growth.icon}</div>
+          <h4 class="font-bold text-deep-blue dark:text-white mb-2 font-sketch">${data.about.growth.title}</h4>
+          <p class="text-sm text-gray-600 dark:text-gray-400 font-comic">${data.about.growth.description}</p>
+        </div>
+      `;
+    }
+
+    // Fun Facts
+    const funFactsList = document.querySelector('.about-fun-facts ul');
+    if (funFactsList) {
+      funFactsList.innerHTML = data.about.funFacts.map(fact => `
+        <li class="flex items-center space-x-3">
+          <span class="text-bright-green text-xl">${fact.icon}</span>
+          <span>${fact.text}</span>
+        </li>
+      `).join('');
+    }
+
+    // Skills Section
+    const skillsGrid = document.querySelector('#skills .grid.md\\:grid-cols-3');
+    if (skillsGrid && data.skills.categories) {
+      const rotations = ['rotate-1', '-rotate-1', 'rotate-1'];
+      const iconRotations = ['-rotate-12', 'rotate-12', '-rotate-12'];
+      skillsGrid.innerHTML = data.skills.categories.map((cat, idx) => `
+        <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl sketch-border transform ${rotations[idx]} shadow-lg">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border mx-auto mb-4 transform ${iconRotations[idx]}">
+              <i class="fas ${cat.icon} text-white text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-deep-blue dark:text-white font-sketch">${cat.title}</h3>
+          </div>
+          <div class="space-y-4">
+            ${cat.skills.map(skill => `
+              <div class="skill-item">
+                <div class="flex justify-between mb-2">
+                  <span class="font-bold text-deep-blue dark:text-white font-sketch">${skill.name}</span>
+                  <span class="text-bright-green font-bold">${skill.level}% ${skill.emoji}</span>
+                </div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 sketch-border">
+                  <div class="bg-bright-green h-3 rounded-full" style="width: ${skill.level}%"></div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Tech Stack
+    const techStackGrid = document.querySelector('#skills .grid.grid-cols-4');
+    if (techStackGrid && data.skills.techStack) {
+      techStackGrid.innerHTML = data.skills.techStack.map(tech => `
+        <div class="text-center transform hover:scale-110 transition-transform">
+          <div class="w-16 h-16 ${tech.color} rounded-full flex items-center justify-center sketch-border mx-auto mb-2">
+            <i class="${tech.icon} text-white text-2xl"></i>
+          </div>
+          <span class="text-sm font-sketch text-gray-600 dark:text-gray-400">${tech.name}</span>
+        </div>
+      `).join('');
+    }
+
+    // Experience Timeline
+    const experienceTimeline = document.querySelector('#experience .space-y-16');
+    if (experienceTimeline && data.experience) {
+      experienceTimeline.innerHTML = data.experience.map((exp, idx) => {
+        const isEven = idx % 2 === 0;
+        return `
+          <div class="relative">
+            <div class="flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} items-center">
+              <div class="md:w-1/2 ${isEven ? 'md:pr-12' : 'md:pl-12'}">
+                <div class="bg-soft-gray dark:bg-gray-700 p-8 rounded-3xl sketch-border transform ${isEven ? '-rotate-1' : 'rotate-1'} hover:rotate-0 transition-transform shadow-lg">
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="${exp.statusColor} text-white px-4 py-1 rounded-full text-sm font-sketch">${exp.status}</span>
+                    <span class="text-gray-600 dark:text-gray-400 font-comic">${exp.period}</span>
+                  </div>
+                  <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-2 font-sketch">${exp.title}</h3>
+                  <h4 class="text-lg text-bright-green font-bold font-sketch mb-4">${exp.company}</h4>
+                  <p class="text-gray-600 dark:text-gray-300 font-comic mb-4">${exp.description}</p>
+                  <div class="flex flex-wrap gap-2">
+                    ${exp.tags.map(tag => `<span class="${tag.color} px-3 py-1 rounded-full text-sm">${tag.text}</span>`).join('')}
+                  </div>
+                </div>
+              </div>
+              <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-8 h-8 ${exp.iconBg} rounded-full border-4 border-white dark:border-gray-800 shadow-lg flex items-center justify-center">
+                ${exp.icon}
+              </div>
+              <div class="md:w-1/2 ${isEven ? 'md:pl-12' : 'md:pr-12'} mt-8 md:mt-0">
+                <img class="w-full rounded-2xl shadow-lg transform ${isEven ? 'rotate-2' : '-rotate-2'}" src="${exp.image}" alt="${exp.title}">
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Certifications
+    const certList = document.querySelector('#experience .grid.md\\:grid-cols-2 > div:first-child ul');
+    if (certList && data.certifications) {
+      certList.innerHTML = data.certifications.map(cert =>
+        `<li><strong>${cert.title}</strong> – ${cert.issuer} • ${cert.year}</li>`
+      ).join('');
+    }
+
+    // Achievements
+    const achieveList = document.querySelector('#experience .grid.md\\:grid-cols-2 > div:last-child ul');
+    if (achieveList && data.achievements) {
+      achieveList.innerHTML = data.achievements.map(ach =>
+        `<li><strong>${ach.title}</strong> – ${ach.issuer} • ${ach.year}</li>`
+      ).join('');
+    }
+
+    // Projects Section
+    const projectsSection = data.projectsSection;
+    if (projectsSection) {
+      // Update heading and description
+      const projectsHeading = document.querySelector('.projects-heading');
+      if (projectsHeading) projectsHeading.textContent = projectsSection.heading;
+
+      const projectsDescription = document.querySelector('.projects-description');
+      if (projectsDescription) projectsDescription.textContent = projectsSection.description;
+
+      // Update view more button
+      const viewMoreBtn = document.querySelector('.projects-view-more');
+      if (viewMoreBtn) {
+        viewMoreBtn.textContent = projectsSection.viewMoreButton;
+        viewMoreBtn.href = projectsSection.viewMoreUrl;
+      }
+
+      // Generate filter buttons
+      const filtersContainer = document.querySelector('.projects-filters');
+      if (filtersContainer && projectsSection.categories) {
+        const allCategories = [projectsSection.allFilter || 'All Projects', ...projectsSection.categories];
+        filtersContainer.innerHTML = allCategories.map((cat, index) => `
+          <button data-category="${index === 0 ? 'all' : cat}" class="project-filter px-6 py-3 ${index === 0 ? 'bg-bright-green text-white' : 'text-deep-blue dark:text-white hover:bg-bright-green hover:text-white'} rounded-full font-sketch transition-all">
+            ${cat}
+          </button>
+        `).join('');
+      }
+    }
+
+    // Projects Grid
+    const projectsGrid = document.querySelector('.projects-grid');
+    const renderProjects = (projects) => {
+      if (!projectsGrid) return;
+      const rotations = ['rotate-1', '-rotate-1', 'rotate-2'];
+      projectsGrid.innerHTML = projects.map((proj, idx) => `
+        <div class="project-card bg-white dark:bg-gray-800 rounded-3xl sketch-border transform ${rotations[idx % 3]} shadow-xl overflow-hidden hover:scale-105 transition-transform" data-category="${proj.category}">
+          <div class="relative">
+            <img class="w-full h-48 object-cover" src="${proj.image}" alt="${proj.title}">
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-deep-blue dark:text-white mb-3 font-sketch">${proj.title}</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic">${proj.description}</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              ${proj.tags.map(tag => `<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">${tag}</span>`).join('')}
+            </div>
+            <div class="flex space-x-4">
+              ${proj.liveUrl && proj.liveUrl !== '#' ? `
+              <a href="${proj.liveUrl}" target="_blank" class="flex-1 bg-bright-green text-white py-2 px-4 rounded-full font-sketch hover:bg-green-600 transition-colors text-center">
+                <i class="fas fa-eye mr-2"></i>Live Demo
+              </a>` : ''}
+              <a href="${proj.codeUrl}" target="_blank" class="${proj.liveUrl && proj.liveUrl !== '#' ? 'flex-1' : 'w-full'} border-2 border-bright-green text-bright-green py-2 px-4 rounded-full font-sketch hover:bg-bright-green hover:text-white transition-colors text-center">
+                <i class="fab fa-github mr-2"></i>View Code
+              </a>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    };
+
+    // Render all projects initially
+    if (data.projects) {
+      renderProjects(data.projects);
+
+      // Add filter click handlers
+      document.querySelectorAll('.project-filter').forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Update active state
+          document.querySelectorAll('.project-filter').forEach(b => {
+            b.classList.remove('bg-bright-green', 'text-white');
+            b.classList.add('text-deep-blue', 'dark:text-white', 'hover:bg-bright-green', 'hover:text-white');
+          });
+          btn.classList.add('bg-bright-green', 'text-white');
+          btn.classList.remove('text-deep-blue', 'dark:text-white', 'hover:bg-bright-green', 'hover:text-white');
+
+          // Filter projects
+          const category = btn.dataset.category;
+          if (category === 'all') {
+            renderProjects(data.projects);
+          } else {
+            const filtered = data.projects.filter(p => p.category === category);
+            renderProjects(filtered);
+          }
+        });
+      });
+    }
+
+    // Testimonials
+    const testimonialsGrid = document.querySelector('#testimonials .grid.md\\:grid-cols-2');
+    if (testimonialsGrid && data.testimonials) {
+      const rotations = ['rotate-1', '-rotate-1', 'rotate-1'];
+      testimonialsGrid.innerHTML = data.testimonials.map((test, idx) => `
+        <div class="bg-soft-gray dark:bg-gray-700 p-8 rounded-3xl sketch-border transform ${rotations[idx % 3]} shadow-lg relative">
+          <div class="absolute -top-4 left-8 w-8 h-8 bg-soft-gray dark:bg-gray-700 transform rotate-45"></div>
+          <div class="flex items-center mb-6">
+            <img src="${test.image}" alt="${test.name}" class="w-16 h-16 rounded-full sketch-border mr-4">
+            <div>
+              <h4 class="font-bold text-deep-blue dark:text-white font-sketch">${test.name}</h4>
+              <p class="text-bright-green font-sketch">${test.role}</p>
+              <div class="flex text-yellow-500 mt-1">
+                ${'<i class="fas fa-star"></i>'.repeat(test.rating)}
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 dark:text-gray-300 mb-4 font-comic italic">"${test.text}"</p>
+          <div class="text-bright-green text-6xl absolute bottom-4 right-6 opacity-20">"</div>
+        </div>
+      `).join('');
+    }
+
+    // Stats
+    const statsGrid = document.querySelector('#testimonials .grid.md\\:grid-cols-4');
+    if (statsGrid && data.stats) {
+      const rotations = ['rotate-1', '-rotate-1', 'rotate-1', '-rotate-1'];
+      statsGrid.innerHTML = data.stats.map((stat, idx) => `
+        <div class="text-center bg-bright-green/10 p-8 rounded-3xl sketch-border transform ${rotations[idx]}">
+          <div class="text-5xl font-bold text-deep-blue dark:text-white mb-2 font-sketch">${stat.value}</div>
+          <p class="text-gray-600 dark:text-gray-400 font-comic">${stat.label}</p>
+          <div class="text-2xl mt-2">${stat.emoji}</div>
+        </div>
+      `).join('');
+    }
+
+    // Contact Info
+    const contactEmail = document.querySelector('#contact .space-y-6 div:nth-child(1) p');
+    const contactPhone = document.querySelector('#contact .space-y-6 div:nth-child(2) p');
+    const contactLocation = document.querySelector('#contact .space-y-6 div:nth-child(3) p');
+    if (contactEmail) contactEmail.textContent = data.person.email;
+    if (contactPhone) contactPhone.textContent = data.person.phone;
+    if (contactLocation) contactLocation.textContent = data.person.location;
+
+    // Contact Form - Project Types
+    const projectTypeSelect = document.querySelector('#contact form select:first-of-type');
+    if (projectTypeSelect && data.contact.projectTypes) {
+      projectTypeSelect.innerHTML = data.contact.projectTypes.map(type =>
+        `<option>${type}</option>`
+      ).join('');
+    }
+
+    // Contact Form - Budget Ranges
+    const budgetSelect = document.querySelector('#contact form select:last-of-type');
+    if (budgetSelect && data.contact.budgetRanges) {
+      budgetSelect.innerHTML = data.contact.budgetRanges.map(range =>
+        `<option>${range}</option>`
+      ).join('');
+    }
+
+    // Contact Fun Fact
+    const contactFunFact = document.querySelector('#contact .bg-bright-green\\/10 p');
+    if (contactFunFact) contactFunFact.textContent = data.contact.funFact;
+
+    // Footer
+    document.querySelector('.tagline').textContent = data.footer.tagline;
+    const copyrightLink = data.footer.copyrightLink;
+    const copyrightText = copyrightLink
+        ? `${data.footer.copyright} <a href="${copyrightLink.url}" target="_blank" class="text-bright-green hover:text-deep-blue transition-colors">${copyrightLink.text}</a>`
+        : data.footer.copyright;
+    document.querySelector('.copyright').innerHTML = `${copyrightText} | <span class="text-bright-green">Available for projects!</span>`;
+
+    // Footer Services
+    const footerServices = document.querySelector('#footer .grid.md\\:grid-cols-4 > div:last-child ul');
+    if (footerServices && data.footer.services) {
+      footerServices.innerHTML = data.footer.services.map(service =>
+        `<li><span class="text-gray-300">${service}</span></li>`
+      ).join('');
+    }
+
+    // Footer Quick Links
+    const footerQuickLinks = document.querySelector('#footer .grid.md\\:grid-cols-4 > div:nth-child(3) ul');
+    if (footerQuickLinks && data.footer.quickLinks) {
+      footerQuickLinks.innerHTML = data.footer.quickLinks.map(link =>
+        `<li><a href="${link.href}" class="text-gray-300 hover:text-bright-green transition-colors cursor-pointer">${link.label}</a></li>`
+      ).join('');
+    }
+
+    // Footer Social Links
+    const footerSocial = document.querySelector('#footer .flex.space-x-4');
+    if (footerSocial && data.social) {
+      footerSocial.innerHTML = `
+        <a href="${data.social.github}" target="_blank" class="w-12 h-12 bg-bright-green rounded-full flex items-center justify-center sketch-border hover:scale-110 transition-transform cursor-pointer">
+          <i class="fab fa-github text-white"></i>
+        </a>
+        <a href="${data.social.linkedin}" target="_blank" class="w-12 h-12 bg-bright-green rounded-full flex items-center justify-center sketch-border hover:scale-110 transition-transform cursor-pointer">
+          <i class="fab fa-linkedin text-white"></i>
+        </a>
+      `;
+    }
+
+    // Intro Social Links
+    const introSocial = document.querySelector('#intro .flex.justify-center.space-x-8');
+    if (introSocial && data.social) {
+      introSocial.innerHTML = `
+        <a href="${data.social.github}" target="_blank" class="text-center transform rotate-2">
+          <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border mb-2 hover:scale-110 transition-transform">
+            <i class="fab fa-github text-white text-2xl"></i>
+          </div>
+          <span class="text-sm text-gray-600 dark:text-gray-400 font-sketch">GitHub</span>
+        </a>
+        <a href="${data.social.linkedin}" target="_blank" class="text-center transform -rotate-2">
+          <div class="w-16 h-16 bg-bright-green rounded-full flex items-center justify-center sketch-border mb-2 hover:scale-110 transition-transform">
+            <i class="fab fa-linkedin text-white text-2xl"></i>
+          </div>
+          <span class="text-sm text-gray-600 dark:text-gray-400 font-sketch">LinkedIn</span>
+        </a>
+      `;
+    }
+
+    // Contact Social Links
+    const contactSocial = document.querySelector('#contact .grid.grid-cols-2.gap-4');
+    if (contactSocial && data.social) {
+      contactSocial.innerHTML = `
+        <a href="${data.social.linkedin}" target="_blank" class="flex items-center space-x-3 p-4 bg-blue-500 text-white rounded-2xl sketch-border hover:scale-105 transition-transform cursor-pointer">
+          <i class="fab fa-linkedin text-2xl"></i>
+          <span class="font-sketch">LinkedIn</span>
+        </a>
+        <a href="${data.social.github}" target="_blank" class="flex items-center space-x-3 p-4 bg-gray-800 text-white rounded-2xl sketch-border hover:scale-105 transition-transform cursor-pointer">
+          <i class="fab fa-github text-2xl"></i>
+          <span class="font-sketch">GitHub</span>
+        </a>
+        <a href="mailto:${data.person.email}" class="flex items-center space-x-3 p-4 bg-bright-green text-white rounded-2xl sketch-border hover:scale-105 transition-transform cursor-pointer">
+          <i class="fas fa-envelope text-2xl"></i>
+          <span class="font-sketch">Email</span>
+        </a>
+      `;
+    }
+
+    // CV Download Button
+    const cvButton = document.querySelector('#intro .border-4.border-bright-green');
+    if (cvButton && data.person.cvUrl) {
+      cvButton.onclick = () => window.open(data.person.cvUrl, '_blank');
+    }
+
+    // Update Schema.org markup
+    const schemaScript = document.querySelector('script[type="application/ld+json"]');
+    if (schemaScript) {
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": data.person.name,
+        "jobTitle": data.person.jobTitle,
+        "url": data.meta.url,
+        "sameAs": [data.social.github, data.social.linkedin],
+        "worksFor": {
+          "@type": "Organization",
+          "name": data.experience[0]?.company || "Your Company"
+        }
+      };
+      schemaScript.textContent = JSON.stringify(schema, null, 2);
+    }
+  })
+  .catch(error => console.error('Error loading portfolio data:', error));
+</script>
+
+</body></html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Preconnect hints for faster resource loading -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+
+<!-- Header -->
+<header id="header" class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-2">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                <span id="header-initials" class="text-white font-bold text-base sm:text-lg"></span>
+            </div>
+            <span id="header-name" class="text-lg sm:text-xl font-bold text-gray-900"></span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            <a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition text-sm xl:text-base">About</a>
+            <a href="#experience" class="text-gray-700 hover:text-indigo-600 font-medium transition text-sm xl:text-base">Experience</a>
+            <a href="#skills" class="text-gray-700 hover:text-indigo-600 font-medium transition text-sm xl:text-base">Skills</a>
+            <a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition text-sm xl:text-base">Projects</a>
+            <a href="#certifications" class="text-gray-700 hover:text-indigo-600 font-medium transition text-sm xl:text-base">Certifications</a>
+            <a href="#testimonials" class="text-gray-700 hover:text-indigo-600 font-medium transition text-sm xl:text-base">Testimonials</a>
+            <a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition text-sm xl:text-base">Contact</a>
+        </nav>
+
+        <!-- Desktop Right Actions -->
+        <div class="hidden md:flex items-center space-x-3">
+            <a id="header-linkedin" href="#" target="_blank" class="text-gray-600 hover:text-indigo-600 transition p-2">
+                <i class="fa-brands fa-linkedin text-xl"></i>
+            </a>
+            <a id="header-github" href="#" target="_blank" class="text-gray-600 hover:text-indigo-600 transition p-2">
+                <i class="fa-brands fa-github text-xl"></i>
+            </a>
+            <a id="header-resume" href="Resume.pdf" download class="px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition flex items-center space-x-2 text-sm">
+                <i class="fa-solid fa-download text-xs"></i>
+                <span>Resume</span>
+            </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2 text-gray-700 hover:text-indigo-600 transition" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars text-xl" id="menuIconBars"></i>
+            <i class="fa-solid fa-xmark text-xl hidden" id="menuIconClose"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100">
+        <nav class="max-w-7xl mx-auto px-4 py-4 space-y-1">
+            <a href="#about" class="block px-4 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg font-medium transition">About</a>
+            <a href="#experience" class="block px-4 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg font-medium transition">Experience</a>
+            <a href="#skills" class="block px-4 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg font-medium transition">Skills</a>
+            <a href="#projects" class="block px-4 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg font-medium transition">Projects</a>
+            <a href="#certifications" class="block px-4 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg font-medium transition">Certifications</a>
+            <a href="#testimonials" class="block px-4 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg font-medium transition">Testimonials</a>
+            <a href="#contact" class="block px-4 py-3 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg font-medium transition">Contact</a>
+            <div class="border-t border-gray-100 pt-4 mt-4">
+                <div class="flex items-center justify-between px-4">
+                    <div class="flex items-center space-x-4">
+                        <a id="mobile-linkedin" href="#" target="_blank" class="text-gray-600 hover:text-indigo-600 transition">
+                            <i class="fa-brands fa-linkedin text-xl"></i>
+                        </a>
+                        <a id="mobile-github" href="#" target="_blank" class="text-gray-600 hover:text-indigo-600 transition">
+                            <i class="fa-brands fa-github text-xl"></i>
+                        </a>
+                    </div>
+                    <a id="mobile-resume" href="Resume.pdf" download class="px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition flex items-center space-x-2 text-sm">
+                        <i class="fa-solid fa-download text-xs"></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white min-h-[480px] sm:min-h-[520px] md:min-h-[560px] lg:min-h-[640px] xl:min-h-[700px] flex items-center py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10 xl:gap-12 items-center">
+            <div class="text-center lg:text-left">
+                <div class="inline-block px-2.5 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 bg-white/20 backdrop-blur-sm rounded-full text-[10px] sm:text-xs md:text-sm font-medium mb-3 sm:mb-4 md:mb-5 lg:mb-6">
+                    <i class="fa-solid fa-star mr-1 sm:mr-1.5 md:mr-2"></i><span id="hero-experience-badge"></span>
+                </div>
+                <h1 id="hero-title-1" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-1 sm:mb-2 md:mb-3 lg:mb-4 leading-tight"></h1>
+                <h1 id="hero-title-2" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 md:mb-5 lg:mb-6 leading-tight"></h1>
+                <p id="hero-description" class="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-5 md:mb-6 lg:mb-8 text-white/90 leading-relaxed max-w-xl mx-auto lg:mx-0"></p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2 sm:gap-3 md:gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-5 sm:px-6 md:px-7 lg:px-8 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-gray-100 transition text-center text-xs sm:text-sm md:text-base">Get In Touch</a>
+                    <a href="#projects" class="w-full sm:w-auto px-5 sm:px-6 md:px-7 lg:px-8 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-lg font-semibold hover:bg-white/20 transition text-center text-xs sm:text-sm md:text-base">View Projects</a>
+                </div>
+                <div class="flex items-center justify-center lg:justify-start space-x-3 sm:space-x-5 md:space-x-6 lg:space-x-8 mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+                    <div class="text-center">
+                        <div id="hero-years" class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold"></div>
+                        <div class="text-white/80 text-[10px] sm:text-xs md:text-sm">Years Experience</div>
+                    </div>
+                    <div class="w-px h-8 sm:h-10 md:h-12 bg-white/30"></div>
+                    <div class="text-center">
+                        <div id="hero-projects" class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold"></div>
+                        <div class="text-white/80 text-[10px] sm:text-xs md:text-sm">Projects</div>
+                    </div>
+                    <div class="w-px h-8 sm:h-10 md:h-12 bg-white/30"></div>
+                    <div class="text-center">
+                        <div id="hero-awards" class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold"></div>
+                        <div class="text-white/80 text-[10px] sm:text-xs md:text-sm">Awards</div>
+                    </div>
+                </div>
+                <!-- Mobile Availability Banner -->
+                <div id="hero-availability-banner-mobile" class="lg:hidden mt-6 sm:mt-8 flex justify-center">
+                    <div class="bg-white rounded-xl p-3 sm:p-4 shadow-xl inline-flex items-center space-x-2 sm:space-x-3">
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-check text-white text-xs sm:text-sm"></i>
+                        </div>
+                        <div>
+                            <div id="hero-availability-mobile" class="text-gray-900 font-bold text-xs sm:text-sm"></div>
+                            <div id="hero-availability-sub-mobile" class="text-gray-600 text-[10px] sm:text-xs"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative hidden lg:block">
+                <div class="absolute inset-0 bg-white/10 backdrop-blur-xl rounded-3xl transform rotate-6"></div>
+                <div class="relative bg-white/20 backdrop-blur-xl rounded-3xl p-5 lg:p-6 xl:p-8 border border-white/30">
+                    <div class="h-72 lg:h-80 xl:h-96 overflow-hidden rounded-2xl">
+                        <img id="hero-image" class="w-full h-full object-cover" src="" alt="professional portrait" />
+                    </div>
+                    <div id="hero-availability-banner" class="absolute -bottom-3 -right-3 lg:-bottom-4 lg:-right-4 xl:-bottom-6 xl:-right-6 bg-white rounded-xl xl:rounded-2xl p-3 lg:p-4 xl:p-6 shadow-2xl">
+                        <div class="flex items-center space-x-2 lg:space-x-2.5 xl:space-x-3">
+                            <div class="w-9 h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 bg-green-500 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-check text-white text-sm lg:text-base xl:text-xl"></i>
+                            </div>
+                            <div>
+                                <div id="hero-availability" class="text-gray-900 font-bold text-xs lg:text-sm xl:text-lg"></div>
+                                <div id="hero-availability-sub" class="text-gray-600 text-[10px] lg:text-xs xl:text-sm"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-10 sm:py-12 md:py-16 lg:py-20 xl:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+            <div class="inline-block px-2.5 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 bg-indigo-100 text-indigo-600 rounded-full text-[10px] sm:text-xs md:text-sm font-semibold mb-2 sm:mb-3 md:mb-4">About Me</div>
+            <h2 id="about-title" class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 md:mb-4 lg:mb-6"></h2>
+            <p id="about-subtitle" class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto"></p>
+        </div>
+        <div id="about-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8 mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+            <!-- Cards will be dynamically generated -->
+        </div>
+        <!-- My Journey Section -->
+        <div class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-lg sm:rounded-2xl md:rounded-3xl p-3 sm:p-6 md:p-8 lg:p-10 xl:p-12 border border-indigo-100/50">
+            <div class="text-center mb-3 sm:mb-6 md:mb-8 lg:mb-10">
+                <div class="inline-flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg sm:rounded-2xl mb-1.5 sm:mb-3 md:mb-4">
+                    <i class="fa-solid fa-route text-white text-sm sm:text-lg md:text-xl lg:text-2xl"></i>
+                </div>
+                <h3 class="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-0.5 sm:mb-2 md:mb-3">My Journey</h3>
+                <p class="text-gray-600 text-[9px] sm:text-xs md:text-sm lg:text-base max-w-2xl mx-auto">A snapshot of my professional growth and technical expertise</p>
+            </div>
+
+            <!-- Journey Highlights -->
+            <div id="about-journey" class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 sm:gap-3 md:gap-4 mb-3 sm:mb-6 md:mb-8 lg:mb-10">
+                <!-- Journey items will be dynamically generated -->
+            </div>
+
+            <!-- Skills Progress Cards -->
+            <div id="about-skills-bars">
+                <!-- Skill cards will be dynamically generated -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-10 sm:py-12 md:py-16 lg:py-20 xl:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+            <div class="inline-block px-2.5 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 bg-purple-100 text-purple-600 rounded-full text-[10px] sm:text-xs md:text-sm font-semibold mb-2 sm:mb-3 md:mb-4">Professional Journey</div>
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 md:mb-4 lg:mb-6">Work Experience</h2>
+            <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto">Building innovative solutions across leading technology companies</p>
+        </div>
+        <div class="relative">
+            <div class="absolute left-3 sm:left-1/2 sm:transform sm:-translate-x-1/2 h-full w-0.5 sm:w-1 bg-gradient-to-b from-indigo-600 via-purple-600 to-pink-600"></div>
+            <div id="experience-timeline" class="space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12">
+                <!-- Experience items will be dynamically generated -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-10 sm:py-12 md:py-16 lg:py-20 xl:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+            <div class="inline-block px-2.5 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 bg-indigo-100 text-indigo-600 rounded-full text-[10px] sm:text-xs md:text-sm font-semibold mb-2 sm:mb-3 md:mb-4">Technical Expertise</div>
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 md:mb-4 lg:mb-6">Skills & Technologies</h2>
+            <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive technology stack for building modern cloud-native solutions</p>
+        </div>
+        <div id="skills-grid" class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8 mb-6 sm:mb-8 md:mb-12">
+            <!-- Skills will be dynamically generated -->
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-10 sm:py-12 md:py-16 lg:py-20 xl:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+            <div class="inline-block px-2.5 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 bg-green-100 text-green-600 rounded-full text-[10px] sm:text-xs md:text-sm font-semibold mb-2 sm:mb-3 md:mb-4">Featured Work</div>
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 md:mb-4 lg:mb-6">Projects & Solutions</h2>
+            <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto">Innovative projects showcasing expertise in cloud architecture and platform engineering</p>
+        </div>
+        <div id="projects-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+            <!-- Projects will be dynamically generated -->
+        </div>
+        <div class="mt-6 sm:mt-8 md:mt-12 lg:mt-16 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 text-white">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 md:gap-6">
+                <div class="text-center sm:text-left">
+                    <h3 class="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold mb-1 sm:mb-2 md:mb-3 lg:mb-4">Want to see more projects?</h3>
+                    <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-white/90">Check out my GitHub for open-source contributions</p>
+                </div>
+                <a id="projects-github-link" href="#" target="_blank" class="w-full sm:w-auto px-4 sm:px-6 md:px-7 lg:px-8 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-white text-indigo-600 rounded-lg sm:rounded-xl font-semibold hover:bg-gray-100 transition flex items-center justify-center space-x-2 sm:space-x-2.5 md:space-x-3 whitespace-nowrap text-xs sm:text-sm md:text-base">
+                    <i class="fa-brands fa-github text-lg sm:text-xl md:text-2xl"></i>
+                    <span>Visit GitHub</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="py-10 sm:py-12 md:py-16 lg:py-20 xl:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+            <div class="inline-block px-2.5 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 bg-yellow-100 text-yellow-700 rounded-full text-[10px] sm:text-xs md:text-sm font-semibold mb-2 sm:mb-3 md:mb-4">Professional Development</div>
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 md:mb-4 lg:mb-6">Certifications & Awards</h2>
+            <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto">Recognition for technical excellence and continuous learning</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+            <div>
+                <h3 class="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 sm:mb-5 md:mb-6 lg:mb-8 flex items-center">
+                    <i class="fa-solid fa-certificate text-indigo-600 mr-2 sm:mr-3 md:mr-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl"></i>
+                    Certifications
+                </h3>
+                <div id="certifications-list" class="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6">
+                    <!-- Certifications will be dynamically generated -->
+                </div>
+            </div>
+            <div>
+                <h3 class="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 sm:mb-5 md:mb-6 lg:mb-8 flex items-center">
+                    <i class="fa-solid fa-trophy text-yellow-500 mr-2 sm:mr-3 md:mr-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl"></i>
+                    Awards & Recognition
+                </h3>
+                <div id="awards-list" class="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6">
+                    <!-- Awards will be dynamically generated -->
+                </div>
+            </div>
+        </div>
+        <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 text-white text-center">
+            <i class="fa-solid fa-graduation-cap text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-3 sm:mb-4 md:mb-5 lg:mb-6"></i>
+            <h3 class="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 sm:mb-3 md:mb-4">Committed to Continuous Learning</h3>
+            <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-white/90 max-w-3xl mx-auto">Actively pursuing advanced certifications in cloud architecture, Kubernetes administration, and emerging technologies</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-10 sm:py-12 md:py-16 lg:py-20 xl:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+            <div class="inline-block px-2.5 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 bg-purple-100 text-purple-600 rounded-full text-[10px] sm:text-xs md:text-sm font-semibold mb-2 sm:mb-3 md:mb-4">What People Say</div>
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 md:mb-4 lg:mb-6">Testimonials</h2>
+            <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto">Feedback from colleagues and collaborators</p>
+        </div>
+        <div id="testimonials-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+            <!-- Testimonials will be dynamically generated -->
+        </div>
+        <div class="mt-6 sm:mt-8 md:mt-12 lg:mt-16 text-center">
+            <a id="testimonials-linkedin-link" href="#" target="_blank" class="inline-flex items-center px-4 sm:px-6 md:px-7 lg:px-8 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-indigo-600 text-white rounded-lg sm:rounded-xl font-semibold hover:bg-indigo-700 transition text-xs sm:text-sm md:text-base">
+                <i class="fa-brands fa-linkedin mr-2 sm:mr-2.5 md:mr-3 text-base sm:text-lg md:text-xl"></i>
+                <span>View More on LinkedIn</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-10 sm:py-12 md:py-16 lg:py-20 xl:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+            <div class="inline-block px-2.5 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 bg-indigo-100 text-indigo-600 rounded-full text-[10px] sm:text-xs md:text-sm font-semibold mb-2 sm:mb-3 md:mb-4">Get In Touch</div>
+            <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 md:mb-4 lg:mb-6">Let's Work Together</h2>
+            <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto">Available for technical consulting, cloud architecture projects, and collaborative opportunities</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
+            <div>
+                <div class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 text-white h-full">
+                    <h3 class="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold mb-4 sm:mb-5 md:mb-6 lg:mb-8">Contact Information</h3>
+                    <div class="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 lg:w-12 lg:h-12 bg-white/20 backdrop-blur-sm rounded-lg sm:rounded-xl flex items-center justify-center mr-2.5 sm:mr-3 md:mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-sm sm:text-base md:text-lg lg:text-2xl"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <div class="text-white/80 text-[10px] sm:text-xs md:text-sm mb-0.5">Email</div>
+                                <a id="contact-email" href="" class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold hover:text-white/90 transition break-all"></a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 lg:w-12 lg:h-12 bg-white/20 backdrop-blur-sm rounded-lg sm:rounded-xl flex items-center justify-center mr-2.5 sm:mr-3 md:mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-map-marker-alt text-sm sm:text-base md:text-lg lg:text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-white/80 text-[10px] sm:text-xs md:text-sm mb-0.5">Location</div>
+                                <div id="contact-location" class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 lg:w-12 lg:h-12 bg-white/20 backdrop-blur-sm rounded-lg sm:rounded-xl flex items-center justify-center mr-2.5 sm:mr-3 md:mr-4 flex-shrink-0">
+                                <i class="fa-solid fa-briefcase text-sm sm:text-base md:text-lg lg:text-2xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-white/80 text-[10px] sm:text-xs md:text-sm mb-0.5">Availability</div>
+                                <div id="contact-availability" class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-semibold"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-white/20 pt-4 sm:pt-5 md:pt-6 lg:pt-8">
+                        <h4 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold mb-3 sm:mb-4 md:mb-5 lg:mb-6">Connect on Social</h4>
+                        <div id="contact-social-links" class="flex space-x-2 sm:space-x-3 md:space-x-4">
+                            <!-- Social links will be dynamically generated -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form id="contactForm" class="space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6">
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-1 sm:mb-1.5 md:mb-2 text-xs sm:text-sm md:text-base">Your Name</label>
+                        <input type="text" id="contactName" name="name" required class="w-full px-3 sm:px-4 md:px-5 lg:px-6 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:border-indigo-600 transition text-xs sm:text-sm md:text-base" placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-1 sm:mb-1.5 md:mb-2 text-xs sm:text-sm md:text-base">Email Address</label>
+                        <input type="email" id="contactEmail" name="email" required class="w-full px-3 sm:px-4 md:px-5 lg:px-6 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:border-indigo-600 transition text-xs sm:text-sm md:text-base" placeholder="john@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-1 sm:mb-1.5 md:mb-2 text-xs sm:text-sm md:text-base">Subject</label>
+                        <input type="text" id="contactSubject" name="subject" class="w-full px-3 sm:px-4 md:px-5 lg:px-6 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:border-indigo-600 transition text-xs sm:text-sm md:text-base" placeholder="Project Inquiry">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-1 sm:mb-1.5 md:mb-2 text-xs sm:text-sm md:text-base">Message</label>
+                        <textarea rows="4" id="contactMessage" name="message" required class="w-full px-3 sm:px-4 md:px-5 lg:px-6 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-gray-50 border border-gray-200 rounded-lg sm:rounded-xl focus:outline-none focus:border-indigo-600 transition resize-none text-xs sm:text-sm md:text-base" placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn" class="w-full px-4 sm:px-6 md:px-7 lg:px-8 py-2.5 sm:py-3 md:py-3.5 lg:py-4 bg-indigo-600 text-white rounded-lg sm:rounded-xl font-semibold hover:bg-indigo-700 transition flex items-center justify-center text-xs sm:text-sm md:text-base">
+                        <span id="submitText">Send Message</span>
+                        <span id="submitLoading" class="hidden"><i class="fa-solid fa-spinner fa-spin mr-2"></i>Sending...</span>
+                        <i class="fa-solid fa-paper-plane ml-2 sm:ml-2.5 md:ml-3"></i>
+                    </button>
+                </form>
+                <div id="formSuccess" class="hidden mt-3 sm:mt-4 md:mt-5 lg:mt-6 p-2.5 sm:p-3 md:p-4 bg-green-100 border border-green-300 rounded-lg sm:rounded-xl text-green-700 text-center text-xs sm:text-sm md:text-base">
+                    <i class="fa-solid fa-check-circle mr-2"></i>Message sent successfully!
+                </div>
+                <div id="formError" class="hidden mt-3 sm:mt-4 md:mt-5 lg:mt-6 p-2.5 sm:p-3 md:p-4 bg-red-100 border border-red-300 rounded-lg sm:rounded-xl text-red-700 text-center text-xs sm:text-sm md:text-base">
+                    <i class="fa-solid fa-exclamation-circle mr-2"></i>Failed to send. Please email directly.
+                </div>
+                <div id="formInfo" class="hidden mt-3 sm:mt-4 md:mt-5 lg:mt-6 p-2.5 sm:p-3 md:p-4 bg-blue-100 border border-blue-300 rounded-lg sm:rounded-xl text-blue-700 text-center text-xs sm:text-sm md:text-base">
+                    <i class="fa-solid fa-info-circle mr-2"></i>Contact form info message.
+                </div>
+                <div class="mt-4 sm:mt-5 md:mt-6 lg:mt-8 bg-blue-50 border border-blue-200 rounded-lg sm:rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-5 lg:p-6">
+                    <div class="flex items-start">
+                        <i class="fa-solid fa-info-circle text-blue-600 text-base sm:text-lg md:text-xl lg:text-2xl mr-2 sm:mr-3 md:mr-4 mt-0.5"></i>
+                        <div>
+                            <h4 class="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-gray-900 mb-0.5 sm:mb-1 md:mb-2">Quick Response</h4>
+                            <p class="text-gray-700 text-[10px] sm:text-xs md:text-sm lg:text-base">I typically respond within 24-48 hours. For urgent matters, email directly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="bg-gray-900 text-white py-8 sm:py-10 md:py-12 lg:py-14 xl:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+            <div class="col-span-2">
+                <div class="flex items-center space-x-2 sm:space-x-2.5 md:space-x-3 mb-3 sm:mb-4 md:mb-5 lg:mb-6">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 lg:w-12 lg:h-12 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                        <span id="footer-initials" class="text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl"></span>
+                    </div>
+                    <span id="footer-name" class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold"></span>
+                </div>
+                <p id="footer-description" class="text-gray-400 leading-relaxed mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-[10px] sm:text-xs md:text-sm lg:text-base"></p>
+                <div id="footer-social-links" class="flex space-x-2 sm:space-x-3 md:space-x-4">
+                    <!-- Social links will be dynamically generated -->
+                </div>
+            </div>
+            <div>
+                <h4 class="text-xs sm:text-sm md:text-base lg:text-lg font-bold mb-1.5 sm:mb-3 md:mb-4 lg:mb-6">Quick Links</h4>
+                <ul class="space-y-0.5 sm:space-y-1.5 md:space-y-2 lg:space-y-3">
+                    <li><a href="#about" class="text-gray-400 hover:text-white transition text-[10px] sm:text-xs md:text-sm lg:text-base">About</a></li>
+                    <li><a href="#experience" class="text-gray-400 hover:text-white transition text-[10px] sm:text-xs md:text-sm lg:text-base">Experience</a></li>
+                    <li><a href="#skills" class="text-gray-400 hover:text-white transition text-[10px] sm:text-xs md:text-sm lg:text-base">Skills</a></li>
+                    <li><a href="#projects" class="text-gray-400 hover:text-white transition text-[10px] sm:text-xs md:text-sm lg:text-base">Projects</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-white transition text-[10px] sm:text-xs md:text-sm lg:text-base">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xs sm:text-sm md:text-base lg:text-lg font-bold mb-1.5 sm:mb-3 md:mb-4 lg:mb-6">Services</h4>
+                <ul id="footer-services" class="space-y-0.5 sm:space-y-1.5 md:space-y-2 lg:space-y-3">
+                    <!-- Services will be dynamically generated -->
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-4 sm:pt-5 md:pt-6 lg:pt-8">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-3 md:gap-4">
+                <p id="footer-copyright" class="text-gray-400 text-center sm:text-left text-[10px] sm:text-xs md:text-sm"></p>
+                <div class="flex items-center gap-3 sm:gap-4 md:gap-6">
+                    <button onclick="openModal('privacyModal')" class="text-gray-400 hover:text-white transition text-[10px] sm:text-xs md:text-sm">Privacy Policy</button>
+                    <button onclick="openModal('termsModal')" class="text-gray-400 hover:text-white transition text-[10px] sm:text-xs md:text-sm">Terms of Service</button>
+                    <a id="footer-resume-link" href="Resume.pdf" download class="flex items-center text-gray-400 hover:text-white transition text-[10px] sm:text-xs md:text-sm">
+                        <i class="fa-solid fa-download mr-1.5 sm:mr-2"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Privacy Policy Modal -->
+<div id="privacyModal" class="fixed inset-0 z-50 hidden">
+    <div class="fixed inset-0 bg-black/50 backdrop-blur-sm" onclick="closeModal('privacyModal')"></div>
+    <div class="fixed inset-0 flex items-center justify-center p-4 pointer-events-none">
+        <div class="bg-white rounded-xl sm:rounded-2xl md:rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-hidden shadow-2xl pointer-events-auto">
+            <div class="flex items-center justify-between p-4 sm:p-5 md:p-6 border-b border-gray-200">
+                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">Privacy Policy</h3>
+                <button onclick="closeModal('privacyModal')" class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 flex items-center justify-center rounded-lg hover:bg-gray-100 transition">
+                    <i class="fa-solid fa-xmark text-gray-500 text-lg"></i>
+                </button>
+            </div>
+            <div class="p-4 sm:p-5 md:p-6 overflow-y-auto max-h-[60vh] text-gray-700 text-xs sm:text-sm md:text-base space-y-4">
+                <p class="text-gray-500 text-[10px] sm:text-xs">Last updated: January 2025</p>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">1. Information We Collect</h4>
+                    <p>When you use the contact form on this website, we collect personal information you voluntarily provide, including your name, email address, and message content. We do not collect any information automatically through cookies or tracking technologies.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">2. How We Use Your Information</h4>
+                    <p>The information you provide through the contact form is used solely to respond to your inquiries and communicate with you about potential projects or collaborations. We do not sell, rent, or share your personal information with third parties.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">3. Data Security</h4>
+                    <p>We take reasonable measures to protect your personal information. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">4. Third-Party Services</h4>
+                    <p>This website may contain links to third-party websites (such as LinkedIn and GitHub). We are not responsible for the privacy practices of these external sites.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">5. Contact</h4>
+                    <p>If you have questions about this Privacy Policy, please contact me through the contact form or email provided on this website.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Terms of Service Modal -->
+<div id="termsModal" class="fixed inset-0 z-50 hidden">
+    <div class="fixed inset-0 bg-black/50 backdrop-blur-sm" onclick="closeModal('termsModal')"></div>
+    <div class="fixed inset-0 flex items-center justify-center p-4 pointer-events-none">
+        <div class="bg-white rounded-xl sm:rounded-2xl md:rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-hidden shadow-2xl pointer-events-auto">
+            <div class="flex items-center justify-between p-4 sm:p-5 md:p-6 border-b border-gray-200">
+                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">Terms of Service</h3>
+                <button onclick="closeModal('termsModal')" class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 flex items-center justify-center rounded-lg hover:bg-gray-100 transition">
+                    <i class="fa-solid fa-xmark text-gray-500 text-lg"></i>
+                </button>
+            </div>
+            <div class="p-4 sm:p-5 md:p-6 overflow-y-auto max-h-[60vh] text-gray-700 text-xs sm:text-sm md:text-base space-y-4">
+                <p class="text-gray-500 text-[10px] sm:text-xs">Last updated: January 2025</p>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">1. Acceptance of Terms</h4>
+                    <p>By accessing and using this website, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use this website.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">2. Use of Website</h4>
+                    <p>This website is a personal portfolio intended to showcase professional work and skills. You may browse the content for informational purposes. You may not use this website for any unlawful purpose or in violation of these terms.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">3. Intellectual Property</h4>
+                    <p>All content on this website, including text, images, graphics, and code, is the property of the website owner unless otherwise stated. You may not reproduce, distribute, or use any content without prior written permission.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">4. Disclaimer</h4>
+                    <p>The information on this website is provided "as is" without warranties of any kind. The website owner does not guarantee the accuracy, completeness, or timeliness of the information provided.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">5. Limitation of Liability</h4>
+                    <p>The website owner shall not be liable for any damages arising from the use or inability to use this website or its content.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">6. Changes to Terms</h4>
+                    <p>These terms may be updated from time to time. Continued use of the website after changes constitutes acceptance of the new terms.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">7. Contact</h4>
+                    <p>For questions about these Terms of Service, please contact me through the contact form or email provided on this website.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js" defer></script>
+<script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIconBars = document.getElementById('menuIconBars');
+    const menuIconClose = document.getElementById('menuIconClose');
+
+    function toggleMenuIcons(isOpen) {
+        if (isOpen) {
+            menuIconBars.classList.add('hidden');
+            menuIconClose.classList.remove('hidden');
+        } else {
+            menuIconBars.classList.remove('hidden');
+            menuIconClose.classList.add('hidden');
+        }
+    }
+
+    mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden');
+        toggleMenuIcons(isHidden);
+    });
+
+    // Close mobile menu when clicking a link
+    const mobileNavLinks = mobileMenu.querySelectorAll('a[href^="#"]');
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            toggleMenuIcons(false);
+        });
+    });
+
+    // Modal Functions
+    function openModal(modalId) {
+        document.getElementById(modalId).classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeModal('privacyModal');
+            closeModal('termsModal');
+        }
+    });
+</script>
+</body>
+</html>
