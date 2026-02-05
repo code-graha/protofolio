@@ -1,0 +1,513 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preconnect hints for faster resource loading -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+    <title>Loading...</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            dark: '#0a0a1a',
+                            darker: '#050510',
+                            blue: '#667eea',
+                            purple: '#764ba2',
+                            violet: '#a855f7',
+                            pink: '#f093fb',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-cyber-darker text-gray-100 overflow-x-hidden">
+
+<header id="header" class="fixed top-0 left-0 right-0 z-50 bg-cyber-darker/80 backdrop-blur-lg border-b border-cyber-blue/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <span class="gradient-text">YN</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex space-x-8">
+                <a href="#about" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider">About</a>
+                <a href="#skills" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider">Skills</a>
+                <a href="#projects" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider">Projects</a>
+                <a href="#experience" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider">Experience</a>
+                <a href="#certifications" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider">Certifications</a>
+                <a href="#testimonials" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider">Testimonials</a>
+                <a href="#contact" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider">Contact</a>
+            </nav>
+
+            <!-- Desktop Social Icons -->
+            <div id="header-social-links" class="hidden lg:flex items-center space-x-4">
+                <!-- Social links populated from JSON -->
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-gray-400 hover:text-cyber-blue transition-colors duration-300 focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-screen w-64 bg-cyber-dark border-l border-cyber-blue/20 lg:hidden z-50 overflow-y-auto">
+        <div class="flex flex-col h-full p-6">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-2xl font-bold gradient-text">Menu</span>
+                <button id="close-menu-btn" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 focus:outline-none">
+                    <i class="fa-solid fa-times text-2xl"></i>
+                </button>
+            </div>
+
+            <nav class="space-y-4 mb-8 flex-grow">
+                <a href="#about" class="mobile-menu-link block text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider py-2">About</a>
+                <a href="#skills" class="mobile-menu-link block text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider py-2">Skills</a>
+                <a href="#projects" class="mobile-menu-link block text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider py-2">Projects</a>
+                <a href="#experience" class="mobile-menu-link block text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider py-2">Experience</a>
+                <a href="#certifications" class="mobile-menu-link block text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider py-2">Certifications</a>
+                <a href="#testimonials" class="mobile-menu-link block text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider py-2">Testimonials</a>
+                <a href="#contact" class="mobile-menu-link block text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm font-medium uppercase tracking-wider py-2">Contact</a>
+            </nav>
+
+            <div class="border-t border-gray-700 pt-6 mt-auto">
+                <div id="mobile-social-links" class="flex items-center space-x-4 mb-4">
+                    <!-- Social links populated from JSON -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"></div>
+</header>
+
+<section id="hero" class="relative min-h-[700px] flex items-center justify-center overflow-hidden pt-20">
+    <div class="absolute inset-0 bg-gradient-to-br from-cyber-darker via-cyber-dark to-cyber-darker"></div>
+    
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyber-blue/30 rounded-full blob-1"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyber-purple/30 rounded-full blob-2"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-cyber-violet/20 rounded-full blob-3"></div>
+    
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
+        <div id="availability-badge" class="mb-6">
+            <span class="inline-block px-3 sm:px-4 py-2 bg-green-500/20 border border-green-500/40 rounded-full text-green-400 text-xs sm:text-sm font-medium uppercase tracking-wider">
+                <i class="fa-solid fa-circle text-xs mr-2 animate-pulse"></i>
+            </span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            <span class="gradient-text"></span>
+        </h1>
+        <p class="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-4 font-light"></p>
+        <p class="text-base sm:text-lg md:text-xl text-gray-400 mb-8 max-w-3xl mx-auto"></p>
+        <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
+            <div class="text-center">
+                <div class="text-3xl sm:text-4xl font-bold gradient-text"></div>
+                <div class="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Years Experience</div>
+            </div>
+            <div class="hidden sm:block w-px h-12 bg-gray-700"></div>
+            <div class="text-center">
+                <div class="text-3xl sm:text-4xl font-bold gradient-text"></div>
+                <div class="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Projects Completed</div>
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16 sm:mb-0">
+            <a href="#contact" class="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyber-blue to-cyber-purple hover:from-cyber-purple hover:to-cyber-violet text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-center">
+                Get In Touch
+            </a>
+            <a href="#" download="" class="px-6 sm:px-8 py-3 sm:py-4 border-2 border-cyber-blue text-cyber-blue hover:bg-cyber-blue hover:text-white font-semibold rounded-lg transition-all duration-300 text-center">
+                <i class="fa-solid fa-download mr-2"></i>Download Resume
+            </a>
+        </div>
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block">
+        <i class="fa-solid fa-chevron-down text-cyber-blue text-2xl"></i>
+    </div>
+</section>
+
+<section id="about" class="py-12 sm:py-16 md:py-24 bg-cyber-dark relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text">About Me</span>
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-cyber-blue to-cyber-purple mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="relative z-10 bg-gradient-to-br from-cyber-blue/20 to-cyber-purple/20 p-8 rounded-2xl border border-cyber-blue/30 backdrop-blur-sm">
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-300 leading-relaxed"></p>
+                        <p class="text-lg text-gray-300 leading-relaxed"></p>
+                        <p class="text-lg text-gray-300 leading-relaxed"></p>
+                        <p class="text-lg text-gray-300 leading-relaxed"></p>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t border-gray-700">
+                        <div id="about-contact-info" class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-location-dot text-cyber-blue w-5 mr-3"></i>
+                                <span class="text-sm text-gray-400 uppercase tracking-wider mr-3">Location:</span>
+                                <span id="about-location" class="text-white font-semibold"></span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-envelope text-cyber-blue w-5 mr-3"></i>
+                                <span class="text-sm text-gray-400 uppercase tracking-wider mr-3">Email:</span>
+                                <span id="about-email" class="text-white font-semibold break-all"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-cyber-purple/20 to-cyber-violet/20 rounded-2xl -z-10"></div>
+            </div>
+            
+            <div class="space-y-6">
+                <!-- Expertise cards populated from JSON -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="py-12 sm:py-16 md:py-24 bg-cyber-darker relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-cyber-blue/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-cyber-purple/10 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text" data-section="skills-title">Technical Skills</span>
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-cyber-blue to-cyber-purple mx-auto mb-6"></div>
+            <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto px-4" data-section="skills-description">Comprehensive expertise across cloud platforms, DevOps tools, and modern development frameworks</p>
+        </div>
+        
+        <!-- Skills will be loaded dynamically from JSON -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="py-12 sm:py-16 md:py-24 bg-cyber-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text" data-section="projects-title">Featured Projects</span>
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-cyber-blue to-cyber-purple mx-auto mb-6"></div>
+            <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto px-4" data-section="projects-description">Showcasing innovative solutions in cloud architecture, automation, and platform engineering</p>
+        </div>
+
+        <!-- Projects will be loaded dynamically from JSON -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="py-12 sm:py-16 md:py-24 bg-cyber-darker relative overflow-hidden">
+    <div class="absolute top-1/2 left-0 w-96 h-96 bg-cyber-blue/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-cyber-purple/5 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text" data-section="experience-title">Professional Journey</span>
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-cyber-blue to-cyber-purple mx-auto mb-6"></div>
+            <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto px-4" data-section="experience-description">Career progression through transformative roles in cloud engineering and solution architecture</p>
+        </div>
+        
+        <div class="relative max-w-6xl mx-auto">
+            <div class="hidden sm:block absolute left-4 sm:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyber-blue via-cyber-purple to-cyber-violet"></div>
+
+            <!-- Experience will be loaded dynamically from JSON -->
+            <div class="space-y-12 sm:space-y-16">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="certifications" class="py-12 sm:py-16 md:py-24 bg-cyber-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text" data-section="certifications-title">Certifications &amp; Awards</span>
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-cyber-blue to-cyber-purple mx-auto mb-6"></div>
+            <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto px-4" data-section="certifications-description">Recognized achievements and professional credentials</p>
+        </div>
+        
+        <div class="mb-16">
+            <h3 class="text-3xl font-bold text-white mb-8 flex items-center">
+                <i class="fa-solid fa-certificate text-cyber-blue mr-4"></i>
+                Professional Certifications
+            </h3>
+            <!-- Certifications will be loaded dynamically from JSON -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-3xl font-bold text-white mb-8 flex items-center">
+                <i class="fa-solid fa-trophy text-cyber-blue mr-4"></i>
+                Professional Awards
+            </h3>
+            <!-- Awards will be loaded dynamically from JSON -->
+            <div class="space-y-6">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials" class="py-12 sm:py-16 md:py-24 bg-cyber-darker relative overflow-hidden">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-cyber-blue/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-cyber-purple/5 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text" data-section="testimonials-title">What Colleagues Say</span>
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-cyber-blue to-cyber-purple mx-auto mb-6"></div>
+            <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto px-4" data-section="testimonials-description">Trusted by professionals across the industry</p>
+        </div>
+
+        <!-- Testimonials will be loaded dynamically from JSON -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="py-12 sm:py-16 md:py-24 bg-cyber-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text" data-section="blog-title">Blog</span>
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-cyber-blue to-cyber-purple mx-auto mb-6"></div>
+            <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto px-4" data-section="blog-description">Insights, tutorials, and thoughts on technology and development</p>
+        </div>
+
+        <!-- Blog posts will be loaded dynamically from JSON -->
+        <div id="blog-posts" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-12 sm:py-16 md:py-24 bg-cyber-darker relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-cyber-blue/5 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text" data-section="contact-title">Get In Touch</span>
+            </h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-cyber-blue to-cyber-purple mx-auto mb-6"></div>
+            <p class="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto px-4" data-section="contact-description">Let's discuss your next cloud architecture project or technical consulting needs</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+                <div class="bg-gradient-to-br from-cyber-dark to-cyber-darker p-8 rounded-2xl border border-cyber-blue/30 mb-8">
+                    <h3 class="text-2xl font-bold text-white mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-cyber-blue to-cyber-purple rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-400 uppercase tracking-wider mb-1">Email</div>
+                                <a href="mailto:" class="text-lg text-white hover:text-cyber-blue transition-colors duration-300"></a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-cyber-purple to-cyber-violet rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-400 uppercase tracking-wider mb-1">Phone</div>
+                                <a href="tel:" class="text-lg text-white hover:text-cyber-purple transition-colors duration-300"></a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-cyber-violet to-cyber-pink rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-location-dot text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-400 uppercase tracking-wider mb-1">Location</div>
+                                <div class="text-lg text-white"></div>
+                            </div>
+                        </div>
+
+                        <div id="contact-availability" class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-cyber-pink to-cyber-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-clock text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-400 uppercase tracking-wider mb-1">Availability</div>
+                                <div class="text-lg text-white"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-cyber-dark to-cyber-darker p-8 rounded-2xl border border-cyber-purple/30">
+                    <h3 class="text-2xl font-bold text-white mb-6">Connect With Me</h3>
+                    <div id="contact-social-links" class="flex flex-wrap gap-4">
+                        <!-- Social links populated from JSON -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-br from-cyber-dark to-cyber-darker p-8 rounded-2xl border border-cyber-blue/30">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-cyber-darker border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyber-blue focus:ring-2 focus:ring-cyber-blue/20 transition-all duration-300" placeholder="John Doe">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-cyber-darker border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyber-blue focus:ring-2 focus:ring-cyber-blue/20 transition-all duration-300" placeholder="john@example.com">
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 bg-cyber-darker border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyber-blue focus:ring-2 focus:ring-cyber-blue/20 transition-all duration-300" placeholder="Project Discussion">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" required class="w-full px-4 py-3 bg-cyber-darker border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-cyber-blue focus:ring-2 focus:ring-cyber-blue/20 transition-all duration-300 resize-none" placeholder="Tell me about your project..."></textarea>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <button type="reset" class="px-8 py-4 border-2 border-gray-600 text-gray-300 hover:bg-gray-700 hover:border-gray-500 font-semibold rounded-lg transition-all duration-300">
+                            <i class="fa-solid fa-rotate-left mr-2"></i>Reset
+                        </button>
+                        <button type="submit" class="px-8 py-4 bg-gradient-to-r from-cyber-blue to-cyber-purple hover:from-cyber-purple hover:to-cyber-violet text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            <i class="fa-solid fa-paper-plane mr-2"></i>Send
+                        </button>
+                    </div>
+
+                    <p id="responseMsg" class="text-sm mt-4 text-center text-white"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="bg-cyber-dark border-t border-gray-800 py-8 sm:py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-8">
+            <div>
+                <div class="text-3xl font-bold mb-4">
+                    <span class="gradient-text"></span>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed"></p>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Services</h4>
+                <ul id="footer-services" class="space-y-2">
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm">About</a></li>
+                    <li><a href="#projects" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm">Projects</a></li>
+                    <li><a href="#experience" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm">Experience</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Connect</h4>
+                <div id="footer-social-links" class="flex flex-wrap gap-2 mb-4">
+                    <!-- Social links populated from JSON -->
+                </div>
+                <a href="#" download="" class="inline-flex items-center text-cyber-blue hover:text-cyber-purple transition-colors duration-300 text-sm font-semibold">
+                    <i class="fa-solid fa-download mr-2"></i>Download Resume
+                </a>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-800 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p id="footer-copyright" class="text-gray-400 text-sm mb-4 md:mb-0"></p>
+                <div class="flex space-x-6">
+                    <button onclick="openPolicyModal('privacy')" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm cursor-pointer">Privacy Policy</button>
+                    <button onclick="openPolicyModal('terms')" class="text-gray-400 hover:text-cyber-blue transition-colors duration-300 text-sm cursor-pointer">Terms of Service</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Policy Modal -->
+<div id="policy-modal" class="fixed inset-0 z-50 hidden">
+    <!-- Backdrop -->
+    <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closePolicyModal()"></div>
+
+    <!-- Modal Content -->
+    <div class="absolute inset-4 md:inset-10 lg:inset-20 bg-cyber-dark border border-cyber-blue/30 rounded-2xl overflow-hidden flex flex-col">
+        <!-- Header -->
+        <div class="flex items-center justify-between p-6 border-b border-gray-700">
+            <h2 id="policy-modal-title" class="text-2xl font-bold gradient-text"></h2>
+            <button onclick="closePolicyModal()" class="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-700 rounded-lg transition-all duration-300">
+                <i class="fa-solid fa-times text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Body -->
+        <div class="flex-1 overflow-y-auto p-6">
+            <p id="policy-modal-updated" class="text-gray-400 text-sm mb-6"></p>
+            <div id="policy-modal-content" class="space-y-6">
+                <!-- Content populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="p-6 border-t border-gray-700">
+            <button onclick="closePolicyModal()" class="w-full px-6 py-3 bg-gradient-to-r from-cyber-blue to-cyber-purple hover:from-cyber-purple hover:to-cyber-violet text-white font-semibold rounded-lg transition-all duration-300">
+                I Understand
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js" defer></script>
+
+
+</body></html>

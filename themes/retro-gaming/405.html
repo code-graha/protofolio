@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>405 - Method Not Allowed | Retro Gaming Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        retro: ['"Press Start 2P"', 'cursive'],
+                        terminal: ['"VT323"', 'monospace']
+                    },
+                    colors: {
+                        'retro-purple': '#8A2BE2',
+                        'retro-pink': '#FF6EC7',
+                        'retro-blue': '#00BFFF',
+                        'retro-green': '#00FF7F',
+                        'retro-yellow': '#FFFF00',
+                        'retro-orange': '#FF8C00',
+                        'retro-red': '#FF4444',
+                        'retro-black': '#111111',
+                        'retro-gray': '#333333'
+                    },
+                    boxShadow: {
+                        'retro': '5px 5px 0px rgba(0, 0, 0, 0.8)',
+                        'retro-sm': '3px 3px 0px rgba(0, 0, 0, 0.8)'
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+        }
+        .animate-shake { animation: shake 0.5s infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        .animate-blink { animation: blink 1s infinite; }
+        @keyframes pulse-red {
+            0%, 100% { box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8), 0 0 0 0 rgba(255, 68, 68, 0.4); }
+            50% { box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8), 0 0 20px 10px rgba(255, 68, 68, 0); }
+        }
+        .pulse-red { animation: pulse-red 2s infinite; }
+    </style>
+</head>
+<body class="bg-retro-gray min-h-screen relative">
+    <!-- Screen Border -->
+    <div class="fixed inset-0 border-8 border-retro-black pointer-events-none z-50"></div>
+
+    <!-- Floating Particles -->
+    <div class="fixed inset-0 pointer-events-none z-30">
+        <div class="absolute top-20 left-10 w-2 h-2 bg-retro-red animate-float" style="animation-delay: 0s;"></div>
+        <div class="absolute top-40 right-20 w-3 h-3 bg-retro-orange animate-float" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-40 left-20 w-2 h-2 bg-retro-yellow animate-float" style="animation-delay: 2s;"></div>
+        <div class="absolute bottom-20 right-10 w-3 h-3 bg-retro-pink animate-float" style="animation-delay: 0.5s;"></div>
+    </div>
+
+    <div class="min-h-screen flex flex-col items-center justify-center px-4 py-12 relative z-40">
+        <!-- Access Denied Style -->
+        <div class="text-center mb-8">
+            <div class="bg-retro-red border-4 border-black shadow-retro px-8 py-4 mb-8 inline-block pulse-red">
+                <h1 class="font-retro text-white text-xl">ACCESS DENIED</h1>
+            </div>
+        </div>
+
+        <!-- Error Card -->
+        <div class="bg-white border-4 border-black shadow-retro p-8 max-w-xl w-full">
+            <div class="text-center">
+                <h2 class="font-retro text-8xl text-retro-red mb-4 animate-shake">405</h2>
+                <div class="bg-retro-orange border-2 border-black shadow-retro-sm px-6 py-2 inline-block mb-6">
+                    <p class="font-retro text-retro-black text-sm">METHOD NOT ALLOWED</p>
+                </div>
+                <p class="font-terminal text-2xl text-retro-gray mb-8">
+                    Wrong button combo detected!<br>
+                    <span class="text-retro-red">This move is not allowed...</span>
+                </p>
+            </div>
+
+            <!-- Blocked Icon -->
+            <div class="flex justify-center mb-8">
+                <div class="w-24 h-24 bg-retro-red border-4 border-black shadow-retro rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-ban text-white text-4xl"></i>
+                </div>
+            </div>
+
+            <!-- Terminal -->
+            <div class="bg-retro-black border-2 border-retro-red p-4 mb-8">
+                <p class="font-terminal text-retro-green text-lg">
+                    > REQUEST: <span class="text-retro-red">POST</span> <span class="text-retro-yellow" id="requested-path">/resource</span><br>
+                    > STATUS: <span class="text-retro-red">405 BLOCKED</span><br>
+                    > ALLOWED: <span class="text-retro-green">GET, HEAD</span><br>
+                    > TRY: Different attack pattern<span class="animate-blink">_</span>
+                </p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/" class="bg-retro-green border-4 border-black shadow-retro px-8 py-4 font-retro text-retro-black text-sm hover:bg-retro-yellow transition-colors text-center">
+                    <i class="fa-solid fa-home mr-2"></i>HOME
+                </a>
+                <button onclick="history.back()" class="bg-retro-blue border-4 border-black shadow-retro px-8 py-4 font-retro text-retro-black text-sm hover:bg-retro-pink transition-colors">
+                    <i class="fa-solid fa-arrow-left mr-2"></i>BACK
+                </button>
+            </div>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <div class="bg-white border-4 border-black shadow-retro p-4 text-center">
+                <div class="w-10 h-10 bg-retro-red border-2 border-black flex items-center justify-center mb-2 mx-auto">
+                    <i class="fa-solid fa-shield-halved text-white"></i>
+                </div>
+                <p class="font-retro text-retro-black text-xs">BLOCKED</p>
+            </div>
+            <div class="bg-white border-4 border-black shadow-retro p-4 text-center">
+                <div class="w-10 h-10 bg-retro-yellow border-2 border-black flex items-center justify-center mb-2 mx-auto">
+                    <i class="fa-solid fa-code text-retro-black"></i>
+                </div>
+                <p class="font-retro text-retro-black text-xs">405</p>
+            </div>
+            <div class="bg-white border-4 border-black shadow-retro p-4 text-center">
+                <div class="w-10 h-10 bg-retro-green border-2 border-black flex items-center justify-center mb-2 mx-auto">
+                    <i class="fa-solid fa-rotate text-retro-black"></i>
+                </div>
+                <p class="font-retro text-retro-black text-xs">RETRY</p>
+            </div>
+        </div>
+
+        <!-- Footer Message -->
+        <p class="font-terminal text-gray-300 text-xl mt-8">
+            Use GET method to proceed!
+        </p>
+    </div>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>

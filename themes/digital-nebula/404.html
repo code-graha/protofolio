@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-dark': '#0a0a0f',
+                        'cyber-darker': '#050508',
+                        'cyber-blue': '#667eea',
+                        'cyber-purple': '#764ba2',
+                        'cyber-violet': '#8b5cf6',
+                        'cyber-pink': '#f093fb',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-cyber-dark text-gray-300 min-h-screen">
+    <!-- Background Elements -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="blob-1 absolute top-1/4 left-1/4 w-96 h-96 bg-cyber-blue/30 rounded-full"></div>
+        <div class="blob-2 absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyber-purple/30 rounded-full"></div>
+    </div>
+
+    <!-- Scan Line Effect -->
+    <div class="scan-line fixed inset-0 pointer-events-none h-32 z-10"></div>
+
+    <!-- Main Content -->
+    <div class="relative z-20 min-h-screen flex flex-col items-center justify-center px-4 py-12">
+        <!-- Error Code -->
+        <div class="text-center mb-8">
+            <h1 class="error-code text-8xl sm:text-9xl md:text-[12rem] font-bold gradient-text font-mono leading-none">
+                404
+            </h1>
+        </div>
+
+        <!-- Error Message -->
+        <div class="text-center max-w-lg mx-auto mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">
+                <i class="fa-solid fa-triangle-exclamation text-cyber-purple mr-3"></i>
+                Page Not Found
+            </h2>
+            <p class="text-gray-400 text-lg leading-relaxed">
+                The page you're looking for doesn't exist or has been moved to another dimension.
+            </p>
+        </div>
+
+        <!-- Terminal Style Message -->
+        <div class="bg-cyber-darker/80 border border-gray-700 rounded-lg p-6 max-w-md w-full mb-8 backdrop-blur-sm">
+            <div class="flex items-center gap-2 mb-4">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                <span class="text-gray-500 text-sm ml-2 font-mono">terminal</span>
+            </div>
+            <div class="font-mono text-sm space-y-2">
+                <p class="text-gray-500">$ <span class="text-cyber-blue">find</span> <span class="text-white" id="requested-path">/requested-page</span></p>
+                <p class="text-red-400">Error: Route not found in the system</p>
+                <p class="text-gray-500">$ <span class="text-cyber-blue">suggest</span> --redirect home</p>
+                <p class="text-green-400">Recommendation: Navigate to homepage</p>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/" class="px-8 py-4 bg-gradient-to-r from-cyber-blue to-cyber-purple hover:from-cyber-purple hover:to-cyber-violet text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-center">
+                <i class="fa-solid fa-home mr-2"></i>Go Home
+            </a>
+            <button onclick="history.back()" class="px-8 py-4 border-2 border-gray-600 text-gray-300 hover:bg-gray-700 hover:border-gray-500 font-semibold rounded-lg transition-all duration-300 text-center">
+                <i class="fa-solid fa-arrow-left mr-2"></i>Go Back
+            </button>
+        </div>
+
+        <!-- Fun Stats -->
+        <div class="mt-16 grid grid-cols-3 gap-8 text-center">
+            <div>
+                <div class="text-3xl font-bold gradient-text">404</div>
+                <div class="text-gray-500 text-sm">Error Code</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold gradient-text">0</div>
+                <div class="text-gray-500 text-sm">Pages Found</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold gradient-text">1</div>
+                <div class="text-gray-500 text-sm">Way Home</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-12 text-center text-gray-500 text-sm">
+            <p>Lost? Don't worry, even the best explorers take wrong turns sometimes.</p>
+        </div>
+    </div>
+
+    <!-- Common Script -->
+    <script src="script.js"></script>
+</body>
+</html>

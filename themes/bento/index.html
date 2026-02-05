@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preconnect hints for faster resource loading -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+    <title>Portfolio</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Font Awesome -->
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "",
+      "jobTitle": "",
+      "url": "",
+      "sameAs": [],
+      "worksFor": {
+        "@type": "Organization",
+        "name": ""
+      }
+    }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full bg-white/80 backdrop-blur-lg z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2 animate-slide-in">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm sm:text-lg logo-initials"></span>
+                    </div>
+                    <span class="text-lg sm:text-xl font-bold text-gray-800 logo-text"></span>
+                </div>
+
+                <nav class="hidden md:flex items-center space-x-8">
+                </nav>
+
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <a href="" class="hidden sm:block">
+                        <button class="cta-button bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-lg font-medium transition-colors text-sm sm:text-base"></button>
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                        <i class="fa-solid fa-bars text-gray-700 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-4 py-4">
+                <nav class="flex flex-col space-y-3">
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="pt-20 sm:pt-24 pb-8 sm:pb-12 min-h-[auto] sm:min-h-[600px]">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6">
+                <!-- Main Profile Card -->
+                <div class="col-span-12 lg:col-span-8 bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-sm border border-gray-200/50 bento-card fade-in">
+                    <div class="grid grid-cols-12 gap-4 sm:gap-6 h-full">
+                        <!-- Profile image on mobile - show first -->
+                        <div class="col-span-12 md:hidden flex items-center justify-center mb-4">
+                            <div class="relative">
+                                <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-white shadow-2xl floating">
+                                    <img class="profile-image w-full h-full object-cover" src="" alt="professional headshot">
+                                </div>
+                                <div class="absolute -bottom-2 -right-2 w-10 h-10 sm:w-12 sm:h-12 bg-green-500 rounded-full flex items-center justify-center border-3 border-white">
+                                    <i class="fa-solid fa-check text-white text-sm sm:text-base"></i>
+                                </div>
+                                <div class="absolute -top-2 -left-2 w-8 h-8 sm:w-10 sm:h-10 bg-purple-500 rounded-full flex items-center justify-center border-3 border-white">
+                                    <i class="fa-solid fa-star text-white text-xs sm:text-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-8">
+                            <div class="mb-4 sm:mb-6 flex flex-wrap items-center gap-2 sm:gap-3">
+                                <span class="tagline bg-purple-100 text-purple-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium"></span>
+                                <span class="availability-status bg-green-100 text-green-800 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium"></span>
+                            </div>
+                            <h1 class="headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
+                            </h1>
+                            <p class="hero-description text-base sm:text-lg md:text-xl text-gray-600 mb-4 sm:mb-6 leading-relaxed">
+                            </p>
+                        </div>
+                        <!-- Profile image on desktop -->
+                        <div class="hidden md:flex col-span-4 items-center justify-center">
+                            <div class="relative">
+                                <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl floating">
+                                    <img class="profile-image w-full h-full object-cover" src="" alt="professional headshot">
+                                </div>
+                                <div class="absolute -bottom-4 -right-4 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center border-4 border-white">
+                                    <i class="fa-solid fa-check text-white text-xl"></i>
+                                </div>
+                                <div class="absolute -top-4 -left-4 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center border-4 border-white">
+                                    <i class="fa-solid fa-star text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 flex flex-wrap gap-2 sm:gap-4 hero-buttons">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Status Cards -->
+                <div id="status-cards" class="lg:col-span-4 col-span-12 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4 sm:gap-4 lg:space-y-0">
+                    <div class="status-card bento-card bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl p-4 sm:p-6 text-white shadow-lg animate-fade-in">
+                        <div class="flex items-center justify-between mb-2 sm:mb-4">
+                            <h3 class="card-title text-sm sm:text-lg font-semibold"></h3>
+                            <div class="w-2 h-2 sm:w-3 sm:h-3 bg-white rounded-full animate-pulse"></div>
+                        </div>
+                        <p class="card-description text-green-100 mb-2 sm:mb-4 text-xs sm:text-base"></p>
+                        <div class="card-footer flex items-center text-green-100">
+                            <i class="fas fa-calendar-alt mr-2 text-xs sm:text-base"></i>
+                            <span class="text-xs sm:text-sm"></span>
+                        </div>
+                    </div>
+
+                    <div class="status-card bento-card bg-white rounded-2xl p-4 sm:p-6 shadow-lg animate-fade-in border">
+                        <div class="flex items-center justify-between mb-2 sm:mb-4">
+                            <h3 class="card-title text-sm sm:text-lg font-semibold text-gray-800"></h3>
+                            <i class="fas fa-trophy text-yellow-500 text-base sm:text-xl"></i>
+                        </div>
+                        <div class="card-value text-2xl sm:text-3xl font-bold text-blue-600 mb-1 sm:mb-2"></div>
+                        <p class="card-description text-gray-600 mb-2 sm:mb-3 text-xs sm:text-base"></p>
+                        <div class="card-footer flex items-center text-xs sm:text-sm text-gray-500">
+                            <i class="fas fa-briefcase mr-2"></i>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="status-card bento-card bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-4 sm:p-6 text-white shadow-lg animate-fade-in">
+                        <div class="flex items-center justify-between mb-2 sm:mb-4">
+                            <h3 class="card-title text-sm sm:text-lg font-semibold"></h3>
+                            <div class="card-stars flex text-yellow-400 text-xs sm:text-base">
+                            </div>
+                        </div>
+                        <div class="card-value text-xl sm:text-2xl font-bold mb-1 sm:mb-2"></div>
+                        <p class="card-description text-purple-100 text-xs sm:text-base"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Stats Section -->
+    <section id="stats-section" class="py-8 sm:py-12">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="stats-container grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Skills & Tools Section -->
+    <section id="skills-section" class="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        <div class="text-center mb-8 sm:mb-12">
+            <h2 class="section-title text-2xl sm:text-3xl font-bold text-gray-900 mb-2 sm:mb-4"></h2>
+            <p class="section-subtitle text-sm sm:text-lg text-gray-600"></p>
+        </div>
+
+        <div class="grid grid-cols-12 gap-4 sm:gap-6">
+            <!-- Enhanced Skills Overview -->
+            <div class="col-span-12 lg:col-span-6 bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-sm border border-gray-200/50 bento-card fade-in stagger-1">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                    <i class="fa-solid fa-chart-line text-purple-600"></i>
+                    Core Skills
+                </h3>
+                <div class="core-skills space-y-6">
+                </div>
+            </div>
+
+            <!-- Enhanced Tools & Certifications -->
+            <div class="col-span-12 lg:col-span-6 space-y-6">
+                <div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-200/50 bento-card fade-in stagger-2">
+                    <h4 class="font-bold text-gray-900 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-tools text-purple-600"></i>
+                        Design Tools
+                    </h4>
+                    <div class="design-tools grid sm:grid-cols-4 grid-cols-2 gap-4">
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-gray-900 to-gray-700 rounded-3xl p-6 text-white bento-card fade-in stagger-3">
+                    <h4 class="font-bold mb-4">Development</h4>
+                    <div class="dev-tools flex flex-wrap gap-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio-section" class="py-8 sm:py-12">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-8 sm:mb-12">
+                <h2 class="section-title text-2xl sm:text-4xl font-bold text-gray-800 mb-2 sm:mb-4"></h2>
+                <p class="section-subtitle text-sm sm:text-xl text-gray-600"></p>
+            </div>
+
+            <div class="projects-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+        <div class="grid grid-cols-12 gap-4 sm:gap-6">
+            <!-- About Content -->
+            <div class="col-span-12 lg:col-span-8 bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-sm border border-gray-200/50 bento-card fade-in">
+                <h2 class="section-title text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6"></h2>
+                <div class="about-paragraphs prose prose-sm sm:prose-lg text-gray-600 mb-6 sm:mb-8">
+                </div>
+
+                <div class="about-stats grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-6 sm:mb-8">
+                </div>
+
+                <div class="about-tags flex flex-wrap gap-3">
+                </div>
+            </div>
+
+            <!-- Contact Info & Social -->
+            <div id="contact-section" class="col-span-12 lg:col-span-4 space-y-6">
+                <div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-200/50 bento-card fade-in stagger-1">
+                    <h3 class="section-title font-bold text-gray-900 mb-4"></h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <div class="contact-email font-medium text-gray-900"></div>
+                                <div class="text-sm text-gray-500">Email</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-phone text-green-600"></i>
+                            </div>
+                            <div>
+                                <div class="contact-phone font-medium text-gray-900"></div>
+                                <div class="text-sm text-gray-500">Phone</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-900 to-gray-700 rounded-3xl p-6 text-white bento-card fade-in stagger-2">
+                    <h3 class="font-bold mb-4">Follow Me</h3>
+                    <div class="social-links grid grid-cols-2 gap-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-white border-t border-gray-200 py-6 sm:py-8">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex flex-col items-center text-center md:flex-row md:text-left md:justify-between">
+                <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                    <div class="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xs sm:text-sm logo-initials"></span>
+                    </div>
+                    <span class="text-base sm:text-lg font-bold text-gray-800 logo-text"></span>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-xs sm:text-sm text-gray-600">
+                    <div class="flex items-center space-x-4 sm:space-x-6">
+                        <a href="privacy-policy" class="hover:text-blue-600 transition-colors cursor-pointer">Privacy Policy</a>
+                        <a href="terms-of-service" class="hover:text-blue-600 transition-colors cursor-pointer">Terms of Service</a>
+                    </div>
+                    <span class="copyright"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

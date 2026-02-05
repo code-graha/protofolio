@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "title": "PORTOFOLIO_ by siddharthmhjn.com",
+    "description": "Portfolio of Tony Stark, CEO of Stark Industries and Iron Man. Pioneer in arc reactor technology, AI systems, and advanced weapons defense systems.",
+    "keywords": "Tony Stark, Iron Man, Stark Industries, Arc Reactor, AI, J.A.R.V.I.S., Avengers, Clean Energy, Nanotechnology",
+    "canonical": "https://www.starkindustries.com/",
+    "ogImage": "https://www.starkindustries.com/preview.jpg"
+  },
+  "header": {
+    "logoInitials": "TS",
+    "logoText": "TonyStark",
+    "navigation": [
+      { "label": "Home", "href": "#hero-section" },
+      { "label": "Expertise", "href": "#skills-section" },
+      { "label": "Portfolio", "href": "#portfolio-section" },
+      { "label": "About", "href": "#about-section" }
+    ],
+    "ctaButton": {
+      "label": "Contact Stark Industries",
+      "href": "#contact-section"
+    }
+  },
+  "hero": {
+    "tagline": "Genius, Billionaire, Playboy, Philanthropist",
+    "availabilityStatus": "Currently Saving the World",
+    "headline": {
+      "line1": "Iron",
+      "highlight1": "Man",
+      "connector": "&",
+      "highlight2": "Visionary"
+    },
+    "description": "I am Iron Man. I build cutting-edge technology that protects the world and powers the future. From arc reactor clean energy to AI-driven defense systems, I create what others consider impossible.",
+    "profileImage": "/resources/iron-man.jpg",
+    "buttons": [
+      { "label": "View Inventions", "icon": "fa-solid fa-briefcase", "href": "#portfolio-section", "style": "primary" },
+      { "label": "Download Profile", "icon": "fa-solid fa-download", "href": "/resources/resume.pdf", "style": "secondary" },
+      { "label": "Book Meeting", "icon": "fa-solid fa-calendar", "href": "#contact-section", "style": "accent" }
+    ]
+  },
+  "statusCards": [
+    {
+      "title": "Availability Status",
+      "description": "Taking meetings between saving the world",
+      "footer": "Next availability: Ask Pepper",
+      "icon": "fas fa-calendar-alt",
+      "style": "gradient-green"
+    },
+    {
+      "title": "Experience",
+      "value": "20+ Years",
+      "description": "Engineering & Innovation Excellence",
+      "footer": "Countless Lives Saved",
+      "icon": "fas fa-trophy",
+      "style": "white"
+    },
+    {
+      "title": "Innovation Rating",
+      "value": "∞/5.0",
+      "description": "Based on saving the universe",
+      "stars": 5,
+      "style": "gradient-purple"
+    }
+  ],
+  "stats": [
+    {
+      "icon": "fas fa-project-diagram",
+      "value": "85+",
+      "label": "Iron Man Suits",
+      "sublabel": "Mark I through Mark LXXXV",
+      "color": "blue"
+    },
+    {
+      "icon": "fas fa-users",
+      "value": "1",
+      "label": "Company Founded",
+      "sublabel": "Stark Industries",
+      "color": "purple"
+    },
+    {
+      "icon": "fas fa-award",
+      "value": "∞",
+      "label": "Lives Saved",
+      "sublabel": "Including the universe",
+      "color": "green"
+    },
+    {
+      "icon": "fas fa-clock",
+      "value": "20+",
+      "label": "Years Innovation",
+      "sublabel": "Changing the world",
+      "color": "orange"
+    }
+  ],
+  "skills": {
+    "sectionTitle": "Skills & Expertise",
+    "sectionSubtitle": "Technologies I've invented or mastered",
+    "coreSkills": [
+      { "name": "Arc Reactor Technology", "icon": "fa-solid fa-atom", "percentage": 100, "color": "purple-blue" },
+      { "name": "AI Development", "icon": "fa-solid fa-robot", "percentage": 100, "color": "green-teal" },
+      { "name": "Nanotechnology", "icon": "fa-solid fa-microchip", "percentage": 98, "color": "orange-red" },
+      { "name": "Weapons Engineering", "icon": "fa-solid fa-shield-halved", "percentage": 100, "color": "blue-cyan" }
+    ],
+    "designTools": [
+      { "name": "J.A.R.V.I.S.", "icon": "fa-solid fa-robot", "level": "Creator", "bgColor": "purple" },
+      { "name": "Arc Reactor", "icon": "fa-solid fa-atom", "level": "Inventor", "bgColor": "blue" },
+      { "name": "Nanotech", "icon": "fa-solid fa-microchip", "level": "Pioneer", "bgColor": "green" },
+      { "name": "Quantum Tech", "icon": "fa-solid fa-infinity", "level": "Expert", "bgColor": "orange" }
+    ],
+    "developmentTools": ["Holographic UI", "Neural Interfaces", "Repulsor Tech", "Time Travel GPS"]
+  },
+  "portfolio": {
+    "sectionTitle": "Featured Inventions",
+    "sectionSubtitle": "A selection of my world-changing creations",
+    "projects": [
+      {
+        "title": "Iron Man Armor",
+        "description": "Powered exoskeleton suit with flight, weapons systems, and AI integration",
+        "image": "/resources/ironman-armor.jpg",
+        "tags": ["Nanotech", "Arc Reactor"],
+        "featured": true,
+        "size": "large"
+      },
+      {
+        "title": "J.A.R.V.I.S.",
+        "description": "",
+        "image": "/resources/jarvis-ai.jpg",
+        "tags": ["AI System"],
+        "size": "small"
+      },
+      {
+        "title": "Arc Reactor",
+        "description": "",
+        "image": "/resources/arc-reactor.jpg",
+        "tags": ["Clean Energy"],
+        "size": "small"
+      },
+      {
+        "title": "Stark Tower",
+        "description": "Self-sustaining clean energy building",
+        "image": "/resources/stark-tower.jpg",
+        "tags": ["Architecture"],
+        "size": "medium"
+      },
+      {
+        "title": "Time Travel GPS",
+        "description": "Quantum navigation for time heist",
+        "image": "/resources/time-space-gps.jpg",
+        "tags": ["Quantum"],
+        "size": "medium"
+      }
+    ]
+  },
+  "about": {
+    "sectionTitle": "About Me",
+    "paragraphs": [
+      "I'm Tony Stark - genius, billionaire, playboy, philanthropist. After being held captive in Afghanistan, I built the first Iron Man suit in a cave with a box of scraps. That experience changed everything - I went from weapons manufacturer to Earth's greatest defender.",
+      "I've pioneered arc reactor technology, created advanced AI systems, and led the Avengers against threats ranging from rogue robots to intergalactic warlords. I believe that the best way to protect the world is to stay one step ahead with technology."
+    ],
+    "stats": [
+      { "value": "20+", "label": "Years Innovation" },
+      { "value": "85+", "label": "Suits Built" },
+      { "value": "1", "label": "Universe Saved" },
+      { "value": "∞", "label": "Lives Protected" }
+    ],
+    "tags": ["Arc Reactor", "AI Systems", "Nanotechnology", "Clean Energy", "Avenger"]
+  },
+  "contact": {
+    "sectionTitle": "Get In Touch",
+    "email": "tony@starkindustries.com",
+    "phone": "Contact Pepper Potts",
+    "socialLinks": [
+      { "platform": "LinkedIn", "icon": "fa-brands fa-linkedin", "url": "https://www.linkedin.com/in/siddharth-mhjn" },
+      { "platform": "GitHub", "icon": "fa-brands fa-github", "url": "https://github.com/siddharth-mhjn" }
+    ]
+  },
+  "footer": {
+    "logoInitials": "TS",
+    "logoText": "TonyStark",
+    "links": ["Privacy Policy", "Terms of Service"],
+    "copyright": "Made with ❤️ by",
+    "copyrightLink": {
+      "text": "siddharthmhjn.com",
+      "url": "https://siddharthmhjn.com"
+    }
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tony Stark",
+    "jobTitle": "CEO of Stark Industries & Iron Man",
+    "url": "https://www.starkindustries.com/",
+    "sameAs": [
+      "https://www.linkedin.com/in/siddharth-mhjn",
+      "https://github.com/siddharth-mhjn"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Stark Industries"
+    }
+  }
+}

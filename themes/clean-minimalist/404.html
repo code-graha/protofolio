@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Page Not Found - 404 Error" name="description" />
+    <title>404 - Page Not Found</title>
+    <link href="" rel="icon" type="image/jpeg" id="favicon-link" />
+
+    <!-- Theme initialization (must be in head to prevent flash) -->
+    <script>
+        if (localStorage.getItem('theme') === 'dark' ||
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        "soft-white": "#FAFAFA",
+                        "deep-navy": "#040C3B",
+                        "sky-blue": "#6CCFF6",
+                        "dark-gray": "#121212"
+                    },
+                    fontFamily: {
+                        "inter": ["Inter", "sans-serif"],
+                        "sans": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Font Awesome -->
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+    <script crossorigin="anonymous" referrerpolicy="no-referrer"
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body class="bg-soft-white text-dark-gray font-inter dark:bg-dark-gray dark:text-white min-h-screen flex flex-col page-loaded">
+    <!-- Header -->
+    <header class="w-full bg-white/90 dark:bg-dark-gray/90 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/">
+                    <div class="text-xl font-bold text-deep-navy dark:text-white" id="header-name"></div>
+                </a>
+                <a href="/" class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors">
+                    <i class="fas fa-home mr-2"></i>Home
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center px-6">
+        <div class="text-center max-w-2xl mx-auto">
+            <!-- Error Code -->
+            <div class="mb-8">
+                <h1 class="text-9xl md:text-[12rem] font-bold text-deep-navy dark:text-sky-blue opacity-20">404</h1>
+            </div>
+
+            <!-- Icon -->
+            <div class="mb-8 -mt-20 relative">
+                <div class="w-24 h-24 mx-auto bg-gradient-to-br from-deep-navy to-blue-900 rounded-full flex items-center justify-center shadow-lg">
+                    <i class="fas fa-compass text-4xl text-sky-blue animate-pulse"></i>
+                </div>
+            </div>
+
+            <!-- Message -->
+            <h2 class="text-3xl md:text-4xl font-bold text-deep-navy dark:text-white mb-4">Page Not Found</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                Oops! The page you're looking for seems to have wandered off into the digital void.
+                It might have been moved, deleted, or never existed in the first place.
+            </p>
+
+            <!-- Actions -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/">
+                    <span class="bg-sky-blue text-deep-navy px-6 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors flex items-center justify-center cursor-pointer">
+                        <i class="fas fa-home mr-2"></i>Back to Home
+                    </span>
+                </a>
+                <a href="/#contact">
+                    <span class="border border-deep-navy dark:border-white text-deep-navy dark:text-white px-6 py-3 rounded-lg hover:bg-deep-navy hover:text-white dark:hover:bg-white dark:hover:text-deep-navy transition-colors flex items-center justify-center cursor-pointer">
+                        <i class="fas fa-envelope mr-2"></i>Contact Me
+                    </span>
+                </a>
+            </div>
+
+            <!-- Suggested Links -->
+            <div class="mt-12 p-6 bg-white dark:bg-[#1e1e1e] rounded-lg shadow-md">
+                <h3 class="text-lg font-semibold text-deep-navy dark:text-white mb-4">You might be looking for:</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="/#about" class="text-gray-600 dark:text-gray-300 hover:text-sky-blue transition-colors">
+                        <i class="fas fa-user mr-1"></i>About
+                    </a>
+                    <a href="/#projects" class="text-gray-600 dark:text-gray-300 hover:text-sky-blue transition-colors">
+                        <i class="fas fa-code mr-1"></i>Projects
+                    </a>
+                    <a href="/#skills" class="text-gray-600 dark:text-gray-300 hover:text-sky-blue transition-colors">
+                        <i class="fas fa-tools mr-1"></i>Skills
+                    </a>
+                    <a href="/#experience" class="text-gray-600 dark:text-gray-300 hover:text-sky-blue transition-colors">
+                        <i class="fas fa-briefcase mr-1"></i>Experience
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400 text-sm" id="footer-copyright"></p>
+        </div>
+    </footer>
+
+    <!-- Toggle Theme Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button class="w-12 h-12 bg-deep-navy text-white rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90 transition-colors" id="theme-toggle">
+            <i class="fas"></i>
+        </button>
+    </div>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const icon = themeToggle.querySelector('i');
+
+        function updateIcon() {
+            if (document.documentElement.classList.contains('dark')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+
+        updateIcon();
+
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+            updateIcon();
+        });
+    </script>
+
+    <!-- Load Portfolio Data -->
+    <script>
+        const defaultData = {
+            name: "Siddharth Mahajan",
+            favicon: "favicon.jpg"
+        };
+
+        async function loadData() {
+            let data = defaultData;
+            try {
+                const response = await fetch('portfolio-data.json');
+                if (response.ok) {
+                    const json = await response.json();
+                    data = { name: json.personal?.name || defaultData.name, favicon: json.personal?.favicon || defaultData.favicon };
+                }
+            } catch (e) {
+                console.log('Using default data');
+            }
+
+            const headerName = document.getElementById('header-name');
+            if (headerName) headerName.textContent = data.name;
+
+            const favicon = document.getElementById('favicon-link');
+            if (favicon) favicon.href = data.favicon;
+
+            const copyright = document.getElementById('footer-copyright');
+            if (copyright) copyright.innerHTML = `&copy; ${new Date().getFullYear()} ${data.name}. All rights reserved.`;
+        }
+
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+
+</html>

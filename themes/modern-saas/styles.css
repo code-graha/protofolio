@@ -1,0 +1,404 @@
+/* Modern SaaS Portfolio - Styles */
+::-webkit-scrollbar { display: none; }
+* {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body { font-family: 'Inter', sans-serif; }
+
+/* Performance Optimizations */
+img {
+    content-visibility: auto;
+}
+
+.project-card, .testimonial-card, .animate-float {
+    will-change: transform;
+    contain: layout style paint;
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slideIn {
+    animation: slideIn 0.6s ease-out forwards;
+}
+
+/* ========================================
+   CARD STYLES
+   ======================================== */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+}
+
+.gradient-border {
+    position: relative;
+    background: linear-gradient(145deg, rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.05));
+    border: 1px solid transparent;
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(145deg, #6366f1, #8b5cf6);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+/* ========================================
+   SKILL BARS
+   ======================================== */
+.skill-bar {
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #e5e7eb;
+}
+
+.skill-bar-fill {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 1s ease-out;
+}
+
+/* ========================================
+   TIMELINE STYLES
+   ======================================== */
+.timeline-dot {
+    position: relative;
+    z-index: 10;
+}
+
+.timeline-dot::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+}
+
+/* ========================================
+   PROJECT CARDS
+   ======================================== */
+.project-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(99, 102, 241, 0.15);
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-image {
+    transition: transform 0.5s ease;
+}
+
+/* ========================================
+   FORM STYLES
+   ======================================== */
+.form-input {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* ========================================
+   BUTTON STYLES
+   ======================================== */
+.btn-primary {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+}
+
+.btn-secondary {
+    border: 2px solid #6366f1;
+    color: #6366f1;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #6366f1;
+    color: white;
+}
+
+/* ========================================
+   TESTIMONIAL CARDS
+   ======================================== */
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   GRADIENT BACKGROUNDS
+   ======================================== */
+.gradient-indigo {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+.gradient-purple {
+    background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+}
+
+.gradient-blue {
+    background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+}
+
+.gradient-green {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+/* ========================================
+   SECTION BACKGROUNDS
+   ======================================== */
+.bg-pattern {
+    background-image:
+        radial-gradient(circle at 25% 25%, rgba(99, 102, 241, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.03) 0%, transparent 50%);
+}
+
+/* ========================================
+   RESPONSIVE - MOBILE
+   ======================================== */
+@media (max-width: 640px) {
+    /* Hero Section */
+    #hero {
+        min-height: auto;
+        padding: 4rem 1rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    /* Section headings */
+    section h2 {
+        font-size: 1.75rem;
+    }
+
+    /* Cards */
+    .card-hover:hover {
+        transform: translateY(-4px);
+    }
+
+    /* Timeline - Stack vertically on mobile */
+    .timeline-item {
+        flex-direction: column !important;
+    }
+
+    .timeline-item > div {
+        width: 100% !important;
+        text-align: left !important;
+        padding: 0 !important;
+    }
+
+    /* General padding adjustments */
+    section {
+        padding: 3rem 1rem;
+    }
+
+    /* Footer */
+    #footer .grid {
+        gap: 2rem;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - TABLET
+   ======================================== */
+@media (min-width: 641px) and (max-width: 1024px) {
+    /* Hero Section */
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Section headings */
+    section h2 {
+        font-size: 2.25rem;
+    }
+
+    /* Grid adjustments */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* General padding */
+    section {
+        padding: 4rem 1.5rem;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - DESKTOP
+   ======================================== */
+@media (min-width: 1025px) {
+    /* Hero Section */
+    #hero h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Section headings */
+    section h2 {
+        font-size: 3rem;
+    }
+
+    /* Cards hover effects */
+    .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 50px rgba(99, 102, 241, 0.15);
+    }
+
+    /* General padding */
+    section {
+        padding: 6rem 2rem;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY & REDUCED MOTION
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ========================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ======================================== */
+@media (hover: none) {
+    .card-hover:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    /* Larger touch targets */
+    button, a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+.text-gradient {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.shadow-glow {
+    box-shadow: 0 0 40px rgba(99, 102, 241, 0.3);
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* ========================================
+   LOADING STATES
+   ======================================== */
+.skeleton {
+    background: linear-gradient(90deg,
+        #f3f4f6 25%,
+        #e5e7eb 50%,
+        #f3f4f6 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 0.5rem;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* ========================================
+   CUSTOM SCROLLBAR (for browsers that show it)
+   ======================================== */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #6366f1, #8b5cf6);
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #4f46e5, #7c3aed);
+}

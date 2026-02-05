@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Bento Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .bento-card {
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="min-h-screen flex flex-col items-center justify-center px-4 py-8 sm:py-12">
+        <!-- Bento Grid Error Layout -->
+        <div class="max-w-4xl w-full">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+                <!-- Main Error Card -->
+                <div class="md:col-span-2 bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg border border-gray-200/50 bento-card">
+                    <div class="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                        <span class="bg-red-100 text-red-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium">Error</span>
+                        <span class="bg-purple-100 text-purple-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium">404</span>
+                    </div>
+                    <h1 class="text-5xl sm:text-6xl md:text-8xl font-bold mb-3 sm:mb-4">
+                        <span class="gradient-text">404</span>
+                    </h1>
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">Page Not Found</h2>
+                    <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+                        Oops! The page you're looking for seems to have wandered off. Let's get you back on track.
+                    </p>
+                    <div class="flex flex-wrap gap-3 sm:gap-4">
+                        <a href="/" class="flex-1 sm:flex-none bg-gradient-to-r from-blue-500 to-purple-600 text-white px-5 sm:px-8 py-2.5 sm:py-3 rounded-xl font-medium hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer text-sm sm:text-base">
+                            <i class="fa-solid fa-home"></i>
+                            Go Home
+                        </a>
+                        <a onclick="history.back()" class="flex-1 sm:flex-none border border-gray-300 text-gray-700 px-5 sm:px-8 py-2.5 sm:py-3 rounded-xl font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-2 cursor-pointer text-sm sm:text-base">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Go Back
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Side Cards -->
+                <div class="grid grid-cols-2 md:grid-cols-1 gap-4 sm:gap-6">
+                    <div class="bg-gradient-to-r from-red-500 to-pink-600 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-white shadow-lg bento-card">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                            <i class="fa-solid fa-triangle-exclamation text-lg sm:text-xl"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-semibold mb-1 sm:mb-2">Not Found</h3>
+                        <p class="text-red-100 text-xs sm:text-sm">The requested page doesn't exist</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-200/50 bento-card">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                            <i class="fa-solid fa-lightbulb text-blue-600 text-lg sm:text-xl"></i>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2">Suggestions</h3>
+                        <ul class="text-gray-600 text-xs sm:text-sm space-y-1">
+                            <li>• Check the URL</li>
+                            <li>• Return to homepage</li>
+                            <li>• Contact support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terminal Card -->
+            <div class="mt-4 sm:mt-6 bg-gray-900 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg bento-card overflow-x-auto">
+                <div class="flex items-center gap-2 mb-3 sm:mb-4">
+                    <div class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500"></div>
+                    <div class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500"></div>
+                    <span class="text-gray-500 text-xs sm:text-sm ml-2 font-mono">terminal</span>
+                </div>
+                <div class="font-mono text-xs sm:text-sm space-y-1.5 sm:space-y-2 min-w-max">
+                    <p class="text-gray-500">$ <span class="text-blue-400">find</span> <span class="text-white" id="requested-path">/page</span></p>
+                    <p class="text-red-400">Error: Page not found in directory</p>
+                    <p class="text-gray-500">$ <span class="text-blue-400">suggest</span> --redirect home</p>
+                    <p class="text-green-400">Redirecting to homepage...</p>
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="mt-4 sm:mt-6 grid grid-cols-3 gap-3 sm:gap-6">
+                <div class="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-6 text-center shadow-lg border border-gray-200/50 bento-card">
+                    <div class="text-2xl sm:text-3xl font-bold gradient-text mb-0.5 sm:mb-1">404</div>
+                    <div class="text-gray-500 text-xs sm:text-sm">Error Code</div>
+                </div>
+                <div class="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-6 text-center shadow-lg border border-gray-200/50 bento-card">
+                    <div class="text-2xl sm:text-3xl font-bold gradient-text mb-0.5 sm:mb-1">0</div>
+                    <div class="text-gray-500 text-xs sm:text-sm">Results Found</div>
+                </div>
+                <div class="bg-white rounded-xl sm:rounded-2xl p-3 sm:p-6 text-center shadow-lg border border-gray-200/50 bento-card">
+                    <div class="text-2xl sm:text-3xl font-bold gradient-text mb-0.5 sm:mb-1">1</div>
+                    <div class="text-gray-500 text-xs sm:text-sm">Way Home</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Retro Gaming Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        retro: ['"Press Start 2P"', 'cursive'],
+                        terminal: ['"VT323"', 'monospace']
+                    },
+                    colors: {
+                        'retro-purple': '#8A2BE2',
+                        'retro-pink': '#FF6EC7',
+                        'retro-blue': '#00BFFF',
+                        'retro-green': '#00FF7F',
+                        'retro-yellow': '#FFFF00',
+                        'retro-orange': '#FF8C00',
+                        'retro-black': '#111111',
+                        'retro-gray': '#333333'
+                    },
+                    boxShadow: {
+                        'retro': '5px 5px 0px rgba(0, 0, 0, 0.8)',
+                        'retro-sm': '3px 3px 0px rgba(0, 0, 0, 0.8)'
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            10% { transform: translate(-2px, -1px); }
+            20% { transform: translate(2px, 1px); }
+            30% { transform: translate(-1px, 2px); }
+            40% { transform: translate(1px, -1px); }
+            50% { transform: translate(-2px, 2px); }
+        }
+        .animate-glitch { animation: glitch 0.5s infinite; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        .animate-blink { animation: blink 1s infinite; }
+    </style>
+</head>
+<body class="bg-retro-gray min-h-screen relative">
+    <!-- Screen Border -->
+    <div class="fixed inset-0 border-8 border-retro-black pointer-events-none z-50"></div>
+
+    <!-- Floating Particles -->
+    <div class="fixed inset-0 pointer-events-none z-30">
+        <div class="absolute top-20 left-10 w-2 h-2 bg-retro-pink animate-float" style="animation-delay: 0s;"></div>
+        <div class="absolute top-40 right-20 w-3 h-3 bg-retro-blue animate-float" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-40 left-20 w-2 h-2 bg-retro-yellow animate-float" style="animation-delay: 2s;"></div>
+        <div class="absolute bottom-20 right-10 w-3 h-3 bg-retro-green animate-float" style="animation-delay: 0.5s;"></div>
+    </div>
+
+    <div class="min-h-screen flex flex-col items-center justify-center px-4 py-12 relative z-40">
+        <!-- Game Over Style -->
+        <div class="text-center mb-8">
+            <div class="bg-retro-pink border-4 border-black shadow-retro px-8 py-4 mb-8 inline-block">
+                <h1 class="font-retro text-retro-black text-xl">GAME OVER</h1>
+            </div>
+        </div>
+
+        <!-- Error Card -->
+        <div class="bg-white border-4 border-black shadow-retro p-8 max-w-xl w-full">
+            <div class="text-center">
+                <h2 class="font-retro text-8xl text-retro-purple mb-4 animate-glitch">404</h2>
+                <div class="bg-retro-yellow border-2 border-black shadow-retro-sm px-6 py-2 inline-block mb-6">
+                    <p class="font-retro text-retro-black text-sm">PAGE NOT FOUND</p>
+                </div>
+                <p class="font-terminal text-2xl text-retro-gray mb-8">
+                    The level you're looking for doesn't exist!<br>
+                    <span class="text-retro-pink">Insert coin to continue...</span>
+                </p>
+            </div>
+
+            <!-- Pixel Art Sad Face -->
+            <div class="flex justify-center mb-8">
+                <div class="grid grid-cols-5 gap-1">
+                    <div class="w-4 h-4 bg-retro-black"></div>
+                    <div class="w-4 h-4 bg-transparent"></div>
+                    <div class="w-4 h-4 bg-transparent"></div>
+                    <div class="w-4 h-4 bg-transparent"></div>
+                    <div class="w-4 h-4 bg-retro-black"></div>
+                    <div class="w-4 h-4 bg-transparent"></div>
+                    <div class="w-4 h-4 bg-transparent"></div>
+                    <div class="w-4 h-4 bg-transparent"></div>
+                    <div class="w-4 h-4 bg-transparent"></div>
+                    <div class="w-4 h-4 bg-transparent"></div>
+                    <div class="w-4 h-4 bg-transparent"></div>
+                    <div class="w-4 h-4 bg-retro-black"></div>
+                    <div class="w-4 h-4 bg-retro-black"></div>
+                    <div class="w-4 h-4 bg-retro-black"></div>
+                    <div class="w-4 h-4 bg-transparent"></div>
+                </div>
+            </div>
+
+            <!-- Terminal -->
+            <div class="bg-retro-black border-2 border-retro-green p-4 mb-8">
+                <p class="font-terminal text-retro-green text-lg">
+                    > ERROR: Route <span class="text-retro-yellow" id="requested-path">/unknown</span> not found<br>
+                    > STATUS: <span class="text-retro-pink">404</span><br>
+                    > SUGGESTION: Return to home base<span class="animate-blink">_</span>
+                </p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/" class="bg-retro-green border-4 border-black shadow-retro px-8 py-4 font-retro text-retro-black text-sm hover:bg-retro-yellow transition-colors text-center">
+                    <i class="fa-solid fa-home mr-2"></i>HOME
+                </a>
+                <button onclick="history.back()" class="bg-retro-blue border-4 border-black shadow-retro px-8 py-4 font-retro text-retro-black text-sm hover:bg-retro-pink transition-colors">
+                    <i class="fa-solid fa-arrow-left mr-2"></i>BACK
+                </button>
+            </div>
+        </div>
+
+        <!-- Score Display -->
+        <div class="mt-8 flex gap-8">
+            <div class="bg-white border-4 border-black shadow-retro p-4 text-center">
+                <p class="font-retro text-retro-black text-xs mb-2">ERROR</p>
+                <p class="font-retro text-retro-purple text-2xl">404</p>
+            </div>
+            <div class="bg-white border-4 border-black shadow-retro p-4 text-center">
+                <p class="font-retro text-retro-black text-xs mb-2">LIVES</p>
+                <p class="font-retro text-retro-pink text-2xl">0</p>
+            </div>
+            <div class="bg-white border-4 border-black shadow-retro p-4 text-center">
+                <p class="font-retro text-retro-black text-xs mb-2">COINS</p>
+                <p class="font-retro text-retro-yellow text-2xl">1</p>
+            </div>
+        </div>
+
+        <!-- Footer Message -->
+        <p class="font-terminal text-gray-300 text-xl mt-8">
+            Press START to try again!
+        </p>
+    </div>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>

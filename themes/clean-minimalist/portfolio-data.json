@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "PORTOFOLIO_ by siddharthmhjn.com",
+    "description": "Professional portfolio showcasing skills, projects, and experience."
+  },
+  "personal": {
+    "name": "Tony Stark",
+    "initials": "TS",
+    "title": "Genius, Billionaire, Philanthropist",
+    "subtitle": "Iron Man | Avenger | Inventor",
+    "location": "New York, USA",
+    "email": "tony@starkindustries.com",
+    "availability": "Currently Saving the World",
+    "yearsExperience": "20+",
+    "projectsCompleted": "85+",
+    "resume": "/resources/resume.pdf",
+    "profilePhoto": "/resources/iron-man.jpg",
+    "bannerPhoto": "/resources/ironman-banner.jpg",
+    "favicon": "favicon.jpg",
+    "ogImage": "Profile_Photo.png",
+    "ogUrl": "https://www.starkindustries.com",
+    "footerDescription": "CEO of Stark Industries & Iron Man. Building technology to protect the world.",
+    "googleScriptURL": "https://script.google.com/",
+    "socialLinks": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/siddharth-mhjn",
+        "icon": "fab fa-linkedin"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/siddharth-mhjn",
+        "icon": "fab fa-github"
+      }
+    ]
+  },
+  "about": {
+    "paragraphs": [
+      "I'm Tony Stark - genius, billionaire, playboy, philanthropist. After being held captive in Afghanistan, I built the first Iron Man suit in a cave with a box of scraps. That experience changed everything - I went from weapons manufacturer to Earth's greatest defender. I've pioneered arc reactor technology, created advanced AI systems like J.A.R.V.I.S. and F.R.I.D.A.Y., and led the Avengers against threats ranging from rogue robots to intergalactic warlords.",
+      "Beyond building suits, I focus on clean energy innovation, nanotechnology advancement, and protecting the world from threats both terrestrial and cosmic. By combining my engineering genius, unlimited resources, and an unwavering commitment to humanity's future, I deliver solutions that others consider impossible. I am Iron Man."
+    ]
+  },
+  "skills": {
+    "Arc Reactor & Energy": {
+      "icon": "fas fa-atom",
+      "technologies": ["Arc Reactor", "Clean Energy", "Palladium Core", "Vibranium Integration", "Quantum Energy", "Miniaturization", "Power Systems", "Energy Transfer"]
+    },
+    "AI & Robotics": {
+      "icon": "fas fa-robot",
+      "technologies": ["J.A.R.V.I.S.", "F.R.I.D.A.Y.", "EDITH", "Ultron", "Vision", "Neural Networks", "Machine Learning", "Autonomous Systems"]
+    },
+    "Armor & Nanotechnology": {
+      "icon": "fas fa-shield-halved",
+      "technologies": ["Nanotech Suits", "Repulsor Tech", "Unibeam", "Flight Systems", "Weapons Systems", "Mark I-LXXXV", "Bleeding Edge", "Hulkbuster"]
+    },
+    "Advanced Engineering": {
+      "icon": "fas fa-microchip",
+      "technologies": ["Quantum Mechanics", "Time Travel GPS", "Holographic UI", "Neural Interfaces", "Space Travel", "Teleportation", "Particle Physics", "Materials Science"]
+    }
+  },
+  "experience": [
+    {
+      "title": "CEO & Lead Inventor",
+      "company": "Stark Industries",
+      "period": "1991 - Present",
+      "icon": "fas fa-building",
+      "gradient": "from-sky-blue to-blue-500",
+      "description": "Transformed Stark Industries from a weapons manufacturer to a leader in clean energy and advanced technology. Invented the arc reactor, created the Iron Man suit series, and pioneered numerous technologies that have shaped the modern world.",
+      "technologies": ["Arc Reactor", "Iron Man Armor", "Clean Energy"]
+    },
+    {
+      "title": "Founding Member",
+      "company": "The Avengers",
+      "period": "2012 - Present",
+      "icon": "fas fa-users",
+      "gradient": "from-blue-500 to-indigo-600",
+      "description": "Co-founded Earth's Mightiest Heroes alongside Captain America, Thor, Hulk, Black Widow, and Hawkeye. Led the team through multiple world-ending threats including the Battle of New York, Ultron, and Thanos.",
+      "technologies": ["Leadership", "Strategy", "Combat Systems"]
+    },
+    {
+      "title": "Quantum Engineer",
+      "company": "Time Heist Initiative",
+      "period": "2023",
+      "icon": "fas fa-clock",
+      "gradient": "from-indigo-600 to-purple-600",
+      "description": "Cracked the code for time travel using quantum realm navigation. Designed the Time-Space GPS that enabled the Avengers to retrieve the Infinity Stones from the past and reverse the Snap, saving half of all life in the universe.",
+      "technologies": ["Quantum Mechanics", "Time Travel", "Infinity Stones"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Iron Man Armor Series",
+      "description": "85+ iterations of powered exoskeleton suits featuring flight, weapons systems, AI integration, and nanotechnology.",
+      "image": "/resources/ironman-armor.jpg",
+      "technologies": ["Nanotech", "Arc Reactor", "AI"],
+      "link": "https://github.com/siddharth-mhjn"
+    },
+    {
+      "title": "J.A.R.V.I.S. AI System",
+      "description": "Advanced natural language AI assistant capable of managing complex systems, security protocols, and suit operations.",
+      "image": "/resources/jarvis-ai.jpg",
+      "technologies": ["Neural Networks", "NLP", "Automation"],
+      "link": "https://github.com/siddharth-mhjn"
+    },
+    {
+      "title": "Stark Tower / Avengers Tower",
+      "description": "Self-sustaining skyscraper powered entirely by arc reactor technology. Serves as Avengers headquarters.",
+      "image": "/resources/stark-tower.jpg",
+      "technologies": ["Clean Energy", "Architecture", "Security"],
+      "link": "https://github.com/siddharth-mhjn"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "MIT - Summa Cum Laude",
+      "issuer": "Massachusetts Institute of Technology",
+      "icon": "fas fa-graduation-cap"
+    },
+    {
+      "title": "PhD in Physics & Engineering",
+      "issuer": "MIT - Age 17",
+      "icon": "fas fa-atom"
+    },
+    {
+      "title": "Avengers Security Clearance - Level 10",
+      "issuer": "S.H.I.E.L.D.",
+      "icon": "fas fa-shield-halved"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Saved the Universe",
+      "date": "2023",
+      "description": "Used the Infinity Gauntlet to reverse the Snap and defeat Thanos, sacrificing everything to save half of all life in the universe.",
+      "icon": "fas fa-infinity",
+      "iconColor": "text-purple-500"
+    },
+    {
+      "title": "Person of the Year",
+      "date": "2012",
+      "description": "Recognized for leading the defense of New York City against the Chitauri invasion and carrying a nuclear missile through a wormhole.",
+      "icon": "fas fa-trophy",
+      "iconColor": "text-yellow-500"
+    },
+    {
+      "title": "Apogee Award",
+      "date": "2008",
+      "description": "Honored for advancing technology and clean energy innovation through Stark Industries' groundbreaking arc reactor technology.",
+      "icon": "fas fa-medal",
+      "iconColor": "text-blue-500"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Steve Rogers",
+      "role": "Captain America",
+      "company": "The Avengers",
+      "image": "/resources/steve-rogers.jpg",
+      "quote": "Tony may be the most annoying person I've ever met, but he's also one of the bravest. When it mattered most, he made the sacrifice play - the one I always said he'd never make. He was wrong about a lot of things, but he was right about the important ones."
+    },
+    {
+      "name": "Pepper Potts",
+      "role": "CEO",
+      "company": "Stark Industries",
+      "image": "/resources/pepper-potts.jpg",
+      "quote": "I've watched Tony grow from a man who had everything and cared about nothing, to someone who was willing to give everything for the people he loved. Behind the armor was the most selfless person I've ever known."
+    },
+    {
+      "name": "Peter Parker",
+      "role": "Spider-Man",
+      "company": "The Avengers",
+      "image": "/resources/spider-man.jpg",
+      "quote": "Mr. Stark believed in me when no one else did. He gave me a chance, mentored me, and showed me what it really means to be a hero. Everything I am as Spider-Man, I owe to him."
+    }
+  ],
+  "footerServices": [
+    "Arc Reactor Technology",
+    "Defense Systems",
+    "Clean Energy Solutions",
+    "AI Development"
+  ],
+  "availabilityOptions": [
+    "World-saving emergencies only"
+  ],
+  "footer": {
+    "copyright": "Made with ❤️ by",
+    "copyrightLink": {
+      "text": "siddharthmhjn.com",
+      "url": "https://siddharthmhjn.com"
+    }
+  }
+}

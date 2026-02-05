@@ -1,37 +1,3 @@
-// // Prevent right click globally
-// window.top.document.addEventListener('contextmenu', e => e.preventDefault());
-
-// // Disable specific key combos
-// window.top.document.addEventListener('keydown', function (e) {
-//     if (
-//         e.key === 'F12' ||
-//         (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
-//         (e.ctrlKey && e.key === 'U')
-//     ) {
-//         e.preventDefault();
-//         return false;
-//     }
-// });
-
-// // Detect DevTools in top window
-// let devtoolsOpen = false;
-// const threshold = 160;
-
-// setInterval(function () {
-//     const widthThreshold = window.top.outerWidth - window.top.innerWidth > threshold;
-//     const heightThreshold = window.top.outerHeight - window.top.innerHeight > threshold;
-
-//     if (widthThreshold || heightThreshold) {
-//         if (!devtoolsOpen) {
-//             devtoolsOpen = true;
-//             window.top.location.replace("500.html"); // force parent redirect
-//         }
-//     } else {
-//         devtoolsOpen = false;
-//     }
-// }, 1000);
-
-
 // Disable right-click
 document.addEventListener('contextmenu', e => e.preventDefault());
 
@@ -47,24 +13,36 @@ document.addEventListener('keydown', function (e) {
     }
 });
 
+// Detect DevTools open (works in both standalone and iframe)
+let devtoolsOpen = false;
+const threshold = 160;
+const isInIframe = window.self !== window.top;
 
-// Only run if NOT inside an iframe
-if (window.top === window.self) {
-    let devtoolsOpen = false;
-    const threshold = 160;
+setInterval(function () {
+    let devtoolsDetected = false;
 
-    setInterval(function () {
+    if (isInIframe) {
+        // For iframe: use console timing detection
+        const element = new Image();
+        Object.defineProperty(element, 'id', {
+            get: function () {
+                devtoolsDetected = true;
+            }
+        });
+        console.log('%c', element);
+    } else {
+        // For standalone: use window size detection
         const widthThreshold = window.outerWidth - window.innerWidth > threshold;
         const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+        devtoolsDetected = widthThreshold || heightThreshold;
+    }
 
-        if (widthThreshold || heightThreshold) {
-            if (!devtoolsOpen) {
-                devtoolsOpen = true;
-                // Action: redirect or clear page
-                window.location.replace("500");
-            }
-        } else {
-            devtoolsOpen = false;
+    if (devtoolsDetected) {
+        if (!devtoolsOpen) {
+            devtoolsOpen = true;
+            window.location.replace("405");
         }
-    }, 1000);
-}
+    } else {
+        devtoolsOpen = false;
+    }
+}, 1000);

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Preconnect hints for faster resource loading -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <meta content="" name="description" id="meta-description" />
+    <meta content="" name="keywords" id="meta-keywords" />
+    <meta content="" name="author" id="meta-author" />
+    <!-- Open Graph Meta Tags -->
+    <meta content="" property="og:title" id="og-title" />
+    <meta content="" property="og:description" id="og-description" />
+    <meta content="" property="og:image" id="og-image" />
+    <meta content="website" property="og:type" />
+    <meta content="" property="og:url" id="og-url" />
+
+    <!-- Theme initialization (must be in head to prevent flash) -->
+    <script>
+        if (localStorage.getItem('theme') === 'dark' ||
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        "soft-white": "#FAFAFA",
+                        "deep-navy": "#040C3B",
+                        "sky-blue": "#6CCFF6",
+                        "dark-gray": "#121212"
+                    },
+                    fontFamily: {
+                        "inter": ["Inter", "sans-serif"],
+                        "sans": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Font Awesome -->
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest' };</script>
+    <script crossorigin="anonymous" referrerpolicy="no-referrer"
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link href="styles.css" rel="stylesheet" />
+
+    <title>Loading...</title>
+    <link href="" rel="icon" type="image/jpeg" id="favicon-link" />
+</head>
+
+<body class="bg-soft-white text-dark-gray font-inter dark:bg-dark-gray dark:text-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white/90 dark:bg-dark-gray/90 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700" id="header">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#">
+                    <div class="text-xl font-bold text-deep-navy dark:text-white" id="header-name"></div>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about"><span class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors cursor-pointer">About</span></a>
+                    <a href="#skills"><span class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors cursor-pointer">Skills</span></a>
+                    <a href="#experience"><span class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors cursor-pointer">Experience</span></a>
+                    <a href="#projects"><span class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors cursor-pointer">Projects</span></a>
+                    <a href="#testimonials"><span class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors cursor-pointer">Testimonials</span></a>
+                    <a href="#contact"><span class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors cursor-pointer">Contact</span></a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-button">
+                    <i class="fas fa-bars text-deep-navy dark:text-white"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-4 bg-white rounded-lg shadow-lg p-4 dark:bg-[#2a2a2a] hover-card-big" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#about"><span class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors cursor-pointer">About</span></a>
+                    <a href="#skills"><span class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors cursor-pointer">Skills</span></a>
+                    <a href="#experience"><span class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors cursor-pointer">Experience</span></a>
+                    <a href="#projects"><span class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors cursor-pointer">Projects</span></a>
+                    <a href="#testimonials"><span class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors cursor-pointer">Testimonials</span></a>
+                    <a href="#contact"><span class="text-gray-600 dark:text-gray-300 hover:text-deep-navy dark:hover:text-sky-blue transition-colors cursor-pointer">Contact</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-[600px] bg-gradient-to-br from-deep-navy to-blue-900 text-white flex items-center pt-20 fade-up-big" id="hero">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6" id="hero-name"></h1>
+                    <p class="text-xl md:text-2xl mb-8 text-sky-blue" id="hero-title"></p>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <a href="Resume.pdf" rel="noopener noreferrer" target="_blank">
+                            <span class="bg-sky-blue text-deep-navy px-6 py-3 rounded-lg font-semibold hover:bg-blue-400 transition-colors flex items-center cursor-pointer">
+                                <i class="fas fa-eye mr-2"></i>View CV
+                            </span>
+                        </a>
+                        <a href="#" rel="noopener noreferrer" target="_blank" id="hero-linkedin">
+                            <span class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-deep-navy transition-colors flex items-center cursor-pointer">
+                                <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                            </span>
+                        </a>
+                        <a href="#" rel="noopener noreferrer" target="_blank" id="hero-github">
+                            <span class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-deep-navy transition-colors flex items-center cursor-pointer">
+                                <i class="fab fa-github mr-2"></i>GitHub
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <img alt="Profile Banner" class="h-96 object-cover rounded-lg mx-auto image-zoom" src="" id="hero-banner" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="py-20 bg-white dark:bg-[#1e1e1e] fade-up-big" id="about">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-deep-navy dark:text-white">About Me</h2>
+            <div class="grid md:grid-cols-3 gap-12 items-center">
+                <div class="md:col-span-1">
+                    <img alt="Profile" class="w-80 h-80 object-cover rounded-lg mx-auto shadow-md image-zoom" src="" id="about-profile-img" />
+                </div>
+                <div class="md:col-span-2">
+                    <p class="text-lg mb-6 leading-relaxed" id="about-paragraph-1"></p>
+                    <p class="text-lg mb-6 leading-relaxed" id="about-paragraph-2"></p>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="text-center p-4 bg-gray-50 rounded-lg shadow-sm dark:bg-[#2a2a2a] hover-card-big">
+                            <div class="text-2xl font-bold text-sky-blue" id="about-years-experience"></div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300">Years Experience</div>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-lg shadow-sm dark:bg-[#2a2a2a] hover-card-big">
+                            <div class="text-2xl font-bold text-sky-blue" id="about-projects-completed"></div>
+                            <div class="text-sm text-gray-600 dark:text-gray-300">Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="py-20 bg-gray-50 dark:bg-[#1f1f1f] fade-up-big" id="skills">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-deep-navy dark:text-white">Technical Skills</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Skills will be dynamically loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="py-20 bg-white dark:bg-[#1e1e1e] fade-up-big" id="experience">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-deep-navy dark:text-white">Professional Experience</h2>
+            <div class="max-w-5xl mx-auto">
+                <div class="relative">
+                    <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-sky-blue/30"></div>
+                    <!-- Experience will be dynamically loaded from JSON -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="py-20 bg-gray-50 dark:bg-[#1f1f1f] fade-up-big" id="projects">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-deep-navy dark:text-white">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projects will be dynamically loaded from JSON -->
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" rel="noopener noreferrer" target="_blank">
+                    <span class="inline-block px-6 py-3 bg-deep-navy text-white rounded-lg hover:bg-opacity-90 transition-colors cursor-pointer">
+                        View All Projects
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-20 bg-white dark:bg-[#1e1e1e] fade-up-big" id="certifications">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-deep-navy dark:text-white">Certifications &amp; Awards</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Certifications will be dynamically loaded from JSON -->
+            </div>
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-center mb-8 text-deep-navy dark:text-white">Awards &amp; Recognition</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Awards will be dynamically loaded from JSON -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50 dark:bg-[#1f1f1f] fade-up-big" id="testimonials">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-deep-navy dark:text-white">What People Say</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonials will be dynamically loaded from JSON -->
+            </div>
+            <div class="text-center mt-10">
+                <a href="#" rel="noopener noreferrer" target="_blank">
+                    <span class="inline-block px-6 py-3 bg-deep-navy text-white rounded-lg hover:bg-opacity-90 transition-colors cursor-pointer">
+                        View More
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-20 bg-deep-navy text-white fade-up-big" id="contact">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Get In Touch</h2>
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Let's Connect</h3>
+                    <p class="text-gray-300 mb-8">I'm always interested in discussing new opportunities, innovative projects, and collaborations in cloud technologies.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-sky-blue mr-4 w-6"></i>
+                            <a href="" id="contact-email-link">
+                                <span class="hover:text-sky-blue transition-colors cursor-pointer" id="contact-email-text"></span>
+                            </a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-linkedin text-sky-blue mr-4 w-6"></i>
+                            <a href="#" rel="noopener noreferrer" target="_blank" id="contact-linkedin">
+                                <span class="hover:text-sky-blue transition-colors cursor-pointer">LinkedIn Profile</span>
+                            </a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-github text-sky-blue mr-4 w-6"></i>
+                            <a href="#" rel="noopener noreferrer" target="_blank" id="contact-github">
+                                <span class="hover:text-sky-blue transition-colors cursor-pointer">GitHub Profile</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-10 p-6 bg-white/5 rounded-lg hover-card-big">
+                        <h4 class="text-lg font-semibold mb-4">Availability</h4>
+                        <p class="text-gray-300 mb-2">I'm currently available for:</p>
+                        <ul class="space-y-2 text-gray-300" id="contact-availability-list">
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <form class="space-y-6" id="contact-form">
+                        <div>
+                            <label class="block text-sm font-medium mb-2 text-white" for="name">Your Name</label>
+                            <input class="w-full p-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-blue"
+                                id="name" placeholder="John Doe" required="" type="text" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2 text-white" for="email">Your Email</label>
+                            <input class="w-full p-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-blue"
+                                id="email" placeholder="john@example.com" required="" type="email" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2 text-white" for="message">Your Message</label>
+                            <textarea class="w-full p-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-blue"
+                                id="message" placeholder="I'd like to discuss a project..." required="" rows="5"></textarea>
+                        </div>
+                        <button class="w-full bg-sky-blue text-deep-navy font-semibold py-3 px-6 rounded-lg hover:bg-blue-400 transition-colors" type="submit">
+                            Send Message
+                        </button>
+                        <p class="text-sm mt-4 text-center text-white" id="responseMsg"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-12" id="footer">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4" id="footer-name"></h3>
+                    <p class="text-gray-400 mb-4" id="footer-description"></p>
+                    <div class="flex space-x-4">
+                        <a href="#" rel="noopener noreferrer" target="_blank" id="footer-linkedin">
+                            <span class="text-gray-400 hover:text-sky-blue transition-colors cursor-pointer">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </span>
+                        </a>
+                        <a href="#" rel="noopener noreferrer" target="_blank" id="footer-github">
+                            <span class="text-gray-400 hover:text-sky-blue transition-colors cursor-pointer">
+                                <i class="fab fa-github text-xl"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about"><span class="hover:text-sky-blue transition-colors cursor-pointer">About Me</span></a></li>
+                        <li><a href="#skills"><span class="hover:text-sky-blue transition-colors cursor-pointer">Skills</span></a></li>
+                        <li><a href="#experience"><span class="hover:text-sky-blue transition-colors cursor-pointer">Experience</span></a></li>
+                        <li><a href="#projects"><span class="hover:text-sky-blue transition-colors cursor-pointer">Projects</span></a></li>
+                        <li><a href="#testimonials"><span class="hover:text-sky-blue transition-colors cursor-pointer">Testimonials</span></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul id="footer-services" class="space-y-2 text-gray-400">
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p class="flex items-center" id="footer-email">
+                            <i class="fas fa-envelope mr-2 text-sky-blue"></i>
+                            <span></span>
+                        </p>
+                        <p class="flex items-center" id="footer-location">
+                            <i class="fas fa-map-marker-alt mr-2 text-sky-blue"></i>
+                            <span></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm" id="footer-copyright">
+                    </p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <button onclick="openModal('privacy-modal')" class="text-gray-400 hover:text-sky-blue text-sm transition-colors cursor-pointer">Privacy Policy</button>
+                        <button onclick="openModal('terms-modal')" class="text-gray-400 hover:text-sky-blue text-sm transition-colors cursor-pointer">Terms of Service</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toggle Theme Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button class="w-12 h-12 bg-deep-navy text-white rounded-full flex items-center justify-center shadow-lg hover:bg-opacity-90 transition-colors" id="theme-toggle">
+            <i class="fas"></i>
+        </button>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeModal('privacy-modal')"></div>
+        <div class="absolute inset-0 flex items-center justify-center p-4">
+            <div class="bg-white dark:bg-[#1e1e1e] rounded-2xl shadow-2xl max-w-2xl w-full max-h-[80vh] flex flex-col">
+                <!-- Header - Fixed -->
+                <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700 flex-shrink-0">
+                    <h2 class="text-2xl font-bold text-deep-navy dark:text-white">
+                        <i class="fas fa-shield-alt text-sky-blue mr-3"></i>Privacy Policy
+                    </h2>
+                    <button onclick="closeModal('privacy-modal')" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                        <i class="fas fa-times text-gray-600 dark:text-gray-300"></i>
+                    </button>
+                </div>
+                <!-- Content - Scrollable -->
+                <div class="p-6 overflow-y-auto flex-grow text-gray-600 dark:text-gray-300">
+                    <p class="mb-4"><strong class="text-deep-navy dark:text-white">Last Updated:</strong> January 2024</p>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">1. Information We Collect</h3>
+                    <p class="mb-4">When you visit this portfolio website, we may collect certain information automatically, including your IP address, browser type, and pages visited. If you contact us through the contact form, we collect the information you provide (name, email, message).</p>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">2. How We Use Your Information</h3>
+                    <p class="mb-4">We use collected information to:</p>
+                    <ul class="list-disc list-inside mb-4 space-y-2">
+                        <li>Respond to your inquiries and messages</li>
+                        <li>Improve our website and user experience</li>
+                        <li>Analyze website traffic and usage patterns</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">3. Cookies</h3>
+                    <p class="mb-4">This website uses cookies to remember your theme preference (light/dark mode). These are essential for functionality and do not track personal information.</p>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">4. Third-Party Services</h3>
+                    <p class="mb-4">We may use third-party services such as Google Fonts and analytics tools. These services have their own privacy policies governing their use of information.</p>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">5. Data Security</h3>
+                    <p class="mb-4">We implement appropriate security measures to protect your personal information. However, no method of transmission over the internet is 100% secure.</p>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">6. Contact</h3>
+                    <p class="mb-4">If you have questions about this Privacy Policy, please contact us through the contact form on this website.</p>
+                </div>
+                <!-- Footer - Fixed -->
+                <div class="p-6 border-t border-gray-200 dark:border-gray-700 flex-shrink-0 bg-white dark:bg-[#1e1e1e] rounded-b-2xl">
+                    <button onclick="closeModal('privacy-modal')" class="w-full bg-sky-blue text-deep-navy font-semibold py-3 px-6 rounded-lg hover:bg-blue-400 transition-colors">
+                        I Understand
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div id="terms-modal" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeModal('terms-modal')"></div>
+        <div class="absolute inset-0 flex items-center justify-center p-4">
+            <div class="bg-white dark:bg-[#1e1e1e] rounded-2xl shadow-2xl max-w-2xl w-full max-h-[80vh] flex flex-col">
+                <!-- Header - Fixed -->
+                <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700 flex-shrink-0">
+                    <h2 class="text-2xl font-bold text-deep-navy dark:text-white">
+                        <i class="fas fa-file-contract text-sky-blue mr-3"></i>Terms of Service
+                    </h2>
+                    <button onclick="closeModal('terms-modal')" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
+                        <i class="fas fa-times text-gray-600 dark:text-gray-300"></i>
+                    </button>
+                </div>
+                <!-- Content - Scrollable -->
+                <div class="p-6 overflow-y-auto flex-grow text-gray-600 dark:text-gray-300">
+                    <p class="mb-4"><strong class="text-deep-navy dark:text-white">Last Updated:</strong> January 2024</p>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">1. Acceptance of Terms</h3>
+                    <p class="mb-4">By accessing and using this website, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use this website.</p>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">2. Use of Content</h3>
+                    <p class="mb-4">All content on this website, including text, images, graphics, and code examples, is for informational purposes only. The content is owned by or licensed to the website owner and is protected by copyright laws.</p>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">3. Intellectual Property</h3>
+                    <p class="mb-4">The portfolio projects, designs, and materials displayed on this website represent original work. You may not reproduce, distribute, or create derivative works without explicit written permission.</p>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">4. Contact Form Usage</h3>
+                    <p class="mb-4">When using the contact form, you agree to:</p>
+                    <ul class="list-disc list-inside mb-4 space-y-2">
+                        <li>Provide accurate and truthful information</li>
+                        <li>Not send spam, malicious content, or unsolicited advertisements</li>
+                        <li>Use the form for legitimate professional inquiries only</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">5. Disclaimer</h3>
+                    <p class="mb-4">This website is provided "as is" without warranties of any kind. The owner is not liable for any damages arising from the use of this website or its content.</p>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">6. External Links</h3>
+                    <p class="mb-4">This website may contain links to external sites. We are not responsible for the content or privacy practices of these external websites.</p>
+
+                    <h3 class="text-lg font-semibold text-deep-navy dark:text-white mt-6 mb-3">7. Changes to Terms</h3>
+                    <p class="mb-4">We reserve the right to modify these terms at any time. Continued use of the website after changes constitutes acceptance of the new terms.</p>
+                </div>
+                <!-- Footer - Fixed -->
+                <div class="p-6 border-t border-gray-200 dark:border-gray-700 flex-shrink-0 bg-white dark:bg-[#1e1e1e] rounded-b-2xl">
+                    <button onclick="closeModal('terms-modal')" class="w-full bg-sky-blue text-deep-navy font-semibold py-3 px-6 rounded-lg hover:bg-blue-400 transition-colors">
+                        I Agree
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Script -->
+    <script>
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal('privacy-modal');
+                closeModal('terms-modal');
+            }
+        });
+    </script>
+
+    <!-- Main Script -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
