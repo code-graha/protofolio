@@ -17,7 +17,7 @@
     <!-- Header -->
     <header>
       <div class="header-top">
-        <div class="logo">PORTOFOLIO<span class="blink">_</span></div>
+        <div class="logo" id="header-logo"></div>
         <div class="header-status">
           <span class="status-dot"></span>
           <span>SYSTEM ONLINE</span>
@@ -35,9 +35,9 @@
     <!-- Error Content -->
     <div class="error-box-container">
       <div class="error-main-box">
-        <div class="error-code-large">404</div>
-        <div class="error-label">PAGE NOT FOUND</div>
-        <p class="error-desc">The requested resource could not be located on this server.</p>
+        <div class="error-code-large" id="error-code"></div>
+        <div class="error-label" id="error-label"></div>
+        <p class="error-desc" id="error-desc"></p>
         <div class="error-nav">
           <a href="/">Return Home</a>
           <span class="separator">|</span>
@@ -49,18 +49,43 @@
     <!-- Footer -->
     <footer>
       <div class="footer-main">
-        <span class="footer-logo">PORTOFOLIO<span class="blink">_</span></span>
+        <span class="footer-logo" id="footer-logo"></span>
         <span class="footer-divider">|</span>
-        <a href="https://wa.me/8448455357" target="_blank" class="footer-link">Contact Us</a>
+        <a id="footer-contact" href="#" target="_blank" class="footer-link"></a>
       </div>
       <div class="footer-bottom">
-        <span>Powered by caffeine & <a href="https://siddharthmhjn.com" target="_blank" class="footer-credit-link">siddharthmhjn.com</a></span>
-        <span>2025</span>
+        <span id="footer-powered"></span>
+        <span id="footer-year"></span>
       </div>
     </footer>
 
   </div>
 
+  <script>
+    fetch('/portfolios-data.json')
+      .then(res => res.json())
+      .then(data => {
+        const site = data.site;
+        const contact = data.contact;
+        const error = data.errors['404'];
+
+        // Header
+        document.getElementById('header-logo').innerHTML = site.name.split('_')[0] + '<span class="blink">_</span>';
+        document.title = error.title + ' | ' + site.name;
+
+        // Error content
+        document.getElementById('error-code').textContent = error.code;
+        document.getElementById('error-label').textContent = error.label;
+        document.getElementById('error-desc').textContent = error.description;
+
+        // Footer
+        document.getElementById('footer-logo').innerHTML = site.name.split('_')[0] + '<span class="blink">_</span>';
+        document.getElementById('footer-contact').href = contact.whatsapp;
+        document.getElementById('footer-contact').textContent = contact.label;
+        document.getElementById('footer-powered').innerHTML = site.footerText + ' <a href="' + site.poweredByUrl + '" target="_blank" class="footer-credit-link">' + site.poweredBy + '</a>';
+        document.getElementById('footer-year').textContent = site.year;
+      });
+  </script>
   <script src="/script.js"></script>
 </body>
 </html>

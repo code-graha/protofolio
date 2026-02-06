@@ -55,14 +55,7 @@ A stunning portfolio template featuring a cyber-themed design with glowing gradi
 
 ## Quick Start
 
-### 1. Download
-
-```bash
-git clone https://github.com/siddharth-mhjn/my-portfolio.git
-cd my-portfolio/portofolio/themes/digital-nebula
-```
-
-### 2. Configure
+### 1. Configure
 
 Edit `portfolio-data.json`:
 
@@ -75,7 +68,7 @@ Edit `portfolio-data.json`:
 }
 ```
 
-### 3. Run
+### 2. Run
 
 ```bash
 # Python
@@ -85,7 +78,7 @@ python -m http.server 8000
 npx serve
 ```
 
-### 4. Deploy
+### 3. Deploy
 
 Upload to your preferred hosting.
 
@@ -101,16 +94,6 @@ digital-nebula/
 ├── portfolio-data.json  # Content configuration
 ├── 404.html             # Error page
 ├── 405.html             # Error page
-│
-├── demo/                # Code demo files
-│   ├── kubernetes.yaml
-│   ├── istio.yaml
-│   ├── api-gateway.yaml
-│   └── monitoring.yaml
-│
-├── resources/           # Assets
-│   └── Resume.pdf
-│
 └── README.md            # This file
 ```
 

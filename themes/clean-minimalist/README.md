@@ -52,14 +52,7 @@ A responsive portfolio template built with HTML, Tailwind CSS, and vanilla JavaS
 
 ## Quick Start
 
-### 1. Download
-
-```bash
-git clone https://github.com/siddharth-mhjn/my-portfolio.git
-cd my-portfolio/portofolio/themes/clean-minimalist
-```
-
-### 2. Configure
+### 1. Configure
 
 Edit `portfolio-data.json` with your information:
 
@@ -73,14 +66,14 @@ Edit `portfolio-data.json` with your information:
 }
 ```
 
-### 3. Replace Assets
+### 2. Replace Assets
 
 - `Profile_Photo.png` - Your profile photo
 - `Banner_Photo.png` - Hero section banner
 - `Resume.pdf` - Your resume
 - `favicon.jpg` - Site favicon
 
-### 4. Run
+### 3. Run
 
 ```bash
 # Python
@@ -90,7 +83,7 @@ python -m http.server 8000
 npx serve
 ```
 
-### 5. Deploy
+### 4. Deploy
 
 Upload to GitHub Pages, Netlify, or Vercel.
 
