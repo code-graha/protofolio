@@ -11,6 +11,20 @@
     "whatsapp": "https://siddharthmhjn.com",
     "label": "Let's Connect"
   },
+  "errors": {
+    "404": {
+      "title": "PORTOFOLIO_ by siddharthmhjn.com",
+      "code": "404",
+      "label": "PAGE NOT FOUND",
+      "description": "The requested resource could not be located on this server."
+    },
+    "405": {
+      "title": "PORTOFOLIO_ by siddharthmhjn.com",
+      "code": "405",
+      "label": "METHOD NOT ALLOWED",
+      "description": "The request method is not supported for this resource."
+    }
+  },
   "stats": [
     "6+ Templates",
     "100% Responsive",
