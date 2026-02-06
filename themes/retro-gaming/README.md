@@ -54,14 +54,7 @@ A retro gaming themed portfolio template featuring authentic 8-bit aesthetics, C
 
 ## Quick Start
 
-### 1. Download
-
-```bash
-git clone https://github.com/siddharth-mhjn/my-portfolio.git
-cd my-portfolio/portofolio/themes/retro-gaming
-```
-
-### 2. Configure
+### 1. Configure
 
 Edit `portfolio-data.json`:
 
@@ -74,7 +67,7 @@ Edit `portfolio-data.json`:
 }
 ```
 
-### 3. Run
+### 2. Run
 
 ```bash
 # Python
@@ -84,7 +77,7 @@ python -m http.server 8000
 npx serve
 ```
 
-### 4. Deploy
+### 3. Deploy
 
 Upload to your preferred hosting service.
 
@@ -94,13 +87,14 @@ Upload to your preferred hosting service.
 
 ```
 retro-gaming/
-├── index.html           # Main HTML
-├── styles.css           # Custom styles & effects
-├── script.js            # JavaScript functionality
-├── portfolio-data.json  # Content configuration
-├── 404.html             # Error page
-├── 405.html             # Error page
-└── README.md            # This file
+├── index.html              # Main HTML
+├── styles.css              # Custom styles & effects
+├── script.js               # JavaScript functionality
+├── portfolio-data.json     # Content configuration
+├── google-apps-script.js   # Contact form backend
+├── 404.html                # Error page
+├── 405.html                # Error page
+└── README.md               # This file
 ```
 
 ---

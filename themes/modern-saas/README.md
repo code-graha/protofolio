@@ -56,14 +56,7 @@ A responsive portfolio template with a modern SaaS aesthetic featuring gradient 
 
 ## Quick Start
 
-### 1. Download
-
-```bash
-git clone https://github.com/siddharth-mhjn/my-portfolio.git
-cd my-portfolio/portofolio/themes/modern-saas
-```
-
-### 2. Configure
+### 1. Configure
 
 Edit `portfolio-data.json`:
 
@@ -76,7 +69,7 @@ Edit `portfolio-data.json`:
 }
 ```
 
-### 3. Run
+### 2. Run
 
 ```bash
 # Python
@@ -86,7 +79,7 @@ python -m http.server 8000
 npx serve
 ```
 
-### 4. Deploy
+### 3. Deploy
 
 Upload to your preferred hosting.
 

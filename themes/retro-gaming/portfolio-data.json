@@ -2,8 +2,8 @@
   "meta": {
     "title": "PORTOFOLIO_ by siddharthmhjn.com",
     "description": "Tony Stark - Genius, Billionaire, Philanthropist. CEO of Stark Industries and Iron Man. Building technology to protect the world and power the future.",
-    "canonical": "https://www.starkindustries.com/",
-    "ogImage": "https://www.starkindustries.com/assets/preview.jpg"
+    "canonical": "https://protofolio.siddharthmhjn.com/",
+    "ogImage": "https://protofolio.siddharthmhjn.com/assets/preview.jpg"
   },
   "header": {
     "logoIcon": "fa-solid fa-shield-halved",
@@ -312,15 +312,19 @@
   },
   "schema": {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Tony Stark",
-    "url": "https://www.starkindustries.com/",
-    "jobTitle": "CEO of Stark Industries & Iron Man",
-    "image": "/resources/iron-man.jpg",
-    "sameAs": [
-      "https://www.linkedin.com/in/siddharth-mhjn",
-      "https://github.com/siddharth-mhjn"
-    ]
+    "@type": "WebSite",
+    "name": "PROTOFOLIO",
+    "description": "portFOLIOs, PROTOtyped for You",
+    "url": "https://protofolio.siddharthmhjn.com",
+    "author": {
+      "@type": "Person",
+      "name": "siddharthmhjn",
+      "url": "https://siddharthmhjn.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/siddharth-mhjn",
+        "https://github.com/siddharth-mhjn"
+      ]
+    }
   },
   "policies": {
     "privacyPolicy": {

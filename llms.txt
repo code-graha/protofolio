@@ -1,0 +1,26 @@
+# Protofolio
+
+> Free, responsive portfolio templates prototyped for you.
+
+Protofolio is a collection of free portfolio website templates built by Siddharth Mahajan (siddharthmhjn.com). Each template is fully responsive, fast-loading, and ready to use.
+
+## Available Templates
+
+- Clean Minimalist: Simple, elegant, professional portfolio with light mode and fast performance.
+- Bento: Modern grid-based bento layout, responsive and minimal.
+- Retro Gaming: Pixel art inspired, nostalgic dark mode template with animations and interactivity.
+- Illustrative UI: Creative and artistic portfolio with colorful illustrations.
+- Modern SaaS: Corporate, sleek, and polished professional template.
+- Digital Nebula: Futuristic dark mode template with neon effects and animations.
+
+## Key Features
+
+- All templates are 100% responsive
+- Free to browse and use
+- 6+ templates available
+- 24/7 support
+
+## Contact
+
+Website: https://siddharthmhjn.com
+Portfolio site: https://protofolio.siddharthmhjn.com
