@@ -66,7 +66,7 @@ This project is open source and available for personal and commercial use.
 
 ## Author
 
-**siddharthmhjn**
+**Siddharth Mahajan**
 
 | Platform | Link |
 |----------|------|
