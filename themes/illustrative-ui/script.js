@@ -466,6 +466,13 @@ function updateMeta() {
 
     document.title = meta.title;
 
+    // Update favicon
+    const person = portfolioData.person;
+    if (person && person.favicon) {
+        const faviconLink = document.getElementById('favicon-link');
+        if (faviconLink) faviconLink.href = person.favicon;
+    }
+
     const descMeta = document.querySelector('meta[name="description"]');
     if (descMeta) descMeta.content = meta.description;
 

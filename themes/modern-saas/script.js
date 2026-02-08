@@ -385,6 +385,12 @@ function updatePageContent(data) {
         document.title = data.meta.title;
     }
 
+    // Update favicon
+    if (data.personal && data.personal.favicon) {
+        const faviconLink = document.getElementById('favicon-link');
+        if (faviconLink) faviconLink.href = data.personal.favicon;
+    }
+
     // Update Header
     if (data.personal) {
         const initials = getInitials(data.personal.name);

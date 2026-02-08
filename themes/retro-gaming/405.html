@@ -69,6 +69,7 @@
         }
         .pulse-red { animation: pulse-red 2s infinite; }
     </style>
+    <link href="" rel="icon" type="image/jpeg" id="favicon-link" />
 </head>
 <body class="bg-retro-gray min-h-screen relative">
     <!-- Screen Border -->
@@ -161,5 +162,12 @@
 
     <!-- Main Script -->
     <script src="script.js"></script>
+    <script>
+        fetch('portfolio-data.json').then(r => r.json()).then(json => {
+            const favicon = json.meta?.favicon || 'favicon.jpg';
+            const el = document.getElementById('favicon-link');
+            if (el) el.href = favicon;
+        }).catch(() => {});
+    </script>
 </body>
 </html>

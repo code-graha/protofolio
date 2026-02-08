@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="" rel="icon" type="image/jpeg" id="favicon-link" />
 </head>
 <body>
   <div class="scanlines"></div>
@@ -72,6 +73,12 @@
         // Header
         document.getElementById('header-logo').innerHTML = site.name.split('_')[0] + '<span class="blink">_</span>';
         document.title = error.title + ' | ' + site.name;
+
+        // Update favicon
+        if (site.favicon) {
+          const faviconLink = document.getElementById('favicon-link');
+          if (faviconLink) faviconLink.href = site.favicon;
+        }
 
         // Error content
         document.getElementById('error-code').textContent = error.code;

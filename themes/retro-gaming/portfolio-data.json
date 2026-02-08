@@ -3,7 +3,8 @@
     "title": "PORTOFOLIO_ by siddharthmhjn.com",
     "description": "Tony Stark - Genius, Billionaire, Philanthropist. CEO of Stark Industries and Iron Man. Building technology to protect the world and power the future.",
     "canonical": "https://protofolio.siddharthmhjn.com/",
-    "ogImage": "https://protofolio.siddharthmhjn.com/assets/preview.jpg"
+    "ogImage": "https://protofolio.siddharthmhjn.com/assets/preview.jpg",
+    "favicon": "/resources/favicon.png"
   },
   "header": {
     "logoIcon": "fa-solid fa-shield-halved",
