@@ -59,6 +59,7 @@
                 radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
         }
     </style>
+    <link href="" rel="icon" type="image/jpeg" id="favicon-link" />
 </head>
 <body class="bg-gray-50 min-h-screen flex items-center justify-center overflow-hidden relative pattern-bg">
     <!-- Background Decorations -->
@@ -165,5 +166,12 @@
             </div>
         </div>
     </div>
+    <script>
+        fetch('portfolio-data.json').then(r => r.json()).then(json => {
+            const favicon = json.personal?.favicon || 'favicon.jpg';
+            const el = document.getElementById('favicon-link');
+            if (el) el.href = favicon;
+        }).catch(() => {});
+    </script>
 </body>
 </html>

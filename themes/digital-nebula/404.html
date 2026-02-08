@@ -34,6 +34,7 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
+    <link href="" rel="icon" type="image/jpeg" id="favicon-link" />
 </head>
 <body class="bg-cyber-dark text-gray-300 min-h-screen">
     <!-- Background Elements -->
@@ -115,5 +116,12 @@
 
     <!-- Common Script -->
     <script src="script.js"></script>
+    <script>
+        fetch('portfolio-data.json').then(r => r.json()).then(json => {
+            const favicon = json.personal?.favicon || 'favicon.jpg';
+            const el = document.getElementById('favicon-link');
+            if (el) el.href = favicon;
+        }).catch(() => {});
+    </script>
 </body>
 </html>

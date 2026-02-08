@@ -4,7 +4,8 @@
     "description": "Portfolio of Tony Stark, CEO of Stark Industries and Iron Man. Pioneer in arc reactor technology, AI systems, and advanced weapons defense systems.",
     "keywords": "Tony Stark, Iron Man, Stark Industries, Arc Reactor, AI, J.A.R.V.I.S., Avengers, Clean Energy, Nanotechnology",
     "canonical": "https://protofolio.siddharthmhjn.com/",
-    "ogImage": "https://protofolio.siddharthmhjn.com/preview.jpg"
+    "ogImage": "https://protofolio.siddharthmhjn.com/preview.jpg",
+    "favicon": "/resources/favicon.png"
   },
   "header": {
     "logoInitials": "TS",

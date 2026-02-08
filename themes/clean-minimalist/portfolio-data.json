@@ -16,7 +16,7 @@
     "resume": "/resources/resume.pdf",
     "profilePhoto": "/resources/iron-man.jpg",
     "bannerPhoto": "/resources/ironman-banner.jpg",
-    "favicon": "favicon.jpg",
+    "favicon": "/resources/favicon.png",
     "ogImage": "Profile_Photo.png",
     "ogUrl": "https://protofolio.siddharthmhjn.com",
     "footerDescription": "CEO of Stark Industries & Iron Man. Building technology to protect the world.",

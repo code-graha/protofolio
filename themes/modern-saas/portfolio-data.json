@@ -18,6 +18,7 @@
     "awardsCount": "∞",
     "resume": "/resources/resume.pdf",
     "heroImage": "/resources/iron-man.jpg",
+    "favicon": "/resources/favicon.png",
     "googleScriptURL": "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE",
     "socialLinks": [
       {

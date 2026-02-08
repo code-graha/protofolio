@@ -25,7 +25,8 @@
     "cvUrl": "/resources/resume.pdf",
     "email": "tony@starkindustries.com",
     "phone": "Contact Pepper Potts",
-    "location": "New York, USA"
+    "location": "New York, USA",
+    "favicon": "/resources/favicon.png"
   },
   "social": {
     "github": "https://github.com/siddharth-mhjn",

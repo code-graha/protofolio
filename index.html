@@ -59,6 +59,7 @@
   <script src="https://cdn.tailwindcss.com" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="" rel="icon" type="image/jpeg" id="favicon-link" />
 </head>
 <body>
   <div class="scanlines"></div>
@@ -137,6 +138,12 @@
 
       // Update site info
       document.title = data.site.name;
+
+      // Update favicon
+      if (data.site.favicon) {
+        const faviconLink = document.getElementById('favicon-link');
+        if (faviconLink) faviconLink.href = data.site.favicon;
+      }
       document.getElementById('tagline').textContent = data.site.tagline;
       document.getElementById('template-count').textContent = `${data.portfolios.length} Templates Available`;
       document.getElementById('year').textContent = data.site.year;

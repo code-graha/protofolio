@@ -363,6 +363,12 @@ function updateMeta() {
     const meta = portfolioData.meta;
     document.title = meta.title;
 
+    // Update favicon
+    if (meta.favicon) {
+        const faviconLink = document.getElementById('favicon-link');
+        if (faviconLink) faviconLink.href = meta.favicon;
+    }
+
     // Update meta description
     const descMeta = document.querySelector('meta[name="description"]');
     if (descMeta) descMeta.content = meta.description;

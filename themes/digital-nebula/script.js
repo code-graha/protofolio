@@ -419,6 +419,12 @@ function populatePortfolio() {
         document.title = portfolioData.meta.title;
     }
 
+    // Update favicon
+    if (portfolioData.personal && portfolioData.personal.favicon) {
+        const faviconLink = document.getElementById('favicon-link');
+        if (faviconLink) faviconLink.href = portfolioData.personal.favicon;
+    }
+
     // Update section headers
     updateSectionHeaders();
     // Update header section
