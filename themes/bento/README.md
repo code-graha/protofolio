@@ -323,7 +323,7 @@ Open source for personal and commercial use.
 
 ## Author
 
-**siddharthmhjn**
+**Siddharth Mahajan**
 
 | Platform | Link |
 |----------|------|

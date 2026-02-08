@@ -359,7 +359,7 @@ Open source for personal use.
 
 ## Author
 
-**siddharthmhjn**
+**Siddharth Mahajan**
 
 | Platform | Link |
 |----------|------|
