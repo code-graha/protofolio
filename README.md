@@ -36,7 +36,7 @@ A retro terminal-style landing page showcasing a collection of modern, responsiv
 ## Project Structure
 
 ```
-portofolio/
+protofolio/
 ├── index.html                  # Landing page
 ├── style.css                   # Landing page styles
 ├── script.js                   # DevTools protection

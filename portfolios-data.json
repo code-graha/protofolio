@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "PORTOFOLIO_ by siddharthmhjn.com",
+    "name": "PROTOFOLIO_ by siddharthmhjn.com",
     "tagline": "portFOLIOs, PROTOtyped for You",
     "year": "2025",
     "footerText": "Powered by caffeine &",
@@ -14,13 +14,13 @@
   },
   "errors": {
     "404": {
-      "title": "PORTOFOLIO_ by siddharthmhjn.com",
+      "title": "PROTOFOLIO_ by siddharthmhjn.com",
       "code": "404",
       "label": "PAGE NOT FOUND",
       "description": "The requested resource could not be located on this server."
     },
     "405": {
-      "title": "PORTOFOLIO_ by siddharthmhjn.com",
+      "title": "PROTOFOLIO_ by siddharthmhjn.com",
       "code": "405",
       "label": "METHOD NOT ALLOWED",
       "description": "The request method is not supported for this resource."
